@@ -13,4 +13,3 @@ out of or in connection with the software or the use or other dealings in the so
 
 # - Image -
 <img src="https://user-images.githubusercontent.com/85012599/120952909-ee26d700-c786-11eb-9f48-4bc2baf88669.png" width="80%">
-![sample](https://user-images.githubusercontent.com/85012599/120952909-ee26d700-c786-11eb-9f48-4bc2baf88669.png)
