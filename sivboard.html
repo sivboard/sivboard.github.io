@@ -31,7 +31,7 @@
   
 <h3>SivBoard</h3>
 
-<div class="c0">ver. 2.10.530</div>
+<div class="c0">ver. 2.10.610</div>
 <div class="c1">Copyright (c) 2021 Nyuma</div>
 
 <div class="c0">Introduction</div>
@@ -615,10 +615,10 @@ out of or in connection with the software or the use or other dealings in the so
 <div class="c2">-</div>
 
 <div class="c1">- Object Method -</div>
-<div class="c2">-</div>
+<div class="c2">NumberEffect()<br>NumberEffect(const NumberEffect&in)<br>bool isEmpty()<br>bool hasEffects()<br>size_t num_effects()<br>void add(const Vec2&in, int32, const Font&in, const ColorF&in)<br>void add(const Vec2&in, int32, const Font&in, const ColorF&in, const Vec2&in)<br>void pause()<br>bool isPaused()<br>void resume()<br>void setSpeed(double)<br>double getSpeed()<br>void update()<br>void clear()</div>
 
 <div class="c1">- Global Function -</div>
-<div class="c2">bool isEmpty()<br>bool hasEffects()<br>size_t num_effects()<br>void add(const Vec2&in, int32, const Font&in, const ColorF&in)<br>void pause()<br>bool isPaused()<br>void resume()<br>void setSpeed(double)<br>double getSpeed()<br>void update()<br>void clear()</div>
+<div class="c2">-</div>
 
 <div class="c0">#OffsetCircular</div>
 <div class="c1">- Object Property -</div>
@@ -815,10 +815,10 @@ out of or in connection with the software or the use or other dealings in the so
 <div class="c2">-</div>
 
 <div class="c1">- Object Method -</div>
-<div class="c2">-</div>
+<div class="c2">RingEffect()<br>RingEffect(const RingEffect&in)<br>bool isEmpty()<br>bool hasEffects()<br>size_t num_effects()<br>void add(const Vec2&in, double, double, const ColorF&in)<br>void pause()<br>bool isPaused()<br>void resume()<br>void setSpeed(double)<br>double getSpeed()<br>void update()<br>void clear()</div>
 
 <div class="c1">- Global Function -</div>
-<div class="c2">bool isEmpty()<br>bool hasEffects()<br>size_t num_effects()<br>void add(const Vec2&in, double, double, const ColorF&in)<br>void pause()<br>bool isPaused()<br>void resume()<br>void setSpeed(double)<br>double getSpeed()<br>void update()<br>void clear()</div>
+<div class="c2">-</div>
 
 <div class="c0">#RoundRect</div>
 <div class="c1">- Object Property -</div>
@@ -858,7 +858,17 @@ out of or in connection with the software or the use or other dealings in the so
 <div class="c2">-</div>
 
 <div class="c1">- Global Function -</div>
-<div class="c2">void Resize(const Point& in)<br>void Resize(int32, int32)<br>Point Size()<br>int32 Width()<br>int32 Height()<br>Point Center()<br>Vec2 CenterF()<br>Rect Rect()<br>void SetScaleMode(ScaleMode)<br>ScaleMode GetScaleMode()<br>void SetBackground(const ColorF& in)<br>void SetLetterbox(const ColorF& in)<br>void SetMaxDeltaTime(double)<br>double GetMaxDeltaTime()<br>double DeltaTime()<br>double Time()<br>int32 FrameCount()<br>Vec2 ClientToScene(const Vec2& in)<br>void Next(const String&in)<br>void Filter(const ColorF&in)<br>ColorF Filter()</div>
+<div class="c2">void Resize(const Point& in)<br>void Resize(int32, int32)<br>Point Size()<br>int32 Width()<br>int32 Height()<br>Point Center()<br>Vec2 CenterF()<br>Rect Rect()<br>void SetScaleMode(ScaleMode)<br>ScaleMode GetScaleMode()<br>void SetBackground(const ColorF& in)<br>void SetLetterbox(const ColorF& in)<br>void SetMaxDeltaTime(double)<br>double GetMaxDeltaTime()<br>double DeltaTime()<br>double Time()<br>int32 FrameCount()<br>Vec2 ClientToScene(const Vec2& in)</div>
+
+<div class="c0">#SceneManager</div>
+<div class="c1">- Object Property -</div>
+<div class="c2">-</div>
+
+<div class="c1">- Object Method -</div>
+<div class="c2">-</div>
+
+<div class="c1">- Global Function -</div>
+<div class="c2">bool ChangeScene(const String&in, double = 1.0)<br>void SetFadeColor(const ColorF& in)<br>ColorF GetFadeColor()<br>void SetFilterColor(const ColorF& in)<br>ColorF GetFilterColor()</div>
 
 <div class="c0">#ScopedRenderStates2D</div>
 <div class="c1">- Object Property -</div>
@@ -968,7 +978,7 @@ out of or in connection with the software or the use or other dealings in the so
 <div class="c2">-</div>
 
 <div class="c1">- Global Function -</div>
-<div class="c2">bool Update()<br>void Exit()<br>void SetTerminationTriggers(uint32)<br>uint32 GetTerminationTriggers()<br>uint32 GetUserActions()<br>void Sleep(int32)<br>void Sleep(const Duration& in)<br>bool LaunchBrowser(const String& in)</div>
+<div class="c2">bool Update()<br>void Exit()<br>void SetTerminationTriggers(uint32)<br>uint32 GetTerminationTriggers()<br>uint32 GetUserActions()<br>void Sleep(int32)<br>void Sleep(const Duration& in)<br>bool LaunchBrowser(const String& in)<br>void SetReloadKeyF5(bool)</div>
 
 <div class="c0">#TCPClient</div>
 <div class="c1">- Object Property -</div>
@@ -1125,7 +1135,7 @@ out of or in connection with the software or the use or other dealings in the so
 <div class="c2">-</div>
 
 <div class="c1">- Object Method -</div>
-<div class="c2">TimeEvent(const TimeEvent&in)<br>TimeEvent(double)<br>TimeEvent(double, double)<br>double Get()</div>
+<div class="c2">TimeEvent(const TimeEvent&in)<br>TimeEvent(double)<br>TimeEvent(double, double)<br>double get()<br>void reset()</div>
 
 <div class="c1">- Global Function -</div>
 <div class="c2">-</div>
