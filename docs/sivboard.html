@@ -28,10 +28,10 @@
       </ul>
     </div>
   </nav>
-  
+
 <h3>SivBoard</h3>
 
-<div class="c0">ver. 2.10.610</div>
+<div class="c0">ver. 2.10.620</div>
 <div class="c1">Copyright (c) 2021 Nyuma</div>
 
 <div class="c0">Introduction</div>
@@ -375,7 +375,7 @@ out of or in connection with the software or the use or other dealings in the so
 <div class="c2">-</div>
 
 <div class="c1">- Object Method -</div>
-<div class="c2">Font()<br>Font(const Font& in)<br>Font(int32, Typeface typeface = Typeface::Default, FontStyle style = FontStyle::Default)<br>Font(int32, const String& in path, FontStyle style = FontStyle::Default)<br>Font& opAssign(const Font& in)<br>void release()<br>bool opImplConv() const<br>bool isEmpty() const<br>uint32 id() const<br>bool opEquals(const Texture& in)<br>const String& familyName() const<br>const String& styleName() const<br>int32 fontSize() const<br>int32 ascent() const<br>int32 descent() const<br>int32 height() const<br>DrawableText opCall() const<br>DrawableText opCall(const String& in) const<br>DrawableText opCall(const ?&in) const<br>DrawableText opCall(const ?&in, const ?&in) const<br>DrawableText opCall(const ?&in, const ?&in, const ?&in) const<br>DrawableText opCall(const ?&in, const ?&in, const ?&in, const ?&in) const<br>DrawableText opCall(const ?&in, const ?&in, const ?&in, const ?&in, const ?&in) const<br>DrawableText opCall(const ?&in, const ?&in, const ?&in, const ?&in, const ?&in, const ?&in) const<br>DrawableText opCall(const ?&in, const ?&in, const ?&in, const ?&in, const ?&in, const ?&in, const ?&in) const<br>DrawableText opCall(const ?&in, const ?&in, const ?&in, const ?&in, const ?&in, const ?&in, const ?&in, const ?&in) const<br>DrawableText opCall(const ?&in, const ?&in, const ?&in, const ?&in, const ?&in, const ?&in, const ?&in, const ?&in, const ?&in) const<br>DrawableText opCall(const ?&in, const ?&in, const ?&in, const ?&in, const ?&in, const ?&in, const ?&in, const ?&in, const ?&in, const ?&in) const</div>
+<div class="c2">Font()<br>Font(const Font& in)<br>Font(int32, Typeface typeface = Typeface::Medium, FontStyle style = FontStyle::Default)<br>Font(int32, const String& in path, FontStyle style = FontStyle::Default)<br>Font& opAssign(const Font& in)<br>void release()<br>bool opImplConv() const<br>bool isEmpty() const<br>uint32 id() const<br>bool opEquals(const Texture& in)<br>const String& familyName() const<br>const String& styleName() const<br>int32 fontSize() const<br>int32 ascent() const<br>int32 descent() const<br>int32 height() const<br>DrawableText opCall() const<br>DrawableText opCall(const String& in) const<br>DrawableText opCall(const ?&in) const<br>DrawableText opCall(const ?&in, const ?&in) const<br>DrawableText opCall(const ?&in, const ?&in, const ?&in) const<br>DrawableText opCall(const ?&in, const ?&in, const ?&in, const ?&in) const<br>DrawableText opCall(const ?&in, const ?&in, const ?&in, const ?&in, const ?&in) const<br>DrawableText opCall(const ?&in, const ?&in, const ?&in, const ?&in, const ?&in, const ?&in) const<br>DrawableText opCall(const ?&in, const ?&in, const ?&in, const ?&in, const ?&in, const ?&in, const ?&in) const<br>DrawableText opCall(const ?&in, const ?&in, const ?&in, const ?&in, const ?&in, const ?&in, const ?&in, const ?&in) const<br>DrawableText opCall(const ?&in, const ?&in, const ?&in, const ?&in, const ?&in, const ?&in, const ?&in, const ?&in, const ?&in) const<br>DrawableText opCall(const ?&in, const ?&in, const ?&in, const ?&in, const ?&in, const ?&in, const ?&in, const ?&in, const ?&in, const ?&in) const</div>
 
 <div class="c1">- Global Function -</div>
 <div class="c2">-</div>
@@ -565,7 +565,7 @@ out of or in connection with the software or the use or other dealings in the so
 <div class="c2">-</div>
 
 <div class="c1">- Object Method -</div>
-<div class="c2">Microphone()<br>Microphone(const Microphone&in)<br>Microphone(size_t, int32 = 5, size_t = 220500, bool = true)<br>bool f(size_t, int32 = 5, size_t = 220500, bool = true)<br>bool isAvailable() const<br>bool opImplConv() const<br>void release()<br>bool start()<br>void stop()<br>bool isRecording() const<br>uint32 samplingRate() const<br>size_t bufferSize()<br>const WaveSampleS16& buffer(size_t)<br>size_t posSample() const<br>double mean(double = 0.02)<br>double rootMeanSquare(double = 0.02)<br>double peak(double = 0.02)<br>void fft(FFTResult&)<br>bool saveBuffer(const String&in)</div>
+<div class="c2">Microphone()<br>Microphone(const Microphone&in)<br>Microphone(size_t, int32 = 5, size_t = 220500, bool = true)<br>bool init(size_t, int32 = 5, size_t = 220500, bool = true)<br>bool isAvailable() const<br>bool opImplConv() const<br>void release()<br>bool start()<br>void stop()<br>bool isRecording() const<br>uint32 samplingRate() const<br>size_t bufferSize()<br>const WaveSampleS16& buffer(size_t)<br>size_t posSample() const<br>double mean(double = 0.02)<br>double rootMeanSquare(double = 0.02)<br>double peak(double = 0.02)<br>void fft(FFTResult&)<br>bool saveBuffer(const String&in)</div>
 
 <div class="c1">- Global Function -</div>
 <div class="c2">-</div>
@@ -635,7 +635,7 @@ out of or in connection with the software or the use or other dealings in the so
 <div class="c2">-</div>
 
 <div class="c1">- Object Method -</div>
-<div class="c2">bool f(int32& in, bool& out)<br>Optional(int32& in)<br>Optional(int32& in, const T& in value)<br>Optional(int32& in, None_t)<br>Optional&lt;T&gt;& opAssign(const Optional&lt;T&gt;& in)<br>Optional&lt;T&gt;& opAssign(const T& in)<br>Optional&lt;T&gt;& opAssign(None_t)<br>Optional&lt;T&gt;& opEquals(None_t) const<br>T& value()<br>const T& value() const<br>const T& value_or(const T& in value) const<br>bool opImplConv() const<br>bool has_value() const<br>void reset()<br>void reset(const T& in value)</div>
+<div class="c2">Optional(int32& in)<br>Optional(int32& in, const T& in value)<br>Optional(int32& in, None_t)<br>Optional&lt;T&gt;& opAssign(const Optional&lt;T&gt;& in)<br>Optional&lt;T&gt;& opAssign(const T& in)<br>Optional&lt;T&gt;& opAssign(None_t)<br>Optional&lt;T&gt;& opEquals(None_t) const<br>T& value()<br>const T& value() const<br>const T& value_or(const T& in value) const<br>bool opImplConv() const<br>bool has_value() const<br>void reset()<br>void reset(const T& in value)</div>
 
 <div class="c1">- Global Function -</div>
 <div class="c2">-</div>
@@ -725,7 +725,7 @@ out of or in connection with the software or the use or other dealings in the so
 <div class="c2">-</div>
 
 <div class="c1">- Object Method -</div>
-<div class="c2">PrintBuffer@ f()<br>PrintBuffer()<br>PrintBuffer& opShl(const String&in text)<br>PrintBuffer& opShl(const ?&in)</div>
+<div class="c2">PrintBuffer()<br>PrintBuffer& opShl(const String&in text)<br>PrintBuffer& opShl(const ?&in)</div>
 
 <div class="c1">- Global Function -</div>
 <div class="c2">-</div>
@@ -845,7 +845,7 @@ out of or in connection with the software or the use or other dealings in the so
 <div class="c2">-</div>
 
 <div class="c1">- Object Method -</div>
-<div class="c2">SayBuffer@ f()<br>SayBuffer()<br>SayBuffer& opShl(const String&in text)<br>SayBuffer& opShl(const ?&in)</div>
+<div class="c2">SayBuffer()<br>SayBuffer& opShl(const String&in text)<br>SayBuffer& opShl(const ?&in)</div>
 
 <div class="c1">- Global Function -</div>
 <div class="c2">-</div>
@@ -1115,7 +1115,7 @@ out of or in connection with the software or the use or other dealings in the so
 <div class="c2">-</div>
 
 <div class="c1">- Object Method -</div>
-<div class="c2">TextWriterBuffer@ f(TextWriter&)<br>TextWriterBuffer()<br>TextWriterBuffer& opShl(const String&in)<br>TextWriterBuffer& opShl(const ?&in)</div>
+<div class="c2">TextWriterBuffer()<br>TextWriterBuffer& opShl(const String&in)<br>TextWriterBuffer& opShl(const ?&in)</div>
 
 <div class="c1">- Global Function -</div>
 <div class="c2">-</div>
@@ -1260,8 +1260,17 @@ out of or in connection with the software or the use or other dealings in the so
 <div class="c1">- Global Function -</div>
 <div class="c2">void SetTitle(const String& in)<br>const String& GetTitle()<br>void SetStyle(WindowStyle)<br>WindowStyle GetStyle()<br>Point ClientSize()<br>Point ClientCenter()<br>int32 ClientWidth()<br>int32 ClientHeight()<br>void SetPos(const Point& in)<br>void SetPos(int32, int32)<br>void Centering()<br>bool Resize(const Point& in, WindowResizeOption option = WindowResizeOption::ResizeSceneSize, bool resize = true)<br>bool Resize(int32, int32, WindowResizeOption option = WindowResizeOption::ResizeSceneSize, bool resize = true)<br>void Maximize()<br>void Restore()<br>void Minimize()<br>bool SetFullscreen(bool, const Optional&lt;Point&gt;& in = unspecified, WindowResizeOption option = WindowResizeOption::ResizeSceneSize)<br>bool SetFullscreen(bool, None_t, WindowResizeOption option = WindowResizeOption::ResizeSceneSize)</div>
 
-<br>
+<div class="c0">#ZIPReader</div>
+<div class="c1">- Object Property -</div>
+<div class="c2">-</div>
 
+<div class="c1">- Object Method -</div>
+<div class="c2">ZIPReader()<br>ZIPReader(const ZIPReader&in)<br>ZIPReader(const String&in)<br>bool open(const String&in)<br>void close()<br>bool isOpen() const<br>bool opImplConv() const<br>Array&lt;String&gt;@ enumPaths() const<br>bool extractAll(const String&in)<br>bool extract(const String&in, const String&in)<br>bool extractToAudioAsset(const String&in)<br>bool extractToTextureAsset(const String&in)<br>bool extractToMultiTextureAsset(const String&in)</div>
+
+<div class="c1">- Global Function -</div>
+<div class="c2">-</div>
+
+<br>
   <footer class="page-footer blue-grey darken-1">
     <div class="footer-copyright">
       <div class="container">
