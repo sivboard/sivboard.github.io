@@ -34,7 +34,7 @@
     </div>
     <div class="col s12 m6">
       <p>SivBoardは、手軽にSiv3Dでアートを楽しむソフトウェアです。</p>
-      <p>C++ライクなAngelScriptのプログラミングコードを読み込むことで、<br>
+      <p>C++プログラミングに似たAngelScriptのコードを読み込むことで、<br>
         画像や文字を描いたり、アニメ―ションさせたりできます。</p>
       <p>インストールは不要で、任意の場所に置くだけで使えます。<br>
         以下、ふた通りの使い方が出来るように設計しています。</p>
@@ -66,11 +66,11 @@
     <div class="col s11 white">
 <pre><code>void Main()
 {
-  Font font(60);
-  while (System::Update())
-  {
-    font("Hello, SivBoard!🐣").drawAt(Scene::Center(), Palette::White);
-  }
+    Font font(60);
+    while (System::Update())
+    {
+        font("Hello, SivBoard!🐣").drawAt(Scene::Center(), Palette::White);
+    }
 }</code></pre>
     </div>
   </div>
