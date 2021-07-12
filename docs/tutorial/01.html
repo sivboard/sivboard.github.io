@@ -44,7 +44,7 @@
 
   <div class="row">
     <div class="col s2 white">
-      <a href="01/01.txt" download="script.txt">📥 script.txt</a>
+      <a href="01/script.txt" download>📥 script.txt</a>
     </div>
     <div class="col s11 white">
 <pre><code>void Main()
@@ -82,7 +82,8 @@
       <img src="../data/rage1d.png"></img>
     </div>
     <div class="balloon-text">
-      <p>いやいや、いきなりハードルが高すぎじゃないですかね？</p>
+      <p>ちょっとまった。<br>
+        いきなりハードルが高すぎじゃないですかね？</p>
     </div>
   </div>
 
@@ -93,7 +94,7 @@
     <div class="balloon-text">
       <p>ごめんごめん、まずは雰囲気だけ掴んでもらえたらと思ってね。<br>
         基本は、上の様なスクリプトファイルをSivBoardに読み込ませて使うんだ。<br>
-        テキストファイルだから、メモ帳とかで編集できるよ。</p>
+        テキストファイルだから、メモ帳などで編集できるよ。</p>
     </div>
   </div>
 
@@ -102,7 +103,8 @@
       <img src="../data/rage1c.png"></img>
     </div>
     <div class="balloon-text">
-      <p>よかった。。最初で置いてけぼりになるところだった。</p>
+      <p>よかった。。<br>
+        最初で置いてけぼりになると思ったよ。</p>
     </div>
   </div>
 
@@ -176,7 +178,8 @@
       <img src="../data/rage1.png"></img>
     </div>
     <div class="balloon-text">
-      <p>必要ならコードの方に、キーを押した時の処理を記述するという事だな。</p>
+      <p>必要なら、自分で機能を追加できるってことね。<br>
+        ファンクションキーを押した時の動作も作れるのか。</p>
     </div>
   </div>
 
@@ -208,8 +211,8 @@
       <img src="../data/rage1d.png"></img>
     </div>
     <div class="balloon-text">
-      <p>100 を 10 にすればいいのね、、ぽちっと。<br>
-        お、図形が小さくなった！編集内容がすぐに反映できて良いね。</p>
+      <p>100 を 10 にすればいいのね、、ポチっと。<br>
+        お、図形が小さくなった！編集結果がすぐに確認できて良いね。</p>
     </div>
   </div>
 
@@ -227,8 +230,8 @@
     </div>
     <div class="balloon-text">
       <p>スクリプトファイルについても説明するよ。<br>
-        基本のポイントは２つ。まず、コードは void Main() の中に記述する。<br>
-        そして、その中の while (System::Update()) にループ処理を記述するんだ。</p>
+        ポイントは２つ。まず、基本的には void Main() に処理を書く。<br>
+        そして、その中の while (System::Update()) には、ループ処理を書くんだ。</p>
     </div>
   </div>
 
@@ -237,7 +240,7 @@
       <img src="../data/rage1.png"></img>
     </div>
     <div class="balloon-text">
-      <p>独自の関数を用意して、呼び出すことはできないの？</p>
+      <p>自分で作った関数を、呼び出すことはできないの？</p>
     </div>
   </div>
 
@@ -247,7 +250,7 @@
     </div>
     <div class="balloon-text">
       <p>同一ファイル内であれば、それもできるよ。<br>
-        例えば、Draw() という関数を定義しておいて、Main() から呼び出す、とかね。</p>
+        例えば、Draw() という関数を作って、Main() から呼び出す、とかね。</p>
     </div>
   </div>
 
@@ -258,7 +261,8 @@
       <img src="../data/rage1.png"></img>
     </div>
     <div class="balloon-text">
-      <p>左上に白い文字でFPSが表示されているけど、これはどうやっているの？</p>
+      <p>左上にフレームレートが表示されているよね？<br>
+        これは、どうやっているの？</p>
     </div>
   </div>
 
@@ -269,7 +273,7 @@
     <div class="balloon-text">
       <p>Siv3D の Print という機能を使って表示させてるんだ。<br>
         Print << hensuu の記述で、文字列や簡単な変数なら表示できるよ。<br>
-        また、ClearPrint(); を入れて、一度表示をリセットしてるんだ。</p>
+        また、ClearPrint(); で、一度表示をリセットさせているんだ。</p>
     </div>
   </div>
 
@@ -278,8 +282,31 @@
       <img src="../data/rage1.png"></img>
     </div>
     <div class="balloon-text">
-      <p>Siv3D の公式サイトを調べてみたけど、デバッグ表示に使えるんだね。<br>
-        基本はこれでばっちりかな！</p>
+      <p>へー、デバッグ表示にも使えそうだね。</p>
+    </div>
+  </div>
+
+  <h5>#1-6 : この章のまとめ</h5>
+
+  <div class="balloon-left">
+    <div class="balloon-icon">
+      <img src="../data/yunia1.png"></img>
+    </div>
+    <div class="balloon-text">
+      <p>今回は、基本的な動作について解説したよ。<br>
+        System の関数は、他に、強制終了をさせる Exit() などがある。<br>
+        詳細は、ヘルプで確認してみてね。</p>
+    </div>
+  </div>
+  
+   <div class="balloon-right">
+    <div class="balloon-icon">
+      <img src="../data/rage1c.png"></img>
+    </div>
+    <div class="balloon-text">
+      <p>ちゃらららっちゃっちゃちゃっちゃー♪<br>
+        ちからが 1 あがった。<br>
+        かしこさが 1 あがった。</p>
     </div>
   </div>
 
