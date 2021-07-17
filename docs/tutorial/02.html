@@ -82,14 +82,10 @@
         Shape2D::Star(40, Vec2(100, 400)).asPolygon().rotatedAt(Vec2(100, 400), d2).draw(Palette::Skyblue);
         Shape2D::NStar(10, 40, 30, Vec2(250, 400)).asPolygon().rotatedAt(Vec2(250, 400), d2).draw(Palette::Skyblue);
         Shape2D::Rhombus(80, 60, Vec2(400, 400)).asPolygon().rotatedAt(Vec2(400, 400), d2).draw(Palette::Skyblue);
-        Shape2D::RectBalloon(RectF(510, 370, 80, 40), Vec2(550, 430)).asPolygon().rotatedAt(Vec2(550, 400), d2).draw
-
-(Palette::Skyblue);
+        Shape2D::RectBalloon(RectF(510, 370, 80, 40), Vec2(550, 430)).asPolygon().rotatedAt(Vec2(550, 400), d2).draw(Palette::Skyblue);
         Shape2D::Stairs(Vec2(740, 430), 80, 60, 4).asPolygon().rotatedAt(Vec2(700, 400), d2).draw(Palette::Skyblue);
 
-        Shape2D::Arrow(Vec2(-30, 30), Vec2(30, -30), 20, Vec2(40, 30)).asPolygon().scaled(d1).movedBy(Vec2(100, 500)).draw
-
-(Palette::Skyblue);
+        Shape2D::Arrow(Vec2(-30, 30), Vec2(30, -30), 20, Vec2(40, 30)).asPolygon().scaled(d1).movedBy(Vec2(100, 500)).draw(Palette::Skyblue);
         Line(Vec2(220, 470), Vec2(280, 530)).stretched(-40 * d3).drawArrow(20, Vec2(40, 30), Palette::Gray);
         Line(Vec2(370, 500), Vec2(430, 500)).stretched(-40 * d3).draw(10, Palette::Gray);
         Line(Vec2(520, 500), Vec2(580, 500)).stretched(-40 * d3).draw(LineStyle::RoundDot, 10, Palette::Gray);
