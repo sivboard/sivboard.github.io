@@ -6,7 +6,7 @@
 
     while(System::Update())
     {
-        double d1 = 1 - (Periodic::Sine0_1(3) * 0.5);
+        double d1 = 1.0 - (Periodic::Sine0_1(3) * 0.5);
         double d2 = Periodic::Sine0_1(3) - 0.5;
         double d3 = Periodic::Sine0_1(3) * 0.5;
 
