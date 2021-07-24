@@ -1,0 +1,45 @@
+﻿void Main()
+{
+    Font font(60);
+    Stopwatch sw(true);
+
+    while(System::Update())
+    {
+        double t = sw.sF();
+        double d1 = Periodic::Triangle0_1(3, t);
+        double d2 = Periodic::Sine0_1(3, t);
+        double d3 = Periodic::Jump0_1(3, t);
+        double d4 = Periodic::Flash0_1(3, t);
+
+        Circle(Vec2(100, 500 - d1 * 400), 20).draw(Palette::Turquoise);
+        Circle(Vec2(140, 500 - EaseInOutQuad(d1) * 400), 20).draw(Palette::Turquoise);
+        Circle(Vec2(180, 500 - EaseInOutExpo(d1) * 400), 20).draw(Palette::Turquoise);
+        Circle(Vec2(220, 500 - EaseInOutBounce(d1) * 400), 20).draw(Palette::Turquoise);
+
+        Circle(Vec2(260, 500 - d2 * 400), 20).draw(Palette::Lightcoral);
+        Circle(Vec2(300, 500 - EaseInOutQuad(d2) * 400), 20).draw(Palette::Lightcoral);
+        Circle(Vec2(340, 500 - EaseInOutExpo(d2) * 400), 20).draw(Palette::Lightcoral);
+        Circle(Vec2(380, 500 - EaseInOutBounce(d2) * 400), 20).draw(Palette::Lightcoral);
+
+        Circle(Vec2(420, 500 - d3 * 400), 20).draw(Palette::Skyblue);
+        Circle(Vec2(460, 500 - EaseInOutQuad(d3) * 400), 20).draw(Palette::Skyblue);
+        Circle(Vec2(500, 500 - EaseInOutExpo(d3) * 400), 20).draw(Palette::Skyblue);
+        Circle(Vec2(540, 500 - EaseInOutBounce(d3) * 400), 20).draw(Palette::Skyblue);
+
+        Circle(Vec2(580, 500 - d4 * 400), 20).draw(Palette::Khaki);
+        Circle(Vec2(620, 500 - EaseInOutQuad(d4) * 400), 20).draw(Palette::Khaki);
+        Circle(Vec2(660, 500 - EaseInOutExpo(d4) * 400), 20).draw(Palette::Khaki);
+        Circle(Vec2(700, 500 - EaseInOutBounce(d4) * 400), 20).draw(Palette::Khaki);
+
+        Line(Vec2(80,80),Vec2(720,80)).draw(5, Palette::White);
+        Line(Vec2(80,520),Vec2(720,520)).draw(5, Palette::White);
+
+        font("Hello, SivBoard!🐣").drawAt(Scene::Center(), Palette::White);
+
+        if (MouseL.down())
+        {
+            if (sw.isPaused()) { sw.resume(); }
+            else { sw.pause(); }
+        }
+    }
+}
