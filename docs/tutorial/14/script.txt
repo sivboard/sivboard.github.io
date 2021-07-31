@@ -1,0 +1,44 @@
+﻿void Main()
+{
+    Font font(60);
+    int n = 1000;
+    int i;
+    Array<Vec2> v(n);
+    Array<Circle> b(n);
+    Array<ColorF> c(n);
+
+    for (i = 0; i < n; i++)
+    {
+        v[i] = RandomVec2(Vec2(100, 200), Vec2(100, 200));
+        if (RandomBool()) { v[i].x *= -1; }
+        if (RandomBool()) { v[i].y *= -1; }
+        b[i] = Circle(RandomVec2(Scene::Width(), Scene::Height()), 5);
+        c[i] = RandomColor();
+    }
+
+    while (System::Update())
+    {
+        Circle o(Scene::Center(), 200);
+        o.draw(ColorF(1.0, 0.1));
+
+        for (i = 0; i < n; i++)
+        {
+            b[i].moveBy(v[i] * Scene::DeltaTime());
+
+            if ((b[i].y < 0 && v[i].y < 0) || (Scene::Height() < b[i].y && v[i].y > 0))
+            {
+                v[i].y *= -1;
+            }
+
+            if ((b[i].x < 0 && v[i].x < 0) || (Scene::Width() < b[i].x && v[i].x > 0))
+            {
+                v[i].x *= -1;
+            }
+
+            if (b[i].intersects(o)) { b[i].draw(c[i]); }
+            else { b[i].draw(ColorF(1.0, 0)); }
+        }
+
+        font("Hello, SivBoard!🐣").drawAt(Scene::Center(), Palette::White);
+    }
+}
