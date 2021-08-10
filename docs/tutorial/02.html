@@ -103,7 +103,7 @@
     </div>
     <div class="balloon-text">
       <p>いろいろな図形が描けるんだね。<br>
-        でも、なんかたくさんあって、覚えられるか心配。。</p>
+        でも、たくさんあって、覚えられるか心配。。</p>
     </div>
   </div>
 
@@ -113,8 +113,8 @@
     </div>
     <div class="balloon-text">
       <p>ひとつひとつを覚える必要はないよ。<br>
-        動きをつけているから複雑に見えるけど、描画だけならとてもシンプル。<br>
-        いくつかのパターンに分けられるから、それを中心に説明していくね。</p>
+        動きの部分で複雑に見えるけど、描画だけならシンプル。<br>
+        いくつかのパターンに分けて、順番に説明していくね。</p>
     </div>
   </div>
 
@@ -125,9 +125,9 @@
       <img src="../data/yunia1.png"></img>
     </div>
     <div class="balloon-text">
-      <p>サンプルデモの各図形は、種類によって色分けしている。<br>
-        まず、一番上の図形5つは、すべて Circle を使って描画しているんだ。<br>
-        基本形は、Circle(座標, 半径).draw(色) 。座標は Vec2(x, y) で指定できる。</p>
+      <p>各図形は、種類によって色分けしているよ。<br>
+        まず、一番上の図形は、すべて Circle で描画しているんだ。<br>
+        Circle(Vec2(x, y), 半径).draw(色) の形式で指定できる。</p>
     </div>
   </div>
 
@@ -152,9 +152,8 @@
       <img src="../data/rage1.png"></img>
     </div>
     <div class="balloon-text">
-      <p>Palette::Turquoise は色を指定しているのか。<br>
-        円だけでも色々な種類があるんだね。<br>
-        線の円とか、グラフっぽい円とか。</p>
+      <p>Palette::Turquoise は色なんだね。<br>
+        円だけでも色々あるね。グラフっぽい円とか。</p>
     </div>
   </div>
 
@@ -163,9 +162,9 @@
       <img src="../data/yunia1.png"></img>
     </div>
     <div class="balloon-text">
-      <p>そうだね。線で描画するには drawFrame(線幅, 色) を使う。<br>
-        円グラフを描画するには、drawPie() や drawArc() を使うんだ。<br>
-        drawArc() の線幅は、内側と外側をそれぞれ指定できる。右側の2つがその例だよ。</p>
+      <p>そうだね。線の描画は、drawFrame(線幅, 色) を使う。<br>
+        グラフの様な描画は、drawPie() や drawArc() でできる。<br>
+        角度や線幅のパラメータを指定しているんだ。</p>
     </div>
   </div>
 
@@ -175,7 +174,7 @@
     </div>
     <div class="balloon-text">
       <p>ふむふむ。_deg(n) は、角度を指定しているのか。<br>
-        サイズとか角度に、係数をかけてアニメーションさせているんだね。</p>
+        これに係数をかけてアニメーションさせているんだね。</p>
     </div>
   </div>
 
@@ -186,9 +185,9 @@
       <img src="../data/yunia1.png"></img>
     </div>
     <div class="balloon-text">
-      <p>次に、上から二番目の図形5つを見てみよう。<br>
-        左から、四角形、三角形、四辺形、楕円、角丸長方形だ。<br>
-        アニメーション部分を削除したシンプルなコードはこうなる。</p>
+      <p>次に、上から二番目の図形を見てみよう。<br>
+        左から、四角形、三角形、四辺形、楕円、角丸長方形だね。<br>
+        動きの部分を削除してシンプルにしたコードはこうなる。</p>
     </div>
   </div>
 
@@ -214,7 +213,7 @@
     </div>
     <div class="balloon-text">
       <p>んー、なんとなくだけど、<br>
-        さっきの Circle(座標, 半径).draw(色) の形に似ているような。。</p>
+        Circle の形式に似ているような。。</p>
     </div>
   </div>
 
@@ -224,8 +223,8 @@
     </div>
     <div class="balloon-text">
       <p>そこに気付けるなんて、素晴らしい！<br>
-        Rect(), Triangle(), Quad(), Ellipse(), RoundRect() それぞれの基本形はほぼ同じ。<br>
-        Rect と RoundRect で、中心の座標を指定する場合は Arg::center() を使うんだ。</p>
+        Rect, Triangle, Quad, Ellipse, RoundRect も形式は、ほぼ同じ。<br>
+        これらの図形も、線の描画は drawFrame() が使えるよ。</p>
     </div>
   </div>
 
@@ -234,9 +233,8 @@
       <img src="../data/rage1.png"></img>
     </div>
     <div class="balloon-text">
-      <p>いろいろ値を変更して、変化を確認してみたけど、<br>
-        Rect と Ellipse の残り2つのパラメータは、横と縦の長さなんだね。<br>
-        Quad は4つの座標を指定するのか。これで台形とかも作れそう。</p>
+      <p>パラメータは、幅や高さを指定している感じね。<br>
+        Rect/RoundRect にある Arg::center() ってなに？</p>
     </div>
   </div>
 
@@ -245,8 +243,9 @@
       <img src="../data/yunia1.png"></img>
     </div>
     <div class="balloon-text">
-      <p>そうだね。ヘルプも見ながら、いろいろ試してみてね。<br>
-        ちなみに、線で描画する場合は、これらも drawFrame(線幅, 色) が使えるよ。</p>
+      <p>Arg::center() で、中心座標を指定できる様になるんだ。<br>
+        これが無いと Rect/RoundRect は、左上座標の指定になる。<br>
+        注意してね。</p>
     </div>
   </div>
 
@@ -257,7 +256,7 @@
       <img src="../data/rage1c.png"></img>
     </div>
     <div class="balloon-text">
-      <p>次は、上から三番目以降の水色の図形だね。<br>
+      <p>次は、上から三番目の水色の図形だね。<br>
         複雑な図形がたくさんあって、難しそう。。</p>
     </div>
   </div>
@@ -267,9 +266,9 @@
       <img src="../data/yunia1.png"></img>
     </div>
     <div class="balloon-text">
-      <p>これらは全部 Shape2D という機能を使っているんだ。<br>
-        基本形は、Shape2D(サイズ, 座標).draw(色) で記述する。<br>
-        アニメーション部分を削除したシンプルなコードはこうなる。</p>
+      <p>これらは全部 Shape2D を使っているんだ。<br>
+        Shape2D(サイズ, 座標).draw(色) の形式で指定できる。<br>
+        動きの部分を削除してシンプルにしたコードはこうなる。</p>
     </div>
   </div>
 
@@ -302,8 +301,8 @@
       <img src="../data/rage1.png"></img>
     </div>
     <div class="balloon-text">
-      <p>これも、シンプルなコードで見てみると、<br>
-        さっきの Circle(座標, 半径).draw(色) の形に似ているんだね。</p>
+      <p>さっきよりパラメータは多くなっているけど、<br>
+        これも Circle の形式に似ているね。</p>
     </div>
   </div>
 
@@ -312,9 +311,9 @@
       <img src="../data/yunia1c.png"></img>
     </div>
     <div class="balloon-text">
-      <p>省略したアニメーション部分のコードについて説明すると、<br>
-        拡大縮小は、サイズのパラメータに直接係数をかけて行っている。<br>
-        回転は、asPolygon() でポリゴンにしてから、rotatedAt() で行っているんだ。</p>
+      <p>そのとおり。これも、線の描画は drawFrame() が使えるよ。<br>
+        動きの部分のコードについて補足すると、回転の動作は<br>
+        asPolygon() でポリゴンにしてから、rotatedAt() で行っている。</p>
     </div>
   </div>
 
@@ -323,8 +322,8 @@
       <img src="../data/rage1.png"></img>
     </div>
     <div class="balloon-text">
-      <p>へー、そのままで回転させることは出来ないけど、<br>
-        ポリゴンにして、Polygon の関数を使えば出来るのか。</p>
+      <p>Shape2D には回転の関数が無いのね。<br>
+         Polygon の関数で回転させているんだね。</p>
     </div>
   </div>
 
@@ -335,8 +334,8 @@
       <img src="../data/yunia1.png"></img>
     </div>
     <div class="balloon-text">
-      <p>最後に、一番下の4つの線の説明をするよ。<br>
-        アニメーション部分を削除したシンプルなコードはこうなる。</p>
+      <p>次に、一番下の図形を見てみよう。<br>
+        動きの部分を削除してシンプルにしたコードはこうなる。</p>
     </div>
   </div>
 
@@ -360,8 +359,9 @@
       <img src="../data/rage1.png"></img>
     </div>
     <div class="balloon-text">
-      <p>これも基本の形は似ているね。<br>
-        あれ、矢印の図形はさっきもあったような？</p>
+      <p>これらは線なんだね。<br>
+        パラメータは、始点座標と終点座標かな？<br>
+        あれ、矢印はさっきもあったような？</p>
     </div>
   </div>
 
@@ -371,7 +371,7 @@
     </div>
     <div class="balloon-text">
       <p>矢印は、Line の drawArrow() でも描画できるんだ。<br>
-        Line は、これまでの図形とは異なる関数を持っているから、使い分けてみてね。<br>
+        拡大/縮小の動作が、さっきと異なっている点に着目してね。<br>
         draw() で LineStyle::RoundDot を指定すると、点線にできる。</p>
     </div>
   </div>
@@ -381,8 +381,8 @@
       <img src="../data/rage1.png"></img>
     </div>
     <div class="balloon-text">
-      <p>最後の Bezier2 というのはなに？<br>
-        これだけ違うみたいだけど。</p>
+      <p>線は点線にもできるんだね。<br>
+        最後の Bezier2 というのはなに？</p>
     </div>
   </div>
 
@@ -393,7 +393,7 @@
     <div class="balloon-text">
       <p>これは、自由曲線を描画するときに使うんだ。<br>
         ただ、3つの頂点しかないから、使い方は限定されるかな。<br>
-        あと、アニメーション部分で使っている lerp() は、2点の間の座標を計算している。</p>
+        動きの部分で使っている lerp() は、2点間の座標を計算している。</p>
     </div>
   </div>
 
@@ -414,7 +414,7 @@
       <img src="../data/yunia1c.png"></img>
     </div>
     <div class="balloon-text">
-      <p>ううん。もう一つあるよ。<br>
+      <p>ううん。実はもう一つあるよ。<br>
         これが、そのコードだ。</p>
     </div>
   </div>
@@ -437,8 +437,8 @@
       <img src="../data/rage1d.png"></img>
     </div>
     <div class="balloon-text">
-      <p>いやいや、もうないでしょ。。って、この枠の図形か！<br>
-        （さっき、最後って言ってた気が。。</p>
+      <p>いやいや、もうないでしょ。。<br>
+        って、この枠か！</p>
     </div>
   </div>
 
@@ -448,8 +448,8 @@
     </div>
     <div class="balloon-text">
       <p>そそ。これは LineString を使っているんだ。<br>
-        この例だと、最初に4つの頂点を指定して、drawClosed() で描画させている。<br>
-        今までの図形も、こうやって変数を用意して記述出来るよ。</p>
+        最初に頂点を指定して、drawClosed() で描画させている。<br>
+        draw() を使った場合は、閉じずにコの字型の線になるよ。</p>
     </div>
   </div>
 
@@ -458,8 +458,8 @@
       <img src="../data/rage1.png"></img>
     </div>
     <div class="balloon-text">
-      <p>記述は分かれているけど、これも基本の形は似ているね。<br>
-        あとで頂点を増やしたり減らしたりもできるの？</p>
+      <p>drawClosed() で閉じた図形になるのか。<br>
+        頂点は4つで固定なの？</p>
     </div>
   </div>
 
@@ -468,9 +468,9 @@
       <img src="../data/yunia1.png"></img>
     </div>
     <div class="balloon-text">
-      <p>できるよ。push_back(), push_front() で頂点を増やせるし、<br>
-        pop_back(), pop_front() で頂点を減らせる。これで最初か最後の頂点を操作できる。<br>
-        あと、drawCatmullRomClosed() で曲線にすることも出来るよ。</p>
+      <p>ううん。push_back() などで、頂点を増やす事もできるし、<br>
+        pop_back() などで、頂点を減らす事もできる。<br>
+        drawCatmullRomClosed() で曲線にもできるよ。</p>
     </div>
   </div>
 
@@ -482,7 +482,7 @@
     </div>
     <div class="balloon-text">
       <p>今回は、いろいろな図形を描く方法について解説したよ。<br>
-        ここで紹介しきれなかったパラメータや関数があるから、<br>
+        他にも、図形の描画で便利な関数がいろいろあるから、<br>
         詳細は、ヘルプで確認してみてね。</p>
     </div>
   </div>
@@ -506,10 +506,10 @@
       <img src="../data/yunia1c.png"></img>
     </div>
     <div class="balloon-text">
-      <p>今回、色の指定で使った Palette は、140種類以上の色があるんだけど、<br>
-        色の指定は、Palette 以外に Color(r, g, b) や HSV(h, s, v) でもできるよ。<br>
-        角度の _deg(n) は、本家のSiv3Dだと n_deg という表記になる。注意してね。<br>
-        LineStyle は他に LineStyle::SquareDot や LineStyle::RoundCap などがあるよ。</p>
+      <p>今回、色の指定で使った Palette は、140種類以上の定義があるよ。<br>
+        他にも、Color(r, g, b) や HSV(h, s, v) などで、色の指定ができるよ。<br>
+        角度の _deg(n) は、Siv3Dだと n_deg という記述になる。注意してね。<br>
+        LineStyle は LineStyle::RoundCap や LineStyle::SquareDot などもあるよ。</p>
     </div>
   </div>
 
