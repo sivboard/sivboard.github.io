@@ -64,7 +64,7 @@
     while (System::Update())
     {
         ClearPrint();
-        Print << Profiler::FPS() &lt;&lt; " fps";
+        Print << Profiler::FPS() << " fps";
 
         p.startColor = HSV(360 * Periodic::Sawtooth0_1(60), 0.5, 1, 0.5);
         ps.setParameters(p);
