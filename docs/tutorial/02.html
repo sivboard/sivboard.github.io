@@ -152,7 +152,7 @@
       <img src="../data/rage1.png"></img>
     </div>
     <div class="balloon-text">
-      <p>Palette::Turquoise は色なんだね。<br>
+      <p>Palette::Turquoise は色なのか。<br>
         円だけでも色々あるね。グラフっぽい円とか。</p>
     </div>
   </div>
@@ -162,7 +162,7 @@
       <img src="../data/yunia1.png"></img>
     </div>
     <div class="balloon-text">
-      <p>そうだね。線の描画は、drawFrame(線幅, 色) を使う。<br>
+      <p>そうだね。線画は、drawFrame(線幅, 色) を使う。<br>
         グラフの様な描画は、drawPie() や drawArc() でできる。<br>
         角度や線幅のパラメータを指定しているんだ。</p>
     </div>
@@ -173,8 +173,8 @@
       <img src="../data/rage1.png"></img>
     </div>
     <div class="balloon-text">
-      <p>ふむふむ。_deg(n) は、角度を指定しているのか。<br>
-        これに係数をかけてアニメーションさせているんだね。</p>
+      <p>_deg(n) は、角度を指定しているのか。<br>
+        アニメーションはこれに係数をかけているんだね。</p>
     </div>
   </div>
 
@@ -213,7 +213,7 @@
     </div>
     <div class="balloon-text">
       <p>んー、なんとなくだけど、<br>
-        Circle の形式に似ているような。。</p>
+        さっきの Circle の形式に似ているような。。</p>
     </div>
   </div>
 
@@ -224,7 +224,7 @@
     <div class="balloon-text">
       <p>そこに気付けるなんて、素晴らしい！<br>
         Rect, Triangle, Quad, Ellipse, RoundRect も形式は、ほぼ同じ。<br>
-        これらの図形も、線の描画は drawFrame() が使えるよ。</p>
+        これらの図形も、線画は drawFrame() が使えるよ。</p>
     </div>
   </div>
 
@@ -311,7 +311,7 @@
       <img src="../data/yunia1c.png"></img>
     </div>
     <div class="balloon-text">
-      <p>そのとおり。これも、線の描画は drawFrame() が使えるよ。<br>
+      <p>そのとおり。これも、線画は drawFrame() が使えるよ。<br>
         動きの部分のコードについて補足すると、回転の動作は<br>
         asPolygon() でポリゴンにしてから、rotatedAt() で行っている。</p>
     </div>
@@ -322,7 +322,7 @@
       <img src="../data/rage1.png"></img>
     </div>
     <div class="balloon-text">
-      <p>Shape2D には回転の関数が無いのね。<br>
+      <p>Shape2D には回転の関数が無いから、<br>
          Polygon の関数で回転させているんだね。</p>
     </div>
   </div>
@@ -359,7 +359,7 @@
       <img src="../data/rage1.png"></img>
     </div>
     <div class="balloon-text">
-      <p>これらは線なんだね。<br>
+      <p>これらは、線なんだね。<br>
         パラメータは、始点座標と終点座標かな？<br>
         あれ、矢印はさっきもあったような？</p>
     </div>
@@ -372,7 +372,7 @@
     <div class="balloon-text">
       <p>矢印は、Line の drawArrow() でも描画できるんだ。<br>
         拡大/縮小の動作が、さっきと異なっている点に着目してね。<br>
-        draw() で LineStyle::RoundDot を指定すると、点線にできる。</p>
+        draw() で LineStyle::RoundDot を指定すると、点線になる。</p>
     </div>
   </div>
 
@@ -506,7 +506,7 @@
       <img src="../data/yunia1c.png"></img>
     </div>
     <div class="balloon-text">
-      <p>今回、色の指定で使った Palette は、140種類以上の定義があるよ。<br>
+      <p>今回、色の指定で使った Palette は、140種類以上あるよ。<br>
         他にも、Color(r, g, b) や HSV(h, s, v) などで、色の指定ができるよ。<br>
         角度の _deg(n) は、Siv3Dだと n_deg という記述になる。注意してね。<br>
         LineStyle は LineStyle::RoundCap や LineStyle::SquareDot などもあるよ。</p>

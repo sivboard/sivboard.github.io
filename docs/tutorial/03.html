@@ -100,8 +100,8 @@
       <img src="../data/rage1.png"></img>
     </div>
     <div class="balloon-text">
-      <p>少し、コードに慣れてきたぞ。<br>
-        下の方にある条件分岐の if 文は初めて見たかも。</p>
+      <p>なんとなく、コードに慣れてきたかも。<br>
+        下の方にある条件分岐の if 文は初めてじゃない？</p>
     </div>
   </div>
 
@@ -125,7 +125,7 @@
     <div class="balloon-text">
       <p>まずは、ストップウォッチについて説明するよ。<br>
         これは、経過時間の計測や、一時停止、リセットができる。<br>
-        Stopwatch の定義で true を指定すると、すぐ計測を開始する。</p>
+        true を指定して定義すると、すぐに計測を開始する。</p>
     </div>
   </div>
 
@@ -151,7 +151,7 @@
       <img src="../data/rage1.png"></img>
     </div>
     <div class="balloon-text">
-      <p>任意のタイミングでの計測開始もできるのね。<br>
+      <p>あとから計測を開始することもできるのね。<br>
         sw.sF() というのはなに？</p>
     </div>
   </div>
@@ -161,9 +161,9 @@
       <img src="../data/yunia1.png"></img>
     </div>
     <div class="balloon-text">
-      <p>これは、経過時間を秒で取得する関数だよ。<br>
+      <p>それは、経過時間を秒で取得する関数だよ。<br>
         他に、ミリ秒なら msF()、マイクロ秒なら usF() がある。<br>
-        整数で秒を取得したいなら s() を使う。</p>
+        秒を整数で取得したいなら s() を使う。</p>
     </div>
   </div>
 
@@ -172,7 +172,7 @@
       <img src="../data/rage1.png"></img>
     </div>
     <div class="balloon-text">
-      <p>秒の経過時間を小数で取得しているのね。<br>
+      <p>sw.sF() は秒を小数で取得しているのか。<br>
         if 文ではそれぞれ何をしているの？</p>
     </div>
   </div>
@@ -182,9 +182,9 @@
       <img src="../data/yunia1.png"></img>
     </div>
     <div class="balloon-text">
-      <p>MouseL.down() で左クリックを監視して、<br>
-        isPaused() で一時停止状態かを確認している。<br>
-        pause() は一時停止。resume() は計測の再開だね。</p>
+      <p>MouseL.down() は左クリックの監視。<br>
+        isPaused() は一時停止状態の確認。<br>
+        pause() は一時停止。resume() は計測の再開だよ。</p>
     </div>
   </div>
 
@@ -193,9 +193,9 @@
       <img src="../data/rage1c.png"></img>
     </div>
     <div class="balloon-text">
-      <p>つまり、左クリックされたときに、<br>
-        一時停止状態でなければ、一時停止。<br>
-        一時停止状態なら、計測を再開という事か。。</p>
+      <p>ということは、、左クリックされたときに、<br>
+        一時停止状態であれば、計測を再開して、<br>
+        そうでなければ、一時停止するいう事か。。</p>
     </div>
   </div>
 
@@ -227,7 +227,7 @@
     </div>
     <div class="balloon-text">
       <p>すべて 0.0 ～ 1.0 の値を返すの？<br>
-        うーん、イメージができない。。</p>
+        んー、イメージができない。。</p>
     </div>
   </div>
 
@@ -237,8 +237,8 @@
     </div>
     <div class="balloon-text">
       <p>そうだよね。。解説用の図を下に用意したよ。<br>
-        最初の引数は、周期を秒で指定できる。3 なら 3秒 だね。<br>
-        二番目の引数は、経過時間を秒で指定する。省略もできる。</p>
+        周期と経過時間を秒で指定するんだ。3 なら 3秒 だね。<br>
+        経過時間を省略した場合は、システム時間を扱うよ。</p>
     </div>
   </div>
 
@@ -250,11 +250,11 @@
 
   <div class="balloon-right">
     <div class="balloon-icon">
-      <img src="../data/rage1c.png"></img>
+      <img src="../data/rage1.png"></img>
     </div>
     <div class="balloon-text">
-      <p>なるほど、、同じ経過時間でも、<br>
-        関数によって戻り値が違うんだね。</p>
+      <p>ほー、同じ経過時間を入力しても、<br>
+        関数によって戻り値が変わるんだね。</p>
     </div>
   </div>
 
@@ -310,9 +310,9 @@
       <img src="../data/yunia1.png"></img>
     </div>
     <div class="balloon-text">
-      <p>全部で 30種類 くらいあるよ。今回のデモでは、<br>
-        4種類の色分けした Periodic に、イージング関数を掛けて<br>
-        16パターンのタイミングを作っているよ。</p>
+      <p>全部で30種類くらいあるよ。<br>
+        今回のデモでは、4種類の色分けした Periodic に、<br>
+        イージング関数を掛けて16パターンを作っているよ。</p>
     </div>
   </div>
 
@@ -321,9 +321,8 @@
       <img src="../data/rage1.png"></img>
     </div>
     <div class="balloon-text">
-      <p>各色の一番左はイージング無しの動作だね。<br>
-        色々な動きのパターンが作れそう。<br>
-        ワクワクしてきたぞ！</p>
+      <p>色々な動きのパターンが作れそう。<br>
+        ワクワクするね！</p>
     </div>
   </div>
 
@@ -335,7 +334,7 @@
     </div>
     <div class="balloon-text">
       <p>今回は、いろいろな動きを作る方法について解説したよ。<br>
-        紹介しきれなかった Periodic やイージング関数があるから、<br>
+        Periodic やイージングは他にも関数があるから、<br>
         いろいろ試してみてね。</p>
     </div>
   </div>
@@ -359,10 +358,10 @@
       <img src="../data/yunia1c.png"></img>
     </div>
     <div class="balloon-text">
-      <p>起動からの経過時間は Scene::Time() で取得できるよ。<br>
-        Periodic の二番目の引数を省略した場合、これが適用される。<br>
-        Periodic は他にもいくつかあるから、ヘルプで確認してね。<br>
-        イージング関数は、本家の Siv3D のチュートリアルで確認できるよ。</p>
+      <p>起動からの経過時間だけなら Scene::Time() でも取得できるよ。<br>
+        Periodic の他の関数は、ヘルプで調べることができるよ。<br>
+        Flash0_1(), Flashsaw0_1(), Cosine0_1() は SivBoard 独自の関数だよ。<br>
+        イージング関数は、Siv3D のチュートリアルで確認してみてね。</p>
     </div>
   </div>
 
