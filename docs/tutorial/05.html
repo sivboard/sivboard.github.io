@@ -32,7 +32,8 @@
     </div>
     <div class="balloon-text">
       <p>この章では、画像を描く方法について解説していくよ。<br>
-        まずは、この章のサンプルデモを紹介するね。</p>
+        まずは、この章のサンプルデモを紹介するね。<br>
+        sivb.png はスクリプトと同じ場所においてね。</p>
     </div>
   </div>
 
@@ -54,7 +55,7 @@
 {
     Font font(60);
 
-    Array<Texture> a(6);
+    Array&lt;Texture&gt; a(6);
     a[0] = Texture(Icon(0xf286, 60));
     a[1] = Texture(Icon(0xf06d, 60));
     a[2] = Texture(Icon(0xf0e7, 60));
@@ -104,6 +105,323 @@
     </div>
   </div>
 
+  <div class="balloon-right">
+    <div class="balloon-icon">
+      <img src="../data/rage1.png"></img>
+    </div>
+    <div class="balloon-text">
+      <p>ひょこひょこ歩いている、、だと！</p>
+    </div>
+  </div>
+
+  <div class="balloon-left">
+    <div class="balloon-icon">
+      <img src="../data/yunia1.png"></img>
+    </div>
+    <div class="balloon-text">
+      <p>そそ。画像を扱えると、表現の幅が広がるよね。<br>
+        アイコンも使ってゲーム調にしてみたよ。<br>
+        分けて説明していくね。</p>
+    </div>
+  </div>
+
+  <h5>#5-1 : アイコンのテクスチャを作る</h5>
+  
+  <div class="balloon-left">
+    <div class="balloon-icon">
+      <img src="../data/yunia1.png"></img>
+    </div>
+    <div class="balloon-text">
+      <p>まずはアイコンを描く方法だよ。<br>
+        アイコンは、Font Awesome Solid を使っているんだ。<br>
+        Unicode という番号で指定して、テクスチャを作る。</p>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col s11 white">
+<pre><code>    Array&lt;Texture&gt; a(6);
+    a[0] = Texture(Icon(0xf286, 60));
+    a[1] = Texture(Icon(0xf06d, 60));
+    a[2] = Texture(Icon(0xf0e7, 60));
+    a[3] = Texture(Icon(0xf0fe, 60));
+    a[4] = Texture(Icon(0xf0d0, 60));
+    a[5] = Texture(Icon(0xf065, 150));</code></pre>
+    </div>
+  </div>
+  
+  <div class="balloon-right">
+    <div class="balloon-icon">
+      <img src="../data/rage1.png"></img>
+    </div>
+    <div class="balloon-text">
+      Texture(Icon(0xf286, 60)) の部分だね。<br>
+      0xf286 というのが Unicode の番号？</p>
+    </div>
+  </div>
+  
+  <div class="balloon-left">
+    <div class="balloon-icon">
+      <img src="../data/yunia1.png"></img>
+    </div>
+    <div class="balloon-text">
+      <p>そうだよ。0x は16進数をあらわしている。<br>
+        16進数で、f286 という番号ということだね。<br>
+        右側のパラメータは、サイズだよ。</p>
+    </div>
+  </div>
+  
+  <h5>#5-2 : テクスチャを描画する</h5>
+  
+  <div class="balloon-right">
+    <div class="balloon-icon">
+      <img src="../data/rage1.png"></img>
+    </div>
+    <div class="balloon-text">
+      ふむふむ。<br>
+      で、描画はどうやるの？</p>
+    </div>
+  </div>
+  
+  <div class="balloon-left">
+    <div class="balloon-icon">
+      <img src="../data/yunia1.png"></img>
+    </div>
+    <div class="balloon-text">
+      <p>描画はこの部分だね。<br>
+        drawAt() で中心座標を指定するだけだよ。<br>
+        色も指定できるけど、今回は省略している。</p>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col s11 white">
+<pre><code>        a[0].drawAt(Vec2(50, 50));
+        a[1].drawAt(Vec2(330, 50));
+        a[2].drawAt(Vec2(600, 50));
+        a[3].drawAt(Vec2(50, 470));
+        a[4].drawAt(Vec2(50, 550));
+        a[5].drawAt(Vec2(710, 510));
+        a[2].drawAt(Vec2(710, 510));</code></pre>
+    </div>
+  </div>
+  
+  <div class="balloon-right">
+    <div class="balloon-icon">
+      <img src="../data/rage1.png"></img>
+    </div>
+    <div class="balloon-text">
+      色を省略すると、白になるんだね。</p>
+    </div>
+  </div>
+  
+  <h5>#5-3 : 画像ファイルからテクスチャを作る</h5>
+  
+  <div class="balloon-left">
+    <div class="balloon-icon">
+      <img src="../data/yunia1.png"></img>
+    </div>
+    <div class="balloon-text">
+      <p>次に、画像ファイルからテクスチャを作る方法だよ。<br>
+        Texture() に画像のファイルパスを指定するだけ。</p>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col s11 white">
+<pre><code>    Texture c = Texture("sivb.png");</code></pre>
+    </div>
+  </div>
+  
+  <div class="balloon-right">
+    <div class="balloon-icon">
+      <img src="../data/rage1.png"></img>
+    </div>
+    <div class="balloon-text">
+      結構簡単だね。<br>
+      相対パスの基点はどこになるの？</p>
+    </div>
+  </div>
+  
+  <div class="balloon-left">
+    <div class="balloon-icon">
+      <img src="../data/yunia1.png"></img>
+    </div>
+    <div class="balloon-text">
+      <p>SivBoard を置いている場所になるけど、<br>
+        F5キーでスクリプトを読み込んだ場合は、<br>
+        そのスクリプトの場所になるよ。</p>
+    </div>
+  </div>
+  
+  <h5>#5-4 : ドットを維持して描画する</h5>
+  
+  <div class="balloon-right">
+    <div class="balloon-icon">
+      <img src="../data/rage1.png"></img>
+    </div>
+    <div class="balloon-text">
+      ScopedRenderStates2D というのはなに？<br>
+      SamplerState::ClampNearest を指定しているけど。</p>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col s11 white">
+<pre><code>    ScopedRenderStates2D state(SamplerState::ClampNearest);</code></pre>
+    </div>
+  </div>
+  
+  <div class="balloon-left">
+    <div class="balloon-icon">
+      <img src="../data/yunia1c.png"></img>
+    </div>
+    <div class="balloon-text">
+      <p>これは、拡大縮小の方式を設定しているんだ。<br>
+        ニアレストネイバーにしてドット絵を維持している。<br>
+        これがないと、こうなるんだ。</p>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col s12 offset-m1 m6">
+      <image src="05/05b.png" style="width:400px;" />
+    </div>
+  </div>
+  
+  <div class="balloon-right">
+    <div class="balloon-icon">
+      <img src="../data/rage1c.png"></img>
+    </div>
+    <div class="balloon-text">
+      あらら、残念な感じに。。<br>
+      色が滑らかだけどボケちゃうんだね。</p>
+    </div>
+  </div>
+  
+  <h5>#5-5 : ドット絵を動かして描画する</h5>
+  
+  <div class="balloon-left">
+    <div class="balloon-icon">
+      <img src="../data/yunia1.png"></img>
+    </div>
+    <div class="balloon-text">
+      <p>最後に、絵を動かす部分について説明するね。<br>
+        1枚そのままの表示なら、draw() でいいんだけど、<br>
+        部分的に切り取って、描画することもできるんだ。</p>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col s11 white">
+<pre><code>        double t1 = int(Periodic::Sawtooth0_1(0.3) * 4);
+        double t2 = Periodic::Triangle0_1(5);
+        double t3 = Periodic::Square0_1(5);
+        double n = 4;
+
+        if (t3 < 0.5)
+        {
+            c.uv(t1 / n, 0, 1.0 / n, 1.0).scaled(8).drawAt(Vec2(200 + 400 * t2, 300));
+        }
+        else
+        {
+            c.uv(t1 / n, 0, 1.0 / n, 1.0).scaled(8).mirrored().drawAt(Vec2(200 + 400 * t2, 300));
+        }</code></pre>
+    </div>
+  </div>
+  
+  <div class="balloon-right">
+    <div class="balloon-icon">
+      <img src="../data/rage1d.png"></img>
+    </div>
+    <div class="balloon-text">
+      部分的に切り取る？<br>
+      画像の一部の範囲だけ描画するってこと？</p>
+    </div>
+  </div>
+  
+  <div class="balloon-left">
+    <div class="balloon-icon">
+      <img src="../data/yunia1.png"></img>
+    </div>
+    <div class="balloon-text">
+      <p>うん。今回の絵は、4コマを連結していて、<br>
+        これを uv() の関数で1コマずつ切り取って、<br>
+        アニメーションさせているんだ。</p>
+    </div>
+  </div>
+  
+  <div class="balloon-right">
+    <div class="balloon-icon">
+      <img src="../data/rage1.png"></img>
+    </div>
+    <div class="balloon-text">
+      n = 4 は コマ数なんだね。<br>
+      t1, t2, t3 の3つのタイミングがあるけど、<br>
+      それぞれどう使っているの？</p>
+    </div>
+  </div>
+  
+  <div class="balloon-left">
+    <div class="balloon-icon">
+      <img src="../data/yunia1.png"></img>
+    </div>
+    <div class="balloon-text">
+      <p>t1 は、コマの番号。int() で整数化しているよ。<br>
+        t2は、テクスチャの位置。これでうろうろする。<br>
+        t3は、キャラの向き。絵の反転に使っているよ。</p>
+    </div>
+  </div>
+  
+  <div class="balloon-right">
+    <div class="balloon-icon">
+      <img src="../data/rage1.png"></img>
+    </div>
+    <div class="balloon-text">
+      んー、なんとなくやっていることが<br>
+      分かった気がするよ。</p>
+    </div>
+  </div>
+  
+  <h5>#5-6 : この章のまとめ</h5>
+  
+  <div class="balloon-left">
+    <div class="balloon-icon">
+      <img src="../data/yunia1.png"></img>
+    </div>
+    <div class="balloon-text">
+      <p>今回は、画像を描く方法について解説したよ。<br>
+        1枚の絵に何コマか用意する方法は、ゲームとかで<br>
+        よく使われているから、試してみてね。</p>
+    </div>
+  </div>
+
+   <div class="balloon-right">
+    <div class="balloon-icon">
+      <img src="../data/rage1c.png"></img>
+    </div>
+    <div class="balloon-text">
+      <p>ちゃらららっちゃっちゃちゃっちゃー♪<br>
+        ちからが 1 あがった。<br>
+        たいりょくが 1 あがった。<br>
+        かしこさが 1 あがった。</p>
+    </div>
+  </div>
+
+  <h5>#5-X : 編集後記</h5>
+
+  <div class="balloon-left">
+    <div class="balloon-icon">
+      <img src="../data/yunia1c.png"></img>
+    </div>
+    <div class="balloon-text">
+      <p>Siv3D では、他に Texture(Emoji()) という関数がある。<br>
+        SivBoard でも関数はあるけど、ファイルサイズの関係で、<br>
+        現時点では、リソースに組み込んでいないんだ。<br>
+        今後、要望があれば検討するよ。</p>
+    </div>
+  </div>
+  
   <footer class="page-footer blue-grey darken-1">
     <div class="footer-copyright">
       <div class="container">
