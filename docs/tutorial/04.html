@@ -52,8 +52,8 @@
     Font font(60);
     int n = 100;
     int i;
-    Array<Vec2> v(n);
-    Array<Circle> b(n);
+    Array&lt;Vec2&gt; v(n);
+    Array&lt;Circle&gt; b(n);
 
     for (i = 0; i < n; i++)
     {
@@ -90,6 +90,307 @@
     </div>
   </div>
 
+  <div class="balloon-right">
+    <div class="balloon-icon">
+      <img src="../data/rage1d.png"></img>
+    </div>
+    <div class="balloon-text">
+      <p>小さなボールがたくさん！<br>
+        それと、半透明の大きな円があるね。</p>
+    </div>
+  </div>
+
+  <div class="balloon-left">
+    <div class="balloon-icon">
+      <img src="../data/yunia1.png"></img>
+    </div>
+    <div class="balloon-text">
+      <p>この大きな円にあたっているボールは黄色、<br>
+        あたっていないボールは灰色にするというデモだよ。<br>
+        上から順番に説明していくね。</p>
+    </div>
+  </div>
+
+  <h5>#4-1 : ボールの生成</h5>
+
+  <div class="balloon-left">
+    <div class="balloon-icon">
+      <img src="../data/yunia1.png"></img>
+    </div>
+    <div class="balloon-text">
+      <p>まず、たくさんのボールを生成するために、<br>
+        今回は配列を使っているよ。<br>
+        ボールは、100個用意しているんだ。</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s11 white">
+<pre><code>    int n = 100;
+    Array&lt;Vec2&gt; v(n);
+    Array&lt;Circle&gt; b(n);</code></pre>
+    </div>
+  </div>
+
+  <div class="balloon-right">
+    <div class="balloon-icon">
+      <img src="../data/rage1.png"></img>
+    </div>
+    <div class="balloon-text">
+      <p>Array というのが、配列なのかな？<br>
+        v と b の2つの配列があるね。</p>
+    </div>
+  </div>
+  
+  <div class="balloon-left">
+    <div class="balloon-icon">
+      <img src="../data/yunia1.png"></img>
+    </div>
+    <div class="balloon-text">
+      <p>そうだね。v はボールの移動量の配列で、<br>
+        b はボールの描画で使う Circle の配列だよ。</p>
+    </div>
+  </div>
+
+  <h5>#4-2 : 初期値の設定</h5>
+
+  <div class="balloon-left">
+    <div class="balloon-icon">
+      <img src="../data/yunia1.png"></img>
+    </div>
+    <div class="balloon-text">
+      <p>次に、この配列に初期値を入れていくよ。<br>
+        for 文でまとめて処理しているんだ。<br>
+        for 文の書き方は、C言語と同じだね。</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s11 white">
+<pre><code>    int i;
+
+    for (i = 0; i < n; i++)
+    {
+        v[i] = RandomVec2(Scene::Width(), Scene::Height());
+        b[i] = Circle(v[i], 5);
+    }</code></pre>
+    </div>
+  </div>
+
+  <div class="balloon-right">
+    <div class="balloon-icon">
+      <img src="../data/rage1.png"></img>
+    </div>
+    <div class="balloon-text">
+      <p>i が 0 ～ 99 までの100回分繰り返すのね。<br>
+        RandomVec2() というのはなに？</p>
+    </div>
+  </div>
+
+  <div class="balloon-left">
+    <div class="balloon-icon">
+      <img src="../data/yunia1.png"></img>
+    </div>
+    <div class="balloon-text">
+      <p>ランダムな Vec2 の値を生成する関数だよ。<br>
+        v にランダムな移動量を入れて、<br>
+        その v で b の初期位置も決めているんだ。</p>
+    </div>
+  </div>
+  
+  <h5>#4-3 : あたり判定をする円の表示</h5>
+  
+  <div class="balloon-left">
+    <div class="balloon-icon">
+      <img src="../data/yunia1.png"></img>
+    </div>
+    <div class="balloon-text">
+      <p>次に、あたり判定をする円を用意するよ。<br>
+        Cursor::Pos() は、現在のマウスの位置を取得できる。<br>
+        つまりこの円は、マウスにあわせて動くんだ。</p>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col s11 white">
+<pre><code>        Circle o(Cursor::Pos(), 150);
+        o.draw(ColorF(1.0, 0.1));</code></pre>
+    </div>
+  </div>  
+  
+  <div class="balloon-right">
+    <div class="balloon-icon">
+      <img src="../data/rage1d.png"></img>
+    </div>
+    <div class="balloon-text">
+      <p>あー、そういえばこの円は動かせるね。<br>
+        ColorF() は色を指定しているの？</p>
+    </div>
+  </div>
+
+  <div class="balloon-left">
+    <div class="balloon-icon">
+      <img src="../data/yunia1.png"></img>
+    </div>
+    <div class="balloon-text">
+      <p>ColorF() は色を 0.0 ～ 1.0 で指定できる関数だよ。<br>
+        基本は、ColorF(r, g, b, α) だけど、ここでの<br>
+        パラメータは、RGBの色と、α値（透過）の2つだ。</p>
+    </div>
+  </div>
+
+  <h5>#4-4 : ボールを動かす</h5>
+  
+  <div class="balloon-left">
+    <div class="balloon-icon">
+      <img src="../data/yunia1.png"></img>
+    </div>
+    <div class="balloon-text">
+      <p>次に、ボールを動かす部分を作るよ。<br>
+        Scene::DeltaTime() は、直前のフレームからの経過時間。 <br>
+        この時間に v の移動量を掛けて、位置を動かしている。</p>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col s11 white">
+<pre><code>        for (i = 0; i < n; i++)
+        {
+            b[i].moveBy(v[i] * Scene::DeltaTime());
+
+            if ((b[i].y < 0 && v[i].y < 0) || (Scene::Height() < b[i].y && v[i].y > 0))
+            {
+                v[i].y *= -1;
+            }
+
+            if ((b[i].x < 0 && v[i].x < 0) || (Scene::Width() < b[i].x && v[i].x > 0))
+            {
+                v[i].x *= -1;
+            }
+        }</code></pre>
+    </div>
+  </div>  
+  
+  <div class="balloon-right">
+    <div class="balloon-icon">
+      <img src="../data/rage1.png"></img>
+    </div>
+    <div class="balloon-text">
+      <p>moveBy() という関数で動かしているのね。<br>
+        その下の if 文では、なにをしているの？</p>
+    </div>
+  </div>
+  
+  <div class="balloon-left">
+    <div class="balloon-icon">
+      <img src="../data/yunia1.png"></img>
+    </div>
+    <div class="balloon-text">
+      <p>ボールが画面から、はみ出ないようにしているんだ。<br>
+        2つの if 文で、縦方向と横方向をチェックしている。 <br>
+        はみ出る場合は、移動量を反転させているんだ。</p>
+    </div>
+  </div>
+
+  <div class="balloon-right">
+    <div class="balloon-icon">
+      <img src="../data/rage1.png"></img>
+    </div>
+    <div class="balloon-text">
+      <p>なるほどね～。</p>
+    </div>
+  </div>
+
+  <h5>#4-5 : あたり判定</h5>
+  
+  <div class="balloon-left">
+    <div class="balloon-icon">
+      <img src="../data/yunia1.png"></img>
+    </div>
+    <div class="balloon-text">
+      <p>最後に、あたり判定だ。<br>
+        あたっていれば黄色、あたっていなければ灰色。<br>
+        intersects() という関数を使っているよ。</p>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col s11 white">
+<pre><code>            if (b[i].intersects(o)) { b[i].draw(Palette::Yellow); }
+            else { b[i].draw(Palette::Gray); }</code></pre>
+    </div>
+  </div>
+  
+  <div class="balloon-right">
+    <div class="balloon-icon">
+      <img src="../data/rage1d.png"></img>
+    </div>
+    <div class="balloon-text">
+      <p>え、これだけ？</p>
+    </div>
+  </div>
+  
+  <div class="balloon-left">
+    <div class="balloon-icon">
+      <img src="../data/yunia1c.png"></img>
+    </div>
+    <div class="balloon-text">
+      <p>うん。。シンプルでしょ。<br>
+        ちなみに、Geometry2D::IntersectAt() という関数を使うと、<br>
+        あたった部分の座標も取得できる。</p>
+    </div>
+  </div>
+  
+  <div class="balloon-right">
+    <div class="balloon-icon">
+      <img src="../data/rage1.png"></img>
+    </div>
+    <div class="balloon-text">
+      <p>肝心のあたり判定部分は、<br>
+        これだけで作れちゃうんだね。</p>
+    </div>
+  </div>
+  
+  <h5>#4-6 : この章のまとめ</h5>
+
+  <div class="balloon-left">
+    <div class="balloon-icon">
+      <img src="../data/yunia1.png"></img>
+    </div>
+    <div class="balloon-text">
+      <p>今回は、円のあたり判定の方法について解説したよ。<br>
+        他の図形でもあたり判定ができるから、<br>
+        ヘルプを確認してみてね。</p>
+    </div>
+  </div>
+
+   <div class="balloon-right">
+    <div class="balloon-icon">
+      <img src="../data/rage1c.png"></img>
+    </div>
+    <div class="balloon-text">
+      <p>ちゃらららっちゃっちゃちゃっちゃー♪<br>
+        すばやさが 1 あがった。<br>
+        かしこさが 1 あがった。<br>
+        うんのよさが 1 あがった。</p>
+    </div>
+  </div>
+
+  <h5>#4-X : 編集後記</h5>
+
+  <div class="balloon-left">
+    <div class="balloon-icon">
+      <img src="../data/yunia1c.png"></img>
+    </div>
+    <div class="balloon-text">
+      <p>配列については、データ構造の章で解説予定だよ。<br>
+        ランダムを扱う関数は、ランダムの章で解説予定だよ。<br>
+        ColorF() の他の使い方は、色の章で解説予定だよ。<br>
+        Geometry2D::IntersectAt() は、実装上の都合で、<br>
+        Siv3D と違って、処理が重くなるから注意してね。</p>
+    </div>
+  </div>
+  
   <footer class="page-footer blue-grey darken-1">
     <div class="footer-copyright">
       <div class="container">
