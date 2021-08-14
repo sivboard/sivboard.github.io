@@ -47,7 +47,7 @@
       <a href="b09/script.txt" download>📥 script.txt</a>
     </div>
     <div class="col s2 white">
-      <a href="b09/sivb" download>📥 sivb</a>
+      <a href="b09/sivb.dat" download>📥 sivb.dat</a>
     </div>
     <div class="col s11 white">
 <pre><code>void Main()
@@ -58,7 +58,7 @@
     double n = 4;
     int32 w = Scene::Width();
 
-    ZIPReader zip("sivb");
+    ZIPReader zip("sivb.dat");
     zip.extractToTextureAsset("back1.png");
     zip.extractToTextureAsset("back2.png");
     zip.extractToTextureAsset("sivb.png");
