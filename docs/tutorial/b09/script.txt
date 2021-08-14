@@ -6,7 +6,7 @@
     double n = 4;
     int32 w = Scene::Width();
 
-    ZIPReader zip("sivb");
+    ZIPReader zip("sivb.dat");
     zip.extractToTextureAsset("back1.png");
     zip.extractToTextureAsset("back2.png");
     zip.extractToTextureAsset("sivb.png");
