@@ -52,10 +52,12 @@
     Font font(50);
     
     TextEditState tes;
-    tes.text = "吹き出しのチュートリアルです。\nテキストの大きさに従って\nサイズを自動調整できます。";
+    tes.text = "吹き出しのチュートリアルです。\n右クリックで位置を固定できます。\nテキストの大きさに従って\nサイズを自動調整できます。";
     Font font1(20);
     bool star = false;
     bool frame = false;
+    bool pin = false;
+    Vec2 pos;
     double n = 15;
     double angle = 0;
     double ratio = 0.3;
@@ -68,13 +70,13 @@
         Rect r1 = Rect(Arg::topLeft(p1), dt.region().w, dt.region().h);
         if (star)
         {
-            if (frame) { Shape2D::NStarBalloon(n, r1, Cursor::Pos().lerp(Vec2(r1.center()), 0.4), angle, ratio).drawFrame(2); }
-            else { Shape2D::NStarBalloon(n, r1, Cursor::Pos().lerp(Vec2(r1.center()), 0.4), angle, ratio).draw(Palette::Gray); }
+            if (frame) { Shape2D::NStarBalloon(n, r1, pos.lerp(Vec2(r1.center()), 0.4), angle, ratio).drawFrame(2); }
+            else { Shape2D::NStarBalloon(n, r1, pos.lerp(Vec2(r1.center()), 0.4), angle, ratio).draw(Palette::Gray); }
         }
         else
         {
-            if (frame) { Shape2D::NgonBalloon(n, r1, Cursor::Pos().lerp(Vec2(r1.center()), 0.4), angle, ratio).drawFrame(2); }
-            else { Shape2D::NgonBalloon(n, r1, Cursor::Pos().lerp(Vec2(r1.center()), 0.4), angle, ratio).draw(Palette::Gray); }
+            if (frame) { Shape2D::NgonBalloon(n, r1, pos.lerp(Vec2(r1.center()), 0.4), angle, ratio).drawFrame(2); }
+            else { Shape2D::NgonBalloon(n, r1, pos.lerp(Vec2(r1.center()), 0.4), angle, ratio).draw(Palette::Gray); }
         }
         dt.draw(p1);
 
@@ -83,15 +85,19 @@
         Rect r2 = Rect(Arg::topRight(p2), vt.region().w, vt.region().h);
         if (star)
         {
-            if (frame) { Shape2D::NStarBalloon(n, r2, Cursor::Pos().lerp(Vec2(r2.center()), 0.4), angle, ratio).drawFrame(2); }
-            else { Shape2D::NStarBalloon(n, r2, Cursor::Pos().lerp(Vec2(r2.center()), 0.4), angle, ratio).draw(Palette::Gray); }
+            if (frame) { Shape2D::NStarBalloon(n, r2, pos.lerp(Vec2(r2.center()), 0.4), angle, ratio).drawFrame(2); }
+            else { Shape2D::NStarBalloon(n, r2, pos.lerp(Vec2(r2.center()), 0.4), angle, ratio).draw(Palette::Gray); }
         }
         else
         {
-            if (frame) { Shape2D::NgonBalloon(n, r2, Cursor::Pos().lerp(Vec2(r2.center()), 0.4), angle, ratio).drawFrame(2); }
-            else { Shape2D::NgonBalloon(n, r2, Cursor::Pos().lerp(Vec2(r2.center()), 0.4), angle, ratio).draw(Palette::Gray); }
+            if (frame) { Shape2D::NgonBalloon(n, r2, pos.lerp(Vec2(r2.center()), 0.4), angle, ratio).drawFrame(2); }
+            else { Shape2D::NgonBalloon(n, r2, pos.lerp(Vec2(r2.center()), 0.4), angle, ratio).draw(Palette::Gray); }
         }
         vt.draw(p2);
+
+        if (MouseR.down()) { pin = !pin; }
+        if (!pin) { pos = Cursor::Pos(); }
+        texture.drawAt(pos);
 
         SimpleGUI::TextBox(tes, Vec2(20, 20), 600);
         SimpleGUI::Slider("n", n, 0, 30, Vec2(20, 60), Palette::Gray);
@@ -99,8 +105,6 @@
         SimpleGUI::Slider("ratio", ratio, 0, 1, Vec2(20, 140), Palette::Gray);
         SimpleGUI::CheckBox(star, "NStarBalloon", Vec2(20, 180), 200);
         SimpleGUI::CheckBox(frame, "Frame Only", Vec2(20, 220), 200);
-
-        texture.drawAt(Cursor::Pos());
 
         font("Hello, SivBoard!🐣").drawAt(Scene::Center(), ColorF(0.2, 0.8));
     }
