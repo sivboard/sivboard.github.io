@@ -53,7 +53,7 @@
     
     TextEditState tes;
     tes.text = "吹き出しのチュートリアルです。\n右クリックで位置を固定できます。\nテキストの大きさに従って\nサイズを自動調整できます。";
-    Font font1(20);
+    Font f(20);
     bool star = false;
     bool frame = false;
     bool pin = false;
@@ -65,7 +65,7 @@
 
     while (System::Update())
     {
-        DrawableText dt(font1, tes.text);
+        DrawableText dt(f, tes.text);
         Point p1(100, 450);
         Rect r1 = Rect(Arg::topLeft(p1), dt.region().w, dt.region().h);
         if (star)
@@ -80,7 +80,7 @@
         }
         dt.draw(p1);
 
-        VerticalText vt(font1, tes.text);
+        VerticalText vt(f, tes.text);
         Point p2(750, 100);
         Rect r2 = Rect(Arg::topRight(p2), vt.region().w, vt.region().h);
         if (star)
