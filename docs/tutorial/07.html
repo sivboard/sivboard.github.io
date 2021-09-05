@@ -54,52 +54,52 @@
     TextEditState tes;
     tes.text = "60";
     double v0, d = 60;
-    double r, x, y, n;
+    double x, y, t;
     int i;
 
     while (System::Update())
     {
         f("Parabolic Motion : ").draw(Vec2(60, 60));
-        f("v0 =").draw(Vec2(100, 100));
-        f("θ =").draw(Vec2(300, 100));
-        f("r = v0 x V0 x sin(2θ / g)").draw(Vec2(100, 140));
-        SimpleGUI::TextBox(tes, Vec2(160, 100), 100);
-        SimpleGUI::Slider("", d, 10, 80, Vec2(360, 100), Palette::Gray, 0, 300);
+        f("v0 [m/s] =").draw(Vec2(100, 100));
+        f("θ [deg] =").draw(Vec2(350, 100));
+        f("x [m] = v0 x v0 x sin(2θ / g)").draw(Vec2(100, 140));
+        SimpleGUI::TextBox(tes, Vec2(220, 100), 100);
+        SimpleGUI::Slider("", d, 10, 80, Vec2(460, 100), Palette::Gray, 0, 270);
 
         if (tes.text.isEmpty()) { tes.text = "0"; }
         v0 = ParseFloat(tes.text);
-        r = v0 * v0 * Sin(_deg(2 * d)) / 9.8;
-        f("Format(r) : " + Format(r)).draw(Vec2(360, 220));
-        f("_fmt(\"{:.3f}\", r) : " + _fmt("{:.3f}", r)).draw(Vec2(360, 260));
-        f("_fmt(\"{:+}\", r) : " + _fmt("{:+}", r)).draw(Vec2(360, 300));
-        f("_fmt(\"{:0>6}\", int(r)) : " + _fmt("{:0>6}", int(r))).draw(Vec2(360, 340));
-        f("_fmt(\"{:x}\", int(r)) : " + _fmt("{:x}", int(r))).draw(Vec2(360, 380));
-        f("_fmt(\"{:b}\", int(r)) : " + _fmt("{:b}", int(r))).draw(Vec2(360, 420));
+        x = v0 * v0 * Sin(_deg(2 * d)) / 9.8;
+        f("Format(x) : " + Format(x)).draw(Vec2(360, 220));
+        f("_fmt(\"{:.3f}\", x) : " + _fmt("{:.3f}", x)).draw(Vec2(360, 260));
+        f("_fmt(\"{:+}\", x) : " + _fmt("{:+}", x)).draw(Vec2(360, 300));
+        f("_fmt(\"{:0>6}\", int(x)) : " + _fmt("{:0>6}", int(x))).draw(Vec2(360, 340));
+        f("_fmt(\"{:x}\", int(x)) : " + _fmt("{:x}", int(x))).draw(Vec2(360, 380));
+        f("_fmt(\"{:b}\", int(x)) : " + _fmt("{:b}", int(x))).draw(Vec2(360, 420));
 
-        Line(Vec2(100, 200),Vec2(100, 500)).draw(5, Palette::White);
-        Line(Vec2(100, 500),Vec2(700, 500)).draw(5, Palette::White);
+        f("0").drawAt(Vec2(80, 500));
+        f("y").drawAt(Vec2(80, 200));
+        f("0").drawAt(Vec2(100, 520));
+        f("x").drawAt(Vec2(700, 520));
+        f("θ").drawAt(Vec2(140, 480));
+
+        if (v0 > 0)
+        {
+            f(_fmt("{:.0f}m", x)).drawAt(Vec2(100 + x, 520), Palette::Turquoise);
+            Circle(Vec2(100, 500), 30).drawArc(_deg(90), _deg(-d), 2);
+        }
+
+        Line(Vec2(100, 200),Vec2(100, 500)).draw(5);
+        Line(Vec2(100, 500),Vec2(700, 500)).draw(5);
         Line(Vec2(100, 500), Vec2(v0 * 5, 0).rotate(_deg(-d)).moveBy(Vec2(100, 500))).drawArrow(2, Vec2(10, 10), Palette::Turquoise);
 
         for (i = 0; i < 100; i++)
         {
-            n = i * 0.3;
-            x = n * (v0 * Cos(_deg(d)));
-            y = n * (v0 * Sin(_deg(d)))-(0.5 * 9.8 * n * n);
+            t = i * 0.3;
+            x = t * (v0 * Cos(_deg(d)));
+            y = t * (v0 * Sin(_deg(d)))-(0.5 * 9.8 * t * t);
             if (y < 0) { break; }
             Circle(Vec2(100 + x, 500 - y), 3).draw(Palette::Turquoise);
         }
-
-        if (v0 > 0)
-        {
-            f(_fmt("r = {:.0f}", r)).drawAt(Vec2(100 + r, 520), Palette::Turquoise);
-            Circle(Vec2(100, 500), 30).drawArc(_deg(90), _deg(-d), 2);
-        }
-
-        f("0").drawAt(Vec2(80, 500));
-        f("v").drawAt(Vec2(80, 200));
-        f("0").drawAt(Vec2(100, 520));
-        f("t").drawAt(Vec2(700, 520));
-        f("θ").drawAt(Vec2(140, 480));
 
         font("Hello, SivBoard!🐣").drawAt(Scene::Center(), ColorF(0.5, 0.5));
     }
