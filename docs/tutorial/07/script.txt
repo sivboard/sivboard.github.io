@@ -16,7 +16,7 @@ void Main()
         f("θ [deg] =").draw(Vec2(350, 100));
         f("x [m] = v0 x v0 x sin(2θ / g)").draw(Vec2(100, 140));
         SimpleGUI::TextBox(tes, Vec2(220, 100), 100);
-        SimpleGUI::Slider("", d, 10, 80, Vec2(460, 100), Palette::Gray, 0, 270);
+        SimpleGUI::Slider(d, 10, 80, Vec2(460, 100), Palette::Gray, 270);
 
         if (tes.text.isEmpty()) { tes.text = "0"; }
         v0 = ParseFloat(tes.text);
