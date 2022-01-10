@@ -12,4 +12,4 @@ damages or other liability, whether in an action of contract, tort or otherwise,
 out of or in connection with the software or the use or other dealings in the software. 
 
 # - Image -
-<img src="https://user-images.githubusercontent.com/85012599/148733956-806bc45c-52bd-4f0c-b7fc-c19cca1fe00b.png" width="50%">
+<img src="https://user-images.githubusercontent.com/85012599/148766656-08137c20-9def-4fa7-b320-65c0274d4d14.png" width="300px">
