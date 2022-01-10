@@ -19,11 +19,10 @@
 <body>
   <nav>
     <div class="nav-wrapper blue-grey darken-1">
-      <a href="#" class="brand-logo" style="padding-left:10px;">Nyuma Labo</a>
+      <a href="#" class="brand-logo left" style="padding-left:20px;">Nyuma Labo</a>
       <ul id="nav-mobile" class="right">
         <li><a href="./">Top</a></li>
-        <li><a href="tutorial.html">Tutorial<span class="new badge" data-badge-caption="使い方"></span></a></li>
-        <li><a href="help.html">Help</a></li>
+        <li><a href="help.html">Help<span class="new badge" data-badge-caption="ver.2.20.110"></span></a></li>
       </ul>
     </div>
   </nav>
@@ -31,7 +30,7 @@
   <h1>SivBoard</h1>
   <div class="row">
     <div class="col s12 m6">
-      <image src="data/sample.png" style="width:100%;" />
+      <image src="data/sample.png" style="width:100%; max-width:500px"/>
     </div>
     <div class="col s12 m6">
       <p>SivBoard は手軽に Siv3D でアートを楽しむソフトウェアです。<br>
@@ -39,8 +38,8 @@
       <p>インストールは不要で、任意の場所に置くだけで使えます。<br>
         以下、ふた通りの使い方が出来るように設計しています。</p>
       <p>１．F5キーを押してスクリプトファイルを読み込む。<br>
-        ２．同じディレクトリに "script.as" の名前で置いて起動する。</p>
-      <p>まずは、下にある <a href="#script-file-format">Script File Format</a> を試してみてください。</p>
+        ２．同じディレクトリに "script.txt" のファイルを置いて起動する。</p>
+      <p>まずは、下にある <a href="#sample-code">サンプルコード</a> を試してみてください。</p>
       <p>Hello, SivBoard！</p>
     </div>
   </div>
@@ -49,18 +48,18 @@
   <h4>ダウンロード / Download</h4>
   <div class="row">
     <div class="col s12">
-      <p>SivBoard ver. 2.10.820 : 64bit Windows (OpenSiv3D 0.4.3)</p>
+      <p>SivBoard ver. 2.20.110 : 64bit Windows (OpenSiv3D 0.6.3)</p>
     </div>
     <div class="col s4">
-      <a class="waves-effect waves-light btn" href="https://github.com/sivboard/sivboard.github.io/releases/download/2.10.820/SivBoard_2.10.820.zip" download="SivBoard_2.10.820.zip">Download</a>
+      <a class="waves-effect waves-light btn" href="https://github.com/sivboard/sivboard.github.io/releases/download/2.20.110/SivBoard_2.20.110.zip" download="SivBoard_2.20.110.zip">Download</a>
     </div>
   </div>
   <br>
 
-  <h4 id="script-file-format">スクリプトファイル形式 / Script File Format</h4>
+  <h4 id="sample-code">サンプルコード / Sample Code</h4>
   <div class="row">
     <div class="col s2 white">
-      <a href="data/script.as" download>📥 script.as</a>
+      <a href="data/script.txt" download>📥 script.txt</a>
     </div>
     <div class="col s11 white">
 <pre><code>void Main()
