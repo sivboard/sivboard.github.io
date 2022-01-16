@@ -9,6 +9,7 @@
   <meta name="google-site-verification" content="sHtNFAwozSH665pG0rUhAAajZ8uz-yOVPBIYBUFhYxI" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons%7CMaterial+Icons+Outlined" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="tutorial.css">
   <style>
     body { background-color: #eeeeee; padding: 10px !important; }
     pre { white-space: pre-wrap; line-height: normal; }
@@ -21,47 +22,53 @@
     <div class="nav-wrapper blue-grey darken-1">
       <a href="#" class="brand-logo left" style="padding-left:20px;">Nyuma Labo</a>
       <ul id="nav-mobile" class="right">
-        <li><a href="./">Top</a></li>
+        <li><a href="index.html">Top</a></li>
+        <li><a href="index.html#id-demo">Demo</a></li>
         <li><a href="help.html">Help<span class="new badge" data-badge-caption="ver.2.20.110"></span></a></li>
       </ul>
     </div>
   </nav>
 
   <h1>SivBoard</h1>
-  <div class="row">
-    <div class="col s12 m6">
-      <image src="data/sample.png" style="width:100%; max-width:500px"/>
-    </div>
-    <div class="col s12 m6">
-      <p>SivBoard は手軽に Siv3D でアートを楽しむソフトウェアです。<br>
-        簡単な AngelScript のコードで、アニメ―ションが作れます。</p>
-      <p>インストールは不要で、任意の場所に置くだけで使えます。<br>
-        以下、ふた通りの使い方が出来るように設計しています。</p>
-      <p>１．F5キーを押してスクリプトファイルを読み込む。<br>
-        ２．同じディレクトリに "script.txt" のファイルを置いて起動する。</p>
-      <p>まずは、下にある <a href="#sample-code">サンプルコード</a> を試してみてください。</p>
-      <p>Hello, SivBoard！</p>
-    </div>
-  </div>
-  <br>
-
-  <h4>ダウンロード / Download</h4>
-  <div class="row">
-    <div class="col s12">
-      <p>SivBoard ver. 2.20.110 : 64bit Windows (OpenSiv3D 0.6.3)</p>
-    </div>
-    <div class="col s4">
-      <a class="waves-effect waves-light btn" href="https://github.com/sivboard/sivboard.github.io/releases/download/2.20.110/SivBoard_2.20.110.zip" download="SivBoard_2.20.110.zip">Download</a>
+  <div class="container left" style="width: 900px">
+    <div class="row">
+      <div class="col s12 m6">
+        <img src="data/sample.png" style="width:100%; max-width:500px"/>
+      </div>
+      <div class="col s12 m6">
+        <p>SivBoard は手軽に Siv3D でアートを楽しむソフトウェアです。<br>
+          簡単な AngelScript のコードで、アニメ―ションが作れます。</p>
+        <p>インストールは不要で、任意の場所に置くだけで使えます。<br>
+          以下、ふた通りの使い方が出来るように設計しています。</p>
+        <p>１．F5キーを押してスクリプトファイルを読み込む。<br>
+          ２．同じディレクトリに "script.txt" のファイルを置いて起動する。</p>
+        <p>まずは、下にある <a href="#id-sample">サンプルコード</a> を試してみてください。</p>
+        <p>Hello, SivBoard！</p>
+      </div>
     </div>
   </div>
   <br>
 
-  <h4 id="sample-code">サンプルコード / Sample Code</h4>
-  <div class="row">
-    <div class="col s2 white">
-      <a href="data/script.txt" download>📥 script.txt</a>
+  <div class="container left" style="width: 900px">
+    <h4>ダウンロード / Download</h4>
+    <div class="row">
+      <div class="col s12">
+        <p>SivBoard ver. 2.20.110 : 64bit Windows (OpenSiv3D 0.6.3)</p>
+      </div>
+      <div class="col s4">
+        <a class="waves-effect waves-light btn" href="https://github.com/sivboard/sivboard.github.io/releases/download/2.20.110/SivBoard_2.20.110.zip" download="SivBoard_2.20.110.zip">Download</a>
+      </div>
     </div>
-    <div class="col s11 white">
+  </div>
+  <br>
+
+  <div class="container left" style="width: 900px">
+    <h4 id="id-sample">サンプルコード / Sample Code</h4>
+    <div class="row">
+      <div class="col s2 white">
+        <a href="data/script.txt" download>📥 script.txt</a>
+      </div>
+      <div class="col s11 white">
 <pre><code>void Main()
 {
     Font font(60);
@@ -70,14 +77,263 @@
         font("Hello, SivBoard!🐣").drawAt(Scene::Center(), Palette::White);
     }
 }</code></pre>
+      </div>
     </div>
   </div>
   <br>
 
+  <div class="container left" style="width: 900px">
+    <h4 id="id-demo">デモンストレーション / Demonstration</h4>
+    <div class="row">
+      <div class="col s2">
+        <img src="data/yunia1.png"></img>
+      </div>
+      <div class="col s10">
+        <img src="data/rage1.png"></img>
+        <img src="data/yuni1.png"></img>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s2 white">
+        <a href="demo/sivb01.txt" download>📥 sivb01.txt</a>
+      </div>
+      <div class="col s11 white">
+        <div class="card horizontal z-depth-0">
+          <div class="card-image">
+            <img src="demo/sivb01.gif" style="width:100%; max-width:400px">
+          </div>
+          <div class="card-content" style="width:70%">
+            <div class="bal-left">
+              <div class="bal-icon">
+                <img src="data/yunia1.png"></img>
+              </div>
+              <div class="bal-text">
+                <p>とりあえず動かしてみる用のデモだよ。<br>SivBoard起動後にF5キーを押して、sivb01.txtを読み込んでみてね。</p>
+              </div>
+            </div>
+            <div class="bal-right">
+              <div class="bal-icon">
+                <img src="data/rage1.png"></img>
+              </div>
+              <div class="bal-text">
+                <p>読み込み後にリロードしたい場合は、F5キーでできるぜ。この動作はSceneManager::SetReloadKeyF5(false);で無効にもできる。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s2 white">
+        <a href="demo/sivb02.txt" download>📥 sivb02.txt</a>
+      </div>
+      <div class="col s11 white">
+        <div class="card horizontal z-depth-0">
+          <div class="card-image">
+            <img src="demo/sivb02.gif" style="width:100%; max-width:400px">
+          </div>
+          <div class="card-content" style="width:70%">
+            <div class="bal-left">
+              <div class="bal-icon">
+                <img src="data/yunia1.png"></img>
+              </div>
+              <div class="bal-text">
+                <p>色々な図形を描画するデモだよ。<br>パラメータを変更して変化を確認してみてね。</p>
+              </div>
+            </div>
+            <div class="bal-right">
+              <div class="bal-icon">
+                <img src="data/rage1c.png"></img>
+              </div>
+              <div class="bal-text">
+                <p>スクリプトファイルの編集は、テキストエディタで手軽にできるぜ。上書きするだけですぐに反映されるからとっても快適だ。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s2 white">
+        <a href="demo/sivb03.txt" download>📥 sivb03.txt</a>
+      </div>
+      <div class="col s11 white">
+        <div class="card horizontal z-depth-0">
+          <div class="card-image">
+            <img src="demo/sivb03.gif" style="width:100%; max-width:400px">
+          </div>
+          <div class="card-content" style="width:70%">
+            <div class="bal-left">
+              <div class="bal-icon">
+                <img src="data/yunia1.png"></img>
+              </div>
+              <div class="bal-text">
+                <p>図形に色々なモーションをつけるデモだよ。<br>Periodicで周期的な基本の動きを作って、Easingでアレンジする感じだよ。</p>
+              </div>
+            </div>
+            <div class="bal-right">
+              <div class="bal-icon">
+                <img src="data/rage1d.png"></img>
+              </div>
+              <div class="bal-text">
+                <p>マウスの左ボタンを押すと一時停止できるぜ。一時停止はStopwatchが便利。MouseL.down()で左ボタンの押下を取得できる。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s2 white">
+        <a href="demo/sivb04.txt" download>📥 sivb04.txt</a>
+      </div>
+      <div class="col s11 white">
+        <div class="card horizontal z-depth-0">
+          <div class="card-image">
+            <img src="demo/sivb04.gif" style="width:100%; max-width:400px">
+          </div>
+          <div class="card-content" style="width:70%">
+            <div class="bal-left">
+              <div class="bal-icon">
+                <img src="data/yunia1.png"></img>
+              </div>
+              <div class="bal-text">
+                <p>あたり判定をするデモだよ。<br>グレーの円はマウスで動かせて、あたった点を黄色で表示させている。</p>
+              </div>
+            </div>
+            <div class="bal-right">
+              <div class="bal-icon">
+                <img src="data/rage2.png"></img>
+              </div>
+              <div class="bal-text">
+                <p>色の指定は、Paletteで規定色の名前を指定する方法と、Colorで0～255を指定する方法、ColorFで0.0～1.0を指定する方法があるぜ。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s2 white">
+        <a href="demo/sivb05.txt" download>📥 sivb05.txt</a>
+      </div>
+      <div class="col s2 white">
+        <a href="demo/sivb05.png" download>📥 sivb05.png</a>
+      </div>
+      <div class="col s11 white">
+        <div class="card horizontal z-depth-0">
+          <div class="card-image">
+            <img src="demo/sivb05.gif" style="width:100%; max-width:400px">
+          </div>
+          <div class="card-content" style="width:70%">
+            <div class="bal-left">
+              <div class="bal-icon">
+                <img src="data/yunia1.png"></img>
+              </div>
+              <div class="bal-text">
+                <p>テクスチャとアイコンを扱うデモだよ。<br>sivb05.pngを同じ場所においてね。4コマでアニメーションさせているよ。</p>
+              </div>
+            </div>
+            <div class="bal-right">
+              <div class="bal-icon">
+                <img src="data/rage2c.png"></img>
+              </div>
+              <div class="bal-text">
+                <p>アイコンで使っているFont Awesomeのコード一覧はWebで確認できるぜ。アイコンに色を付けることもできる。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s2 white">
+        <a href="demo/sivb06.txt" download>📥 sivb06.txt</a>
+      </div>
+      <div class="col s11 white">
+        <div class="card horizontal z-depth-0">
+          <div class="card-image">
+            <img src="demo/sivb06.gif" style="width:100%; max-width:400px">
+          </div>
+          <div class="card-content" style="width:70%">
+            <div class="bal-left">
+              <div class="bal-icon">
+                <img src="data/yunia1.png"></img>
+              </div>
+              <div class="bal-text">
+                <p>色々なランダム要素を扱うデモだよ。<br>位置だけじゃなく、種類や色もランダムに決定されているんだ。</p>
+              </div>
+            </div>
+            <div class="bal-right">
+              <div class="bal-icon">
+                <img src="data/yuni1.png"></img>
+              </div>
+              <div class="bal-text">
+                <p>種類の形の定義にはGridを使っているぞ。Gridは少し難しいけど、二次元配列を扱うときに便利なんだ。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s2 white">
+        <a href="demo/sivb07.txt" download>📥 sivb07.txt</a>
+      </div>
+      <div class="col s11 white">
+        <div class="card horizontal z-depth-0">
+          <div class="card-image">
+            <img src="demo/sivb07.gif" style="width:100%; max-width:400px">
+          </div>
+          <div class="card-content" style="width:70%">
+            <div class="bal-left">
+              <div class="bal-icon">
+                <img src="data/yunia1.png"></img>
+              </div>
+              <div class="bal-text">
+                <p>ユーザーインターフェースを扱うデモだよ。<br>量やサイズ、速度、色、方向、形などをリアルタイムに操作できるよ。</p>
+              </div>
+            </div>
+            <div class="bal-right">
+              <div class="bal-icon">
+                <img src="data/yuni1c.png"></img>
+              </div>
+              <div class="bal-text">
+                <p>SimpleGUIにはスライダーやチェックボックス以外に、テキストボックスやカラーピッカーなどもあるぞ。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <br>
+
+  <div class="row">
+    <div class="col s11">
+      <div class="bal-left">
+        <div class="bal-icon">
+          <img src="data/yunia1c.png"></img>
+        </div>
+        <div class="bal-text">
+          <p>ここまでみてくれてありがとう。<br>ご意見、ご要望等があれば <a href="https://github.com/sivboard/sivboard.github.io/issues" target="_blank" rel="noopener noreferrer">こちら</a> までお願いします。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
   <footer class="page-footer blue-grey darken-1">
     <div class="footer-copyright">
       <div class="container">
-        <h6 class="center-align">- Copyright © 2021 Nyuma -</h6>
+        <h6 class="center-align">- Copyright © 2022 Nyuma -</h6>
       </div>
     </div>
   </footer>
