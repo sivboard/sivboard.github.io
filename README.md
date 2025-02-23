@@ -2,7 +2,7 @@
 
 # - Overview -
 This software is for easy enjoyment of programming and art, and is developed based on "OpenSiv3D".
-Copyright is owned by the author, Nyuma. This software has an expiry date.
+Copyright is owned by the author "Nyuma". This software has an expiry date.
 Distribution is permitted, but modification is not permitted.
 
 # - Notice -
