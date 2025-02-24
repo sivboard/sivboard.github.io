@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <meta name="description" content="写真、イラスト、文章を自在にレイアウト。プログラミングやアートを手軽に楽しむツール | SivBoard">
+  <meta name="google-site-verification" content="sHtNFAwozSH665pG0rUhAAajZ8uz-yOVPBIYBUFhYxI"/>
+  <title>SivBoard</title>
+  
+  <link rel="alternate" hreflang="ja" lang="ja" href="https://sivboard.github.io/">
+  <link rel="alternate" hreflang="en" lang="en" href="https://sivboard.github.io/en/">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="blue-grey darken-1" role="navigation">
+    <div class="nav-wrapper container" style="width:90%"><a href="index.html" class="brand-logo left">SivBoard</a>
+      <ul class="right">
+        <li><a href="index.html#id-download">Download</a></li>
+        <li><a href="index.html#id-demo">Demonstration</a></li>
+        <li><a href="help.html">Help<span class="new badge" data-badge-caption="ver. 2.50.2"></span></a></li>
+        <li><a href="en/index.html">English</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <div class="container">
+    <h1 class="header center blue-grey-text text-darken-3">SivBoard</h1>
+    <div class="row center">
+      <h6 class="header col s12">写真、イラスト、文章を自在にレイアウト。プログラミングやアートを手軽に楽しむツール</h6>
+    </div>
+    
+    <div class="section">
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="icon-block center">
+            <img src="data/icon.png" style="height:300px; width:auto">
+            <p>インストールは不要。任意の場所に置くだけで使えます。さらにドラッグ&ドロップに対応し、使いやすくなりました。</p>
+          </div>
+        </div>
+        
+        <div class="col s12 m6">
+          <div class="icon-block center">
+            <img src="data/sample.png" style="height:300px; width:auto">
+            <p>画像やテキストを組み合わせたサムネイル画像や、スクリプトコードを使ったアニメーションが簡単に作れます。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section" id="id-download">
+      <h2 class="header center blue-grey-text text-darken-3">Download</h2>
+      <div class="row center">
+        <h6 class="header col s12 light">SivBoard ver. 2.50.2 : Windows 64bit (based on OpenSiv3D 0.6.15)</h6>
+        <p class="header col s12"><a href="https://github.com/sivboard/sivboard.github.io/releases/download/2.50.2/SivBoard_2.50.2.zip" id="download-button" class="btn-large waves-effect waves-light">DOWNLOAD</a></p>
+      </div>
+     
+      <div class="row">
+        <div class="col s2 grey lighten-4">
+          <a href="data/script.as" download>📥 script.as</a>
+        </div>
+        <div class="col s12 grey lighten-4">
+<pre>void Main()
+{
+    Font font(60);
+    while (System::Update())
+    {
+        font("Hello, SivBoard!").drawAt(Scene::Center(), Palette::White);
+    }
+}</pre>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section" id="id-demo">
+      <h2 class="header center blue-grey-text text-darken-3">Demonstration</h2>
+
+    <div class="row">
+      <div class="col s3 grey lighten-4">
+        <a href="data/sivb08.as" download>📥 sivb08.as</a>
+      </div>
+      <div class="col s3 grey lighten-4">
+        <a href="data/sivb08.zip" download>📥 sivb08.zip</a>
+      </div>
+      <div class="col s12 grey lighten-4">
+        <div class="card horizontal z-depth-0 grey lighten-4">
+          <div class="card-image">
+            <img src="data/sivb08.gif" style="width:100%; max-width:400px">
+          </div>
+          <div class="card-content" style="width:70%">
+            <div class="bal-left">
+              <div class="bal-icon">
+                <img src="data/yunia1.png"></img>
+              </div>
+              <div class="bal-text">
+                <p>アニメーションのデモです。<br>最新のSivBoardはドラッグ&ドロップで画像やテキスト、フォントを読み込めます。</p>
+              </div>
+            </div>
+            <div class="bal-right">
+              <div class="bal-icon">
+                <img src="data/rage2.png"></img>
+              </div>
+              <div class="bal-text">
+                <p>GIFや画像ZIP、改行を挟んだTXTを読み込むと、Stepの指定でコマ送りができます。スクリプトと組み合わせてアニメーションが作れます。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s3 grey lighten-4">
+        <a href="data/sivb07.as" download>📥 sivb07.as</a>
+      </div>
+      <div class="col s12 grey lighten-4">
+        <div class="card horizontal z-depth-0 grey lighten-4">
+          <div class="card-image">
+            <img src="data/sivb07.gif" style="width:100%; max-width:400px">
+          </div>
+          <div class="card-content" style="width:70%">
+            <div class="bal-left">
+              <div class="bal-icon">
+                <img src="data/yunia1.png"></img>
+              </div>
+              <div class="bal-text">
+                <p>SimpleGUI を使ったデモです。<br>スライダーやボタンで各種パラメータをリアルタイムに設定できます。</p>
+              </div>
+            </div>
+            <div class="bal-right">
+              <div class="bal-icon">
+                <img src="data/yuni1c.png"></img>
+              </div>
+              <div class="bal-text">
+                <p>SivBoard専用の関数で、スクリプトを終了したり、他のスクリプトに遷移できます。詳細はヘルプのSivB::を参照してください。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s3 grey lighten-4">
+        <a href="data/sivb06.as" download>📥 sivb06.as</a>
+      </div>
+      <div class="col s12 grey lighten-4">
+        <div class="card horizontal z-depth-0 grey lighten-4">
+          <div class="card-image">
+            <img src="data/sivb06.gif" style="width:100%; max-width:400px">
+          </div>
+          <div class="card-content" style="width:70%">
+            <div class="bal-left">
+              <div class="bal-icon">
+                <img src="data/yunia1c.png"></img>
+              </div>
+              <div class="bal-text">
+                <p>Grid を使ったデモです。<br>ブロックの種類や色、配置はメインループの中でランダムに決定されています。</p>
+              </div>
+            </div>
+            <div class="bal-right">
+              <div class="bal-icon">
+                <img src="data/yuni1.png"></img>
+              </div>
+              <div class="bal-text">
+                <p>読み込み後にF12を押すと画面をキャプチャします。SivBoardと同じ場所にScreenshotというフォルダが作られます。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s3 grey lighten-4">
+        <a href="data/sivb04.as" download>📥 sivb04.as</a>
+      </div>
+      <div class="col s12 grey lighten-4">
+        <div class="card horizontal z-depth-0 grey lighten-4">
+          <div class="card-image">
+            <img src="data/sivb04.gif" style="width:100%; max-width:400px">
+          </div>
+          <div class="card-content" style="width:70%">
+            <div class="bal-left">
+              <div class="bal-icon">
+                <img src="data/yunia1.png"></img>
+              </div>
+              <div class="bal-text">
+                <p>当たり判定のデモです。<br>グレーの円はマウスで動かすことができます。円の中の点は黄色にしています。</p>
+              </div>
+            </div>
+            <div class="bal-right">
+              <div class="bal-icon">
+                <img src="data/rage1c.png"></img>
+              </div>
+              <div class="bal-text">
+                <p>F9を押すとタイトルバーにステータスが表示されます。マウスカーソルの位置や実行後の経過時間などを確認できます。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s3 grey lighten-4">
+        <a href="data/sivb01.as" download>📥 sivb01.as</a>
+      </div>
+      <div class="col s12 grey lighten-4">
+        <div class="card horizontal z-depth-0 grey lighten-4">
+          <div class="card-image">
+            <img src="data/sivb01.gif" style="width:100%; max-width:400px">
+          </div>
+          <div class="card-content" style="width:70%">
+            <div class="bal-left">
+              <div class="bal-icon">
+                <img src="data/yunia1.png"></img>
+              </div>
+              <div class="bal-text">
+                <p>ParticleSystem2D を使ったデモです。<br>SivBoard起動後にF5を押してファイルを読み込んでみてください。</p>
+              </div>
+            </div>
+            <div class="bal-right">
+              <div class="bal-icon">
+                <img src="data/rage1.png"></img>
+              </div>
+              <div class="bal-text">
+                <p>読み込み後にF5を押すとファイルがリロードされます。それ以外にファイルを更新した場合もリロードされます。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </div>
+  
+  <footer class="page-footer blue-grey darken-1">
+    <div class="footer-copyright">
+      <div class="container">
+        <h6 class="center-align"><a href="https://github.com/sivboard/sivboard.github.io/issues">Copyright © 2022 - 2025 Nyuma</a></h6>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
