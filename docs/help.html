@@ -1,0 +1,2426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <meta name="robots" content="noindex,nofollow">
+  <title>Help - SivBoard</title>
+  
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+
+  <style>
+    body { background-color: #212121; }
+    h4 { color: #757575; text-align: center; }
+    p { color: #fafafa; text-align: center; line-height: 1.0; }
+  </style>
+</head>
+
+<body>
+  <nav class="blue-grey darken-1" role="navigation">
+    <div class="nav-wrapper container" style="width:90%"><a href="index.html" class="brand-logo left">SivBoard</a>
+      <ul class="right">
+        <li><a href="index.html">Top (Japanese)</a></li>
+        <li><a href="en/index.html">Top (English)</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <h4>Help - SivBoard</h4>
+  <h4>ver. 2.50.2</h4>
+
+  <br>
+  <h4>- Overview -</h4>
+  <p>This software is designed for easy enjoyment of programming and art, and is developed based on "OpenSiv3D".</p>
+  <p>Copyright is owned by the author "Nyuma".</p>
+  <p>This software has an expiry date. Distribution is permitted, but modification is not permitted.</p>
+  <br>
+  <p>このソフトウェアは、プログラミングとアートを手軽に楽しむために設計されており、"OpenSiv3D"をベースに開発されています。</p>
+  <p>著作権は著作者の"Nyuma"に帰属します。</p>
+  <p>このソフトウェアには有効期限があります。配布は許可されていますが、改変は許可されていません。</p>
+
+  <br>
+  <h4>- Notice -</h4>
+  <p>In no event shall the authors or copyright holders be liable for any claim,</p>
+  <p>damages or other liability, whether in an action of contract, tort or otherwise, arising from,</p>
+  <p>out of or in connection with the software or the use or other dealings in the software.</p>
+  <br>
+  <p>著作者または著作権者は、契約、過失、またはその他の行為にかかわらず、いかなる請求、損害、その他の責任についても、</p>
+  <p>ソフトウェアまたはその使用やその他の取引に関連して、またはそれらから生じた場合においても、一切の責任を負いません。</p>
+
+  <br>
+  <h4>- How to Use -</h4>
+  <p>For basic usage, please refer to the top screen and the title bar of the software.</p>
+  <p>In the latest version of SivBoard, it is possible to load images, text, and fonts in addition to script.</p>
+  <p>The supported file formats are png, jpg, bmp, svg, webp, gif, zip, txt, ttf, otf and as.</p>
+  <br>
+  <p>基本的な使い方は、ソフトウェアのトップ画面およびタイトルバーを参照してください。</p>
+  <p>最新バージョンのSivBoardでは、スクリプトに加えて、画像、テキスト、フォントの読み込みが可能です。</p>
+  <p>対応可能なファイル形式は、png, jpg, bmp, svg, webp, gif, zip, txt, ttf, otf, および as です。</p>
+
+
+<br><h4>- (Grobal) -</h4><p>double _deg(double)</p>
+<p>double _degF(double)</p>
+<p>Emoji _emoji(const String& in)</p>
+<p>Duration _h(double)</p>
+<p>Icon _icon(uint32)</p>
+<p>Duration _min(double)</p>
+<p>Duration _ms(double)</p>
+<p>Duration _ns(double)</p>
+<p>double _pi(double)</p>
+<p>double _piF(double)</p>
+<p>Duration _s(double)</p>
+<p>double _tau(double)</p>
+<p>double _tauF(double)</p>
+<p>Duration _us(double)</p>
+<p>int8 Abs(int8)</p>
+<p>int8 AbsDiff(int8, int8)</p>
+<p>Color Alpha(uint32)</p>
+<p>ColorF AlphaF(double)</p>
+<p>uint32 AsUint32(float)</p>
+<p>uint64 AsUint64(double)</p>
+<p>Audio AudioAsset(const String&in)</p>
+<p>int32 CaseInsensitiveCompare(uint32, uint32)</p>
+<p>bool CaseInsensitiveEquals(uint32, uint32)</p>
+<p>int8 Clamp(int8, int8, int8)</p>
+<p>void ClearPrint()</p>
+<p>double EaseInBack(double)</p>
+<p>double EaseInBounce(double)</p>
+<p>double EaseInCirc(double)</p>
+<p>double EaseInCubic(double)</p>
+<p>double EaseInElastic(double)</p>
+<p>double EaseInExpo(double)</p>
+<p>double EaseInLinear(double)</p>
+<p>double EaseInOutBack(double)</p>
+<p>double EaseInOutBounce(double)</p>
+<p>double EaseInOutCirc(double)</p>
+<p>double EaseInOutCubic(double)</p>
+<p>double EaseInOutElastic(double)</p>
+<p>double EaseInOutExpo(double)</p>
+<p>double EaseInOutLinear(double)</p>
+<p>double EaseInOutQuad(double)</p>
+<p>double EaseInOutQuart(double)</p>
+<p>double EaseInOutQuint(double)</p>
+<p>double EaseInOutSine(double)</p>
+<p>double EaseInQuad(double)</p>
+<p>double EaseInQuart(double)</p>
+<p>double EaseInQuint(double)</p>
+<p>double EaseInSine(double)</p>
+<p>double EaseOutBack(double)</p>
+<p>double EaseOutBounce(double)</p>
+<p>double EaseOutCirc(double)</p>
+<p>double EaseOutCubic(double)</p>
+<p>double EaseOutElastic(double)</p>
+<p>double EaseOutExpo(double)</p>
+<p>double EaseOutLinear(double)</p>
+<p>double EaseOutQuad(double)</p>
+<p>double EaseOutQuart(double)</p>
+<p>double EaseOutQuint(double)</p>
+<p>double EaseOutSine(double)</p>
+<p>Font FontAsset(const String&in)</p>
+<p>String Format(const ?&in, const ?&in, const ?&in, const ?&in, const ?&in, const ?&in, const ?&in, const ?&in)</p>
+<p>Duration HoursF(double)</p>
+<p>Color HueToColor(double)</p>
+<p>ColorF HueToColorF(double)</p>
+<p>bool InOpenRange(int8, int8, int8)</p>
+<p>bool InRange(int8, int8, int8)</p>
+<p>bool IsAlnum(uint32)</p>
+<p>bool IsAlpha(uint32)</p>
+<p>bool IsASCII(uint32)</p>
+<p>bool IsBlank(uint32)</p>
+<p>bool IsControl(uint32)</p>
+<p>bool IsDigit(uint32)</p>
+<p>bool IsEven(int8)</p>
+<p>bool IsFinite(float)</p>
+<p>bool IsInfinity(float)</p>
+<p>bool IsLower(uint32)</p>
+<p>bool IsNaN(float)</p>
+<p>bool IsOdd(int8)</p>
+<p>bool IsPrint(uint32)</p>
+<p>bool IsSpace(uint32)</p>
+<p>bool IsUpper(uint32)</p>
+<p>bool IsXdigit(uint32)</p>
+<p>int8 Max(int8, int8)</p>
+<p>Duration MicrosecondsF(double)</p>
+<p>Duration MillisecondsF(double)</p>
+<p>int8 Min(int8, int8)</p>
+<p>Duration MinutesF(double)</p>
+<p>Duration NanosecondsF(double)</p>
+<p>Bezier2 ParseBezier2(const String&in)</p>
+<p>Bezier3 ParseBezier3(const String&in)</p>
+<p>bool ParseBool(const String&in)</p>
+<p>Circle ParseCircle(const String&in)</p>
+<p>Circular ParseCircular(const String&in)</p>
+<p>Color ParseColor(const String&in)</p>
+<p>ColorF ParseColorF(const String&in)</p>
+<p>double ParseDouble(const String&in)</p>
+<p>Ellipse ParseEllipse(const String&in)</p>
+<p>Float2 ParseFloat2(const String&in)</p>
+<p>float ParseFloat(const String&in)</p>
+<p>Float3 ParseFloat3(const String&in)</p>
+<p>Float4 ParseFloat4(const String&in)</p>
+<p>HSV ParseHSV(const String&in)</p>
+<p>int16 ParseInt16(const String&in)</p>
+<p>int32 ParseInt32(const String&in)</p>
+<p>int64 ParseInt64(const String&in)</p>
+<p>int8 ParseInt8(const String&in)</p>
+<p>Line ParseLine(const String&in)</p>
+<p>Mat3x2 ParseMat3x2(const String&in)</p>
+<p>OffsetCircular ParseOffsetCircular(const String&in)</p>
+<p>Bezier2 ParseOrBezier2(const String&in, const Bezier2& in)</p>
+<p>Bezier3 ParseOrBezier3(const String&in, const Bezier3& in)</p>
+<p>bool ParseOrBool(const String&in, const bool& in)</p>
+<p>Circle ParseOrCircle(const String&in, const Circle& in)</p>
+<p>Circular ParseOrCircular(const String&in, const Circular& in)</p>
+<p>Color ParseOrColor(const String&in, const Color& in)</p>
+<p>ColorF ParseOrColorF(const String&in, const ColorF& in)</p>
+<p>double ParseOrDouble(const String&in, const double& in)</p>
+<p>Ellipse ParseOrEllipse(const String&in, const Ellipse& in)</p>
+<p>Float2 ParseOrFloat2(const String&in, const Float2& in)</p>
+<p>Float3 ParseOrFloat3(const String&in, const Float3& in)</p>
+<p>Float4 ParseOrFloat4(const String&in, const Float4& in)</p>
+<p>float ParseOrFloat(const String&in, const float& in)</p>
+<p>HSV ParseOrHSV(const String&in, const HSV& in)</p>
+<p>int16 ParseOrInt16(const String&in, const int16& in)</p>
+<p>int32 ParseOrInt32(const String&in, const int32& in)</p>
+<p>int64 ParseOrInt64(const String&in, const int64& in)</p>
+<p>int8 ParseOrInt8(const String&in, const int8& in)</p>
+<p>Line ParseOrLine(const String&in, const Line& in)</p>
+<p>Mat3x2 ParseOrMat3x2(const String&in, const Mat3x2& in)</p>
+<p>OffsetCircular ParseOrOffsetCircular(const String&in, const OffsetCircular& in)</p>
+<p>Point ParseOrPoint(const String&in, const Point& in)</p>
+<p>Quad ParseOrQuad(const String&in, const Quad& in)</p>
+<p>Rect ParseOrRect(const String&in, const Rect& in)</p>
+<p>RectF ParseOrRectF(const String&in, const RectF& in)</p>
+<p>RoundRect ParseOrRoundRect(const String&in, const RoundRect& in)</p>
+<p>Triangle ParseOrTriangle(const String&in, const Triangle& in)</p>
+<p>uint16 ParseOrUint16(const String&in, const uint16& in)</p>
+<p>uint32 ParseOrUint32(const String&in, const uint32& in)</p>
+<p>uint64 ParseOrUint64(const String&in, const uint64& in)</p>
+<p>uint8 ParseOrUint8(const String&in, const uint8& in)</p>
+<p>Vec2 ParseOrVec2(const String&in, const Vec2& in)</p>
+<p>Vec3 ParseOrVec3(const String&in, const Vec3& in)</p>
+<p>Vec4 ParseOrVec4(const String&in, const Vec4& in)</p>
+<p>Point ParsePoint(const String&in)</p>
+<p>Quad ParseQuad(const String&in)</p>
+<p>Rect ParseRect(const String&in)</p>
+<p>RectF ParseRectF(const String&in)</p>
+<p>RoundRect ParseRoundRect(const String&in)</p>
+<p>Triangle ParseTriangle(const String&in)</p>
+<p>uint16 ParseUint16(const String&in)</p>
+<p>uint32 ParseUint32(const String&in)</p>
+<p>uint64 ParseUint64(const String&in)</p>
+<p>uint8 ParseUint8(const String&in)</p>
+<p>Vec2 ParseVec2(const String&in)</p>
+<p>Vec3 ParseVec3(const String&in)</p>
+<p>Vec4 ParseVec4(const String&in)</p>
+<p>void PutText(const String& in, Vec2)</p>
+<p>double Random()</p>
+<p>bool RandomBool(double p = 0.5)</p>
+<p>int8 RandomClosed(int8, int8)</p>
+<p>int8 RandomClosedOpen(int8, int8)</p>
+<p>Color RandomColor()</p>
+<p>ColorF RandomColorF()</p>
+<p>HSV RandomHSV()</p>
+<p>int16 RandomInt16()</p>
+<p>int32 RandomInt32()</p>
+<p>int64 RandomInt64()</p>
+<p>int8 RandomInt8()</p>
+<p>int8 RandomOpen(int8, int8)</p>
+<p>int8 RandomOpenClosed(int8, int8)</p>
+<p>Point RandomPoint(const Rect& in)</p>
+<p>uint16 RandomUint16()</p>
+<p>uint32 RandomUint32()</p>
+<p>uint64 RandomUint64()</p>
+<p>uint8 RandomUint8()</p>
+<p>Vec2 RandomVec2()</p>
+<p>Vec3 RandomVec3()</p>
+<p>Vec3 RandomVec3insideUnitSphere()</p>
+<p>Vec3 RandomVec3onUnitSphere()</p>
+<p>Vec4 RandomVec4(const Vec2& in xMinMax, const Vec2& in yMinMax, const Vec2& in zMinMax, const Vec2& in wMinMax)</p>
+<p>void Reseed(uint64)</p>
+<p>String Resource(const String& in)</p>
+<p>Duration SecondsF(double)</p>
+<p>Texture TextureAsset(const String&in)</p>
+<p>Color ToColor(float)</p>
+<p>char32 ToLower(uint32)</p>
+<p>char32 ToUpper(uint32)</p>
+<p>ColorF Transparency(double)</p>
+<br><h4>- ArcEmitter2D -</h4><p>void ArcEmitter2D()</p>
+<p>void drawDebug(const Vec2&)</p>
+<p>Emission2D emit(const Vec2&, double)</p>
+<br><h4>- Audio -</h4><p>void Audio()</p>
+<p>const Audio& fadePan(double, const Duration& in) const</p>
+<p>const Audio& fadeSpeed(double, const Duration& in) const</p>
+<p>const Audio& fadeSpeedBySemitone(int32, const Duration& in) const</p>
+<p>const Audio& fadeVolume(double, const Duration& in) const</p>
+<p>const Audio& setPan(double) const</p>
+<p>const Audio& setSpeed(double) const</p>
+<p>const Audio& setSpeedBySemitone(int32) const</p>
+<p>const Audio& setVolume(double) const</p>
+<p>double getPan() const</p>
+<p>double getSpeed() const</p>
+<p>double getVolume() const</p>
+<p>bool isActive() const</p>
+<p>bool isEmpty() const</p>
+<p>bool isLoop() const</p>
+<p>bool isPaused() const</p>
+<p>bool isPlaying() const</p>
+<p>bool isStreaming() const</p>
+<p>double lengthSec() const</p>
+<p>size_t loopCount() const</p>
+<p>void pause() const</p>
+<p>void pauseAllShots() const</p>
+<p>void play(MixBus busIndex = MixBus0) const</p>
+<p>void playOneShot(double volume = 1.0, double pan = 0.0, double speed = 1.0, MixBus busIndex = MixBus0) const</p>
+<p>int64 posSample() const</p>
+<p>double posSec() const</p>
+<p>void release()</p>
+<p>void resumeAllShots() const</p>
+<p>uint32 sampleRate() const</p>
+<p>size_t samples() const</p>
+<p>int64 samplesPlayed() const</p>
+<p>void seekSamples(size_t) const</p>
+<p>void seekTime(double) const</p>
+<p>void setLoop() const</p>
+<p>void setLoopPoint(uint64) const</p>
+<p>void stop() const</p>
+<p>void stopAllShots() const</p>
+<p>void swap(Audio& inout)</p>
+<br><h4>- AudioAsset -</h4><p>bool IsReady(const String&in)</p>
+<p>bool IsRegistered(const String&in)</p>
+<p>bool Load(const String&in)</p>
+<p>void LoadAsync(const String&in)</p>
+<p>bool Register(const String&in, const String&in)</p>
+<p>void Release(const String&in)</p>
+<p>void ReleaseAll()</p>
+<p>void Unregister(const String&in)</p>
+<p>void UnregisterAll()</p>
+<p>void Wait(const String&in)</p>
+<br><h4>- Bezier2 -</h4><p>void Bezier2(const Bezier2 &in)</p>
+<p>const Bezier2& draw(const LineStyle& in, double, const ColorF& in = Palette::White, int32 quality = 24) const</p>
+<p>RectF boundingRect() const</p>
+<p>LineString getLineString(int32 quality = 24) const</p>
+<p>Vec2 getPos(double) const</p>
+<p>Vec2 getTangent(double) const</p>
+<p>size_t hash() const</p>
+<p>bool intersects(const Vec2& in) const</p>
+<p>Vec2& p(size_t)</p>
+<p>Vec2 point(size_t) const</p>
+<p>const Vec2& p(size_t) const</p>
+<br><h4>- Bezier3 -</h4><p>void Bezier3(const Bezier3 &in)</p>
+<p>const Bezier2& draw(const LineStyle& in, double, const ColorF& in = Palette::White, int32 quality = 24) const</p>
+<p>RectF boundingRect() const</p>
+<p>LineString getLineString(int32 quality = 24) const</p>
+<p>Vec2 getPos(double) const</p>
+<p>Vec2 getTangent(double) const</p>
+<p>size_t hash() const</p>
+<p>bool intersects(const Line& in) const</p>
+<p>Vec2& p(size_t)</p>
+<p>Vec2 point(size_t) const</p>
+<p>const Vec2& p(size_t) const</p>
+<br><h4>- Camera2D -</h4><p>void Camera2D(Vec2 center, double scale = 1.0, CameraControl cameraControl = CameraControl::Default) explicit</p>
+<p>Transformer2D@ createTransformer() const</p>
+<p>void draw(const ColorF& in color = Palette::White) const</p>
+<p>Mat3x2 getMat3x2(Point renderTargetSize = Graphics2D::GetRenderTargetSize()) const</p>
+<p>RectF getRegion(Point renderTargetSize = Graphics2D::GetRenderTargetSize()) const</p>
+<p>double getScale() const</p>
+<p>double getTargetScale() const</p>
+<p>void jumpTo(Vec2 center, double scale)</p>
+<p>void setCenter(Vec2)</p>
+<p>void setScale(double)</p>
+<p>void setTargetCenter(Vec2)</p>
+<p>void setTargetScale(double)</p>
+<p>void update(double deltaTime = Scene::DeltaTime(), Vec2 sceneSize = Graphics2D::GetRenderTargetSize())</p>
+<p>const Vec2& getCenter() const</p>
+<p>const Vec2& getTargetCenter() const</p>
+<br><h4>- Camera2DParameters -</h4><p>void Camera2DParameters()</p>
+<p>Camera2DParameters Default()</p>
+<p>Camera2DParameters KeyboardOnly()</p>
+<p>Camera2DParameters Make(CameraControl)</p>
+<p>Camera2DParameters MouseOnly()</p>
+<p>Camera2DParameters NoControl()</p>
+<br><h4>- Circle -</h4><p>void Circle(double) explicit</p>
+<p>Polygon arcAsPolygon(double, double, double, double, uint32 quality = 24) const</p>
+<p>double area() const</p>
+<p>Polygon asPolygon(uint32 quality = 24) const</p>
+<p>Vec2 bottom() const</p>
+<p>RectF boundingRect() const</p>
+<p>const Circle& draw(const ColorF&in color = Palette::White) const</p>
+<p>const Circle& drawArc(double startAngle, double angle, double innerThickness = 1.0, double outerThickness = 0.0, const ColorF& in color = Palette::White) const</p>
+<p>const Circle& drawFrame(double thickness, const ColorF& in innerColor, const ColorF& in outerColor) const</p>
+<p>const Circle& drawPie(double startAngle, double angle, const ColorF& in color = Palette::White) const</p>
+<p>const Circle& drawShadow(const Vec2& in offset, double blurRadius, double spread = 0.0, const ColorF& in color = ColorF(0.0, 0.5)) const</p>
+<p>const Circle& overwrite(Image& inout, const Color& in, bool antialiased = Antialiased::Yes) const</p>
+<p>const Circle& overwriteFrame(Image& inout, double, double, const Color& in, bool antialiased = Antialiased::Yes) const</p>
+<p>const Circle& paint(Image& inout, const Color& in, bool antialiased = Antialiased::Yes) const</p>
+<p>const Circle& paintFrame(Image& inout, double, double, const Color& in, bool antialiased = Antialiased::Yes) const</p>
+<p>bool contains(const Vec2& in) const</p>
+<p>Vec2 getPointByAngle(double) const</p>
+<p>size_t hash() const</p>
+<p>Line horizontalDiameter() const</p>
+<p>bool intersects(const Vec2& in) const</p>
+<p>Vec2 left() const</p>
+<p>bool leftClicked() const</p>
+<p>bool leftPressed() const</p>
+<p>bool leftReleased() const</p>
+<p>Circle lerp(const Circle& in, double) const</p>
+<p>bool mouseOver() const</p>
+<p>Circle& moveBy(Vec2)</p>
+<p>Circle movedBy(Vec2) const</p>
+<p>double perimeter() const</p>
+<p>Polygon pieAsPolygon(double, double, uint32 quality = 24) const</p>
+<p>Vec2 right() const</p>
+<p>bool rightClicked() const</p>
+<p>bool rightPressed() const</p>
+<p>bool rightReleased() const</p>
+<p>Circle scaled(double) const</p>
+<p>Circle& set(Vec2, double)</p>
+<p>Circle& setCenter(Vec2)</p>
+<p>Circle& setPos(Vec2)</p>
+<p>Circle& setR(double r)</p>
+<p>Circle stretched(double) const</p>
+<p>Vec2 top() const</p>
+<p>Line verticalDiameter() const</p>
+<br><h4>- CircleEmitter2D -</h4><p>void CircleEmitter2D()</p>
+<p>void drawDebug(const Vec2&)</p>
+<p>Emission2D emit(const Vec2&, double)</p>
+<br><h4>- Circular -</h4><p>void Circular(const Vec2& in)</p>
+<p>Float2 fastToFloat2() const</p>
+<p>Vec2 fastToVec2() const</p>
+<p>size_t hash() const</p>
+<p>Circular& rotate(double)</p>
+<p>Circular rotated(double) const</p>
+<p>Float2 toFloat2() const</p>
+<p>Vec2 toPosition() const</p>
+<p>Vec2 toVec2() const</p>
+<p>Circular withR(double) const</p>
+<p>Circular withTheta(double) const</p>
+<br><h4>- Color -</h4><p>void Color(const HSV& in)</p>
+<p>ColorF applySRGBCurve() const</p>
+<p>uint32 asUint32() const</p>
+<p>Color gamma(double) const</p>
+<p>uint8 grayscale0_255() const</p>
+<p>double grayscale() const</p>
+<p>size_t hash() const</p>
+<p>Color lerp(Color, double) const</p>
+<p>uint8 maxComponent() const</p>
+<p>uint8 maxRGBComponent() const</p>
+<p>uint8 minComponent() const</p>
+<p>uint8 minRGBComponent() const</p>
+<p>ColorF removeSRGBCurve() const</p>
+<p>Color& set(Color)</p>
+<p>Color& setA(uint32 a)</p>
+<p>Color& setB(uint32 b)</p>
+<p>Color& setG(uint32 g)</p>
+<p>Color& setR(uint32 r)</p>
+<p>Color& setRGB(uint32 rgb)</p>
+<p>String toHex() const</p>
+<p>Color withA(uint32 a)</p>
+<p>Color withB(uint32 b)</p>
+<p>Color withG(uint32 g)</p>
+<p>Color withR(uint32 r)</p>
+<p>Color FromABGR(uint32)</p>
+<p>Color FromRGBA(uint32)</p>
+<p>uint8 ToUint8(float)</p>
+<p>Color Zero()</p>
+<br><h4>- ColorF -</h4><p>void ColorF(const HSV& in)</p>
+<p>Vec4 abgr() const</p>
+<p>ColorF applySRGBCurve() const</p>
+<p>Vec4 argb() const</p>
+<p>Vec2 ba() const</p>
+<p>Vec3 bgr() const</p>
+<p>double elem(size_t) const</p>
+<p>ColorF gamma(double) const</p>
+<p>Vec2 gb() const</p>
+<p>Vec3 gba() const</p>
+<p>double grayscale() const</p>
+<p>size_t hash() const</p>
+<p>ColorF lerp(const ColorF& in, double) const</p>
+<p>double maxComponent() const</p>
+<p>double maxRGBComponent() const</p>
+<p>double minComponent() const</p>
+<p>double minRGBComponent() const</p>
+<p>ColorF& oopSubAssign(const ColorF& in)</p>
+<p>ColorF removeSRGBCurve() const</p>
+<p>Vec2 rg() const</p>
+<p>Vec4 rgb0() const</p>
+<p>Vec4 rgb1() const</p>
+<p>Vec3 rgb() const</p>
+<p>Vec4 rgba() const</p>
+<p>ColorF& set(const ColorF& in)</p>
+<p>ColorF& setA(double a)</p>
+<p>ColorF& setB(double b)</p>
+<p>ColorF& setG(double g)</p>
+<p>ColorF& setR(double r)</p>
+<p>ColorF& setRGB(double rgb)</p>
+<p>Color toColor() const</p>
+<p>Float4 toFloat4() const</p>
+<p>Vec4 toVec4() const</p>
+<p>ColorF withA(double) const</p>
+<p>ColorF withB(double) const</p>
+<p>ColorF withG(double) const</p>
+<p>ColorF withR(double) const</p>
+<p>ColorF One()</p>
+<p>ColorF Zero()</p>
+<br><h4>- CSV -</h4><p>void CSV()</p>
+<p>void clear()</p>
+<p>size_t columns(size_t) const</p>
+<p>Array&lt;String&gt;@ getRow(size_t)</p>
+<p>bool isEmpty() const</p>
+<p>bool load(const String&in)</p>
+<p>void newLine()</p>
+<p>size_t rows() const</p>
+<p>bool save(const String&in)</p>
+<p>void write(const String&in)</p>
+<p>void writeRow(const String&in)</p>
+<br><h4>- Cursor -</h4><p>void ClipToWindow(bool)</p>
+<p>Point Delta()</p>
+<p>Vec2 DeltaF()</p>
+<p>Point DeltaRaw()</p>
+<p>bool IsClippedToWindow()</p>
+<p>bool OnClientRect()</p>
+<p>Point Pos()</p>
+<p>Vec2 PosF()</p>
+<p>Point PosRaw()</p>
+<p>Point PreviousPos()</p>
+<p>Vec2 PreviousPosF()</p>
+<p>Point PreviousPosRaw()</p>
+<p>void RequestStyle(CursorStyle style)</p>
+<p>Point ScreenDelta()</p>
+<p>Point ScreenPos()</p>
+<p>Point ScreenPreviousPos()</p>
+<p>void SetDefaultStyle(CursorStyle style)</p>
+<p>void SetPos(Point)</p>
+<br><h4>- Date -</h4><p>void Date()</p>
+<p>int32 daysInMonth() const</p>
+<p>int32 daysInYear() const</p>
+<p>String format(const String& in format = \</p>
+<p>size_t hash() const</p>
+<p>bool isLeapYear() const</p>
+<p>bool isToday() const</p>
+<p>bool isValid() const</p>
+<p>int32 DaysInMonth(int32 year, int32 month)</p>
+<p>int32 DaysInYear(int32)</p>
+<p>bool IsLeapYear(int32)</p>
+<p>Date Today()</p>
+<p>Date Tomorrow()</p>
+<p>Date Yesterday()</p>
+<br><h4>- DateTime -</h4><p>void DateTime(const Date& in date, int32 _hour = 0, int32 minute = 0, int32 second = 0, int32 milliseconds = 0)</p>
+<p>int32 daysInMonth() const</p>
+<p>int32 daysInYear() const</p>
+<p>String format(const String& in format = \</p>
+<p>size_t hash() const</p>
+<p>bool isLeapYear() const</p>
+<p>bool isToday() const</p>
+<p>bool isValid() const</p>
+<p>DateTime Now()</p>
+<p>DateTime NowUTC()</p>
+<p>DateTime Today()</p>
+<p>DateTime Tomorrow()</p>
+<p>DateTime Yesterday()</p>
+<br><h4>- Dialog -</h4><p>Audio OpenAudio(const String& in defaultPath = \</p>
+<p>String OpenFile(const String& in = \</p>
+<p>Image OpenImage(const String& in defaultPath = \</p>
+<p>Texture OpenTexture(const String& in defaultPath = \</p>
+<p>Wave OpenWave(const String& in defaultPath = \</p>
+<p>String SaveFile(const String& in = \</p>
+<p>String SelectFolder(const String& in = \</p>
+<br><h4>- DrawableText -</h4><p>void DrawableText()</p>
+<p>RectF draw(const TextStyle&in, double, double x, double y, const ColorF& in color = Palette::White) const</p>
+<p>RectF drawAt(double, const Vec2& in pos = Vec2(0, 0), const ColorF& in color = Palette::White) const</p>
+<p>RectF drawBase(const TextStyle&in, double x, double y, const ColorF& in color = Palette::White) const</p>
+<p>RectF drawBaseAt(const TextStyle&in, double x, double y, const ColorF& in color = Palette::White) const</p>
+<p>void overwrite(Image& inout, double, double) const</p>
+<p>void overwriteAt(Image& inout, double, double) const</p>
+<p>void paint(Image& inout, double, double, const Color& in = Palette::White) const</p>
+<p>void paintAt(Image& inout, double, double, const Color& in = Palette::White) const</p>
+<p>RectF region(const Vec3&in)</p>
+<p>RectF regionAt(Vec2) const</p>
+<p>RectF regionBase(double x, double y) const</p>
+<p>RectF regionBaseAt(double x, double y) const</p>
+<p>void stamp(Image& inout, double, double, const Color& in = Palette::White) const</p>
+<p>void stampAt(Image& inout, double, double, const Color& in = Palette::White) const</p>
+<br><h4>- Duration -</h4><p>void Duration()</p>
+<p>double count() const</p>
+<br><h4>- DynamicTexture -</h4><p>void DynamicTexture(uint32, uint32, const TextureFormat& in format = TextureFormat::R8G8B8A8_Unorm, TextureDesc desc = TextureDesc::Unmipped)</p>
+<p>RectF draw(const Vec2& in, const ColorF& in, const ColorF& in, const ColorF& in, const ColorF& in) const</p>
+<p>RectF drawAt(const Vec2& in, const ColorF& in, const ColorF& in, const ColorF& in, const ColorF& in) const</p>
+<p>RectF drawAtClipped(double x, double y, const RectF& in, const ColorF& in color = Palette::White) const</p>
+<p>RectF drawClipped(double x, double y, const RectF& in, const ColorF& in color = Palette::White) const</p>
+<p>bool fill(const Image& in)</p>
+<p>bool fillIfNotBusy(const Image& in)</p>
+<p>bool fillRegion(const Image& in, const Rect& in)</p>
+<p>bool fillRegionIfNotBusy(const Image& in, const Rect& in)</p>
+<p>TextureRegion fitted(double, double, bool scaleUp = AllowScaleUp::Yes) const</p>
+<p>TextureRegion flipped() const</p>
+<p>bool hasDepth() const</p>
+<p>bool hasMipMap() const</p>
+<p>int32 height() const</p>
+<p>bool isEmpty() const</p>
+<p>bool isSDF() const</p>
+<p>TextureRegion mapped(Vec2) const</p>
+<p>TextureRegion mirrored() const</p>
+<p>RectF region(Vec2) const</p>
+<p>RectF regionAt(Vec2) const</p>
+<p>void release()</p>
+<p>TextureRegion repeated(Vec2) const</p>
+<p>TextureRegion resized(Vec2) const</p>
+<p>TexturedQuad rotated(double) const</p>
+<p>TexturedQuad rotatedAt(double, double, double) const</p>
+<p>TexturedRoundRect rounded(double) const</p>
+<p>TextureRegion scaled(Vec2) const</p>
+<p>Point size() const</p>
+<p>bool srgbSampling() const</p>
+<p>void swap(DynamicTexture& inout)</p>
+<p>TextureRegion uv(const RectF& in) const</p>
+<p>int32 width() const</p>
+<br><h4>- Ellipse -</h4><p>void Ellipse(const Circle& in)</p>
+<p>double area() const</p>
+<p>Polygon asPolygon(uint32 quality = 24) const</p>
+<p>Vec2 bottom() const</p>
+<p>Circle boundingCircle() const</p>
+<p>RectF boundingRect() const</p>
+<p>bool contains(const Vec2& in) const</p>
+<p>const Ellipse& draw(const ColorF& in color = Palette::White) const</p>
+<p>const Ellipse& drawFrame(double thickness = 1.0, const ColorF& in color = Palette::White) const</p>
+<p>const Ellipse& overwrite(Image& inout, const Color& in) const</p>
+<p>const Ellipse& paint(Image& inout, const Color& in) const</p>
+<p>size_t hash() const</p>
+<p>Line horizontalDiameter() const</p>
+<p>bool intersects(const Vec2& in) const</p>
+<p>Vec2 left() const</p>
+<p>bool leftClicked() const</p>
+<p>bool leftPressed() const</p>
+<p>bool leftReleased() const</p>
+<p>Ellipse lerp(const Ellipse& in, double) const</p>
+<p>bool mouseOver() const</p>
+<p>Ellipse& moveBy(const Vec2&in xy)</p>
+<p>Ellipse movedBy(const Vec2&in xy) const</p>
+<p>Vec2 right() const</p>
+<p>bool rightClicked() const</p>
+<p>bool rightPressed() const</p>
+<p>bool rightReleased() const</p>
+<p>Ellipse scaled(double s) const</p>
+<p>Ellipse& set(const RectF& in)</p>
+<p>Ellipse& setAxes(double)</p>
+<p>Ellipse& setCenter(const Vec2& in)</p>
+<p>Ellipse& setPos(double x, double y)</p>
+<p>Ellipse stretched(double size) const</p>
+<p>Vec2 top() const</p>
+<p>Line verticalDiameter() const</p>
+<br><h4>- Emission2D -</h4><p>void Emission2D()</p>
+<br><h4>- Emoji -</h4><p>void Emoji()</p>
+<p>Image CreateImage(const String& in)</p>
+<p>Image CreateImageByGlyphIndex(GlyphIndex)</p>
+<p>Image CreateSilhouetteImage(const String& in)</p>
+<p>Image CreateSilhouetteImageByGlyphIndex(GlyphIndex)</p>
+<p>GlyphIndex GetGlyphIndex(const String& in)</p>
+<p>bool HasGlyph(const String& in)</p>
+<br><h4>- FFT -</h4><p>void Analyze(FFTResult&, const Audio&in)</p>
+<br><h4>- FFTResult -</h4><p>void FFTResult()</p>
+<br><h4>- FFTResultBuffer -</h4><p>void FFTResultBuffer()</p>
+<br><h4>- FileSystem -</h4><p>String BaseName(const String& in)</p>
+<p>bool ChangeCurrentDirectory(const String& in)</p>
+<p>bool Copy(const String& in, const String& in, CopyOption = CopyOption::Default)</p>
+<p>bool CreateDirectories(const String& in)</p>
+<p>bool CreateParentDirectories(const String& in)</p>
+<p>String CurrentDirectory()</p>
+<p>bool Exists(const String& in)</p>
+<p>String Extension(const String& in)</p>
+<p>String FileName(const String& in)</p>
+<p>int64 FileSize(const String& in)</p>
+<p>String FullPath(const String& in)</p>
+<p>bool IsDirectory(const String& in)</p>
+<p>bool IsEmptyDirectory(const String& in)</p>
+<p>bool IsFile(const String& in)</p>
+<p>bool IsResource(const String& in)</p>
+<p>bool IsResourcePath(const String& in)</p>
+<p>String ParentPath(const String& in, size_t level = 0)</p>
+<p>String RelativePath(const String& in, const String& in = CurrentDirectory())</p>
+<p>int64 Size(const String& in)</p>
+<p>const String& GetFolderPath(SpecialFolder)</p>
+<p>const String& InitialDirectory()</p>
+<p>const String& ModulePath()</p>
+<p>String TemporaryDirectoryPath()</p>
+<p>String UniqueFilePath(const String& in = TemporaryDirectoryPath())</p>
+<p>String VolumePath(const String& in)</p>
+<br><h4>- Float2 -</h4><p>void Float2(const Vec2& in)</p>
+<p>Circle asCircle(double) const</p>
+<p>Point asPoint() const</p>
+<p>Float2& clamp(const RectF& in)</p>
+<p>Float2 clamped(const RectF& in) const</p>
+<p>void clear()</p>
+<p>float cross(Float2) const</p>
+<p>float distanceFrom(Float2) const</p>
+<p>float distanceFromSq(Float2) const</p>
+<p>float dot(Float2) const</p>
+<p>float elem(size_t) const</p>
+<p>bool epsilonEquals(Float2, float) const</p>
+<p>float getAngle() const</p>
+<p>Float2 getMidpoint(Float2) const</p>
+<p>Float2 getPerpendicularCCW() const</p>
+<p>Float2 getPerpendicularCW() const</p>
+<p>Float2 getPointByAngleAndDistance(float, float) const</p>
+<p>size_t hash() const</p>
+<p>bool hasNaN() const</p>
+<p>bool hasOppositeDirection(Float2) const</p>
+<p>bool hasSameDirection(Float2) const</p>
+<p>bool intersects(const Vec2& in) const</p>
+<p>float invLength() const</p>
+<p>bool isZero() const</p>
+<p>float length() const</p>
+<p>float lengthSq() const</p>
+<p>Float2 lerp(Float2, float) const</p>
+<p>Float2 limitLength(float) const</p>
+<p>Float2& limitLengthSelf(float)</p>
+<p>float manhattanDistanceFrom(Float2) const</p>
+<p>float manhattanLength() const</p>
+<p>float maxComponent() const</p>
+<p>float minComponent() const</p>
+<p>Float2& moveBy(Float2)</p>
+<p>Float2 movedBy(Float2) const</p>
+<p>Float2& normalize()</p>
+<p>Float2 normalized() const</p>
+<p>Float2 projection(Float2) const</p>
+<p>Float2& rotate(float)</p>
+<p>Float2& rotateAt(Float2, float)</p>
+<p>Float2 rotated(float) const</p>
+<p>Float2 rotatedAt(Float2, float) const</p>
+<p>Float2& set(Float2)</p>
+<p>Float2& setLength(float)</p>
+<p>Float2 withLength(float) const</p>
+<p>Float2 withX(float) const</p>
+<p>Float2 withY(float) const</p>
+<p>Float2 x0() const</p>
+<p>Float2 xx() const</p>
+<p>Float3 xy0() const</p>
+<p>Float2 xy() const</p>
+<p>Float2 y0() const</p>
+<p>Float2 yx() const</p>
+<p>Float2 yy() const</p>
+<p>Float2 All(float value = 1)</p>
+<p>Float2 AnchorBottomCenter()</p>
+<p>Float2 AnchorBottomLeft()</p>
+<p>Float2 AnchorBottomRight()</p>
+<p>Float2 AnchorCenter()</p>
+<p>Float2 AnchorLeftCenter()</p>
+<p>Float2 AnchorRightCenter()</p>
+<p>Float2 AnchorTopCenter()</p>
+<p>Float2 AnchorTopLeft()</p>
+<p>Float2 AnchorTopRight()</p>
+<p>Float2 Down(float length = 1)</p>
+<p>Float2 Left(float length = 1)</p>
+<p>Float2 One()</p>
+<p>Float2 Right(float length = 1)</p>
+<p>Float2 UnitX()</p>
+<p>Float2 UnitY()</p>
+<p>Float2 Up(float length = 1)</p>
+<p>Float2 Zero()</p>
+<br><h4>- Float3 -</h4><p>void Float3(const Vec3& in)</p>
+<p>float angleTo(Float3) const</p>
+<p>void clear()</p>
+<p>Float3 cross(Float3) const</p>
+<p>float distanceFrom(Float3) const</p>
+<p>float distanceFromSq(Float3) const</p>
+<p>float dot(Float3) const</p>
+<p>float elem(size_t) const</p>
+<p>bool epsilonEquals(Float3, float) const</p>
+<p>Float3 getMidpoint(Float3) const</p>
+<p>size_t hash() const</p>
+<p>bool hasNaN() const</p>
+<p>bool hasOppositeDirection(Float3) const</p>
+<p>bool hasSameDirection(Float3) const</p>
+<p>float invLength() const</p>
+<p>bool isZero() const</p>
+<p>float length() const</p>
+<p>float lengthSq() const</p>
+<p>Float3 lerp(Float3, float) const</p>
+<p>Float3 limitLength(float) const</p>
+<p>Float3& limitLengthSelf(float)</p>
+<p>float manhattanDistanceFrom(Float3) const</p>
+<p>float manhattanLength() const</p>
+<p>float maxComponent() const</p>
+<p>float minComponent() const</p>
+<p>Float3& moveBy(Float3)</p>
+<p>Float3 movedBy(Float3) const</p>
+<p>Float3& normalize()</p>
+<p>Float3 normalized() const</p>
+<p>Float3 projectOnPlane(Float3) const</p>
+<p>Float3 projectOnVector(Float3) const</p>
+<p>Float3& set(Float3)</p>
+<p>Float3& setLength(float)</p>
+<p>Float3 withLength(float) const</p>
+<p>Float3 withX(float) const</p>
+<p>Float3 withY(float) const</p>
+<p>Float3 withZ(float) const</p>
+<p>Float2 xx() const</p>
+<p>Float3 xxx() const</p>
+<p>Float2 xy() const</p>
+<p>Float4 xyz0() const</p>
+<p>Float4 xyz1() const</p>
+<p>Float3 xyz() const</p>
+<p>Float2 xz() const</p>
+<p>Float3 xzy() const</p>
+<p>Float2 yx() const</p>
+<p>Float3 yxz() const</p>
+<p>Float2 yy() const</p>
+<p>Float3 yyy() const</p>
+<p>Float2 yz() const</p>
+<p>Float3 yzx() const</p>
+<p>Float2 zx() const</p>
+<p>Float3 zxy() const</p>
+<p>Float2 zy() const</p>
+<p>Float3 zyx() const</p>
+<p>Float2 zz() const</p>
+<p>Float3 zzz() const</p>
+<p>Float3 All(float value = 1)</p>
+<p>Float3 Backward(float length = 1)</p>
+<p>Float3 Down(float length = 1)</p>
+<p>Float3 Forward(float length = 1)</p>
+<p>Float3 Left(float length = 1)</p>
+<p>Float3 One()</p>
+<p>Float3 Right(float length = 1)</p>
+<p>Float3 UnitX()</p>
+<p>Float3 UnitY()</p>
+<p>Float3 UnitZ()</p>
+<p>Float3 Up(float length = 1)</p>
+<p>Float3 Zero()</p>
+<br><h4>- Float4 -</h4><p>void Float4(const Vec4& in)</p>
+<p>void clear()</p>
+<p>float distanceFrom(Float4) const</p>
+<p>float distanceFromSq(Float4) const</p>
+<p>float dot(Float4) const</p>
+<p>float elem(size_t) const</p>
+<p>bool epsilonEquals(Float4, float) const</p>
+<p>Float4 getMidpoint(Float4) const</p>
+<p>size_t hash() const</p>
+<p>bool hasNaN() const</p>
+<p>bool hasOppositeDirection(Float4) const</p>
+<p>bool hasSameDirection(Float4) const</p>
+<p>float invLength() const</p>
+<p>bool isZero() const</p>
+<p>float length() const</p>
+<p>float lengthSq() const</p>
+<p>Float4 lerp(Float4, float) const</p>
+<p>Float4 limitLength(float) const</p>
+<p>Float4& limitLengthSelf(float)</p>
+<p>float manhattanDistanceFrom(Float4) const</p>
+<p>float manhattanLength() const</p>
+<p>float maxComponent() const</p>
+<p>float minComponent() const</p>
+<p>Float4& moveBy(Float4)</p>
+<p>Float4 movedBy(Float4) const</p>
+<p>Float4& normalize()</p>
+<p>Float4 normalized() const</p>
+<p>Float4& set(Float4)</p>
+<p>Float4& setLength(float)</p>
+<p>Float4 withLength(float) const</p>
+<p>Float4 withW(float) const</p>
+<p>Float4 withX(float) const</p>
+<p>Float4 withY(float) const</p>
+<p>Float4 withZ(float) const</p>
+<p>Float2 ww() const</p>
+<p>Float3 www() const</p>
+<p>Float4 wwww() const</p>
+<p>Float2 wx() const</p>
+<p>Float2 wy() const</p>
+<p>Float2 wz() const</p>
+<p>Float3 wzy() const</p>
+<p>Float4 wzyx() const</p>
+<p>Float2 xw() const</p>
+<p>Float2 xx() const</p>
+<p>Float3 xxx() const</p>
+<p>Float4 xxxx() const</p>
+<p>Float2 xy() const</p>
+<p>Float4 xyz0() const</p>
+<p>Float4 xyz1() const</p>
+<p>Float3 xyz() const</p>
+<p>Float4 xyzw() const</p>
+<p>Float2 xz() const</p>
+<p>Float2 yw() const</p>
+<p>Float2 yx() const</p>
+<p>Float3 yxz() const</p>
+<p>Float2 yy() const</p>
+<p>Float3 yyy() const</p>
+<p>Float4 yyyy() const</p>
+<p>Float2 yz() const</p>
+<p>Float3 yzw() const</p>
+<p>Float2 zw() const</p>
+<p>Float2 zx() const</p>
+<p>Float2 zy() const</p>
+<p>Float3 zyx() const</p>
+<p>Float2 zz() const</p>
+<p>Float3 zzz() const</p>
+<p>Float4 zzzz() const</p>
+<p>Float4 All(float value = 1)</p>
+<p>Float4 One()</p>
+<p>Float4 UnitW()</p>
+<p>Float4 UnitX()</p>
+<p>Float4 UnitY()</p>
+<p>Float4 UnitZ()</p>
+<p>Float4 Zero()</p>
+<br><h4>- FloatRect -</h4><p>void FloatRect(const FloatRect &in)</p>
+<br><h4>- Font -</h4><p>void Font(FontMethod fontMethod, int32, const String& in path, FontStyle style = FontStyle::Default)</p>
+<p>void addFallback(const Font& in) const</p>
+<p>int32 ascender() const</p>
+<p>int32 descender() const</p>
+<p>const Font& setBufferThickness(int32) const</p>
+<p>const Font& setIndentSize(int32) const</p>
+<p>int32 fontSize() const</p>
+<p>int32 getBufferThickness() const</p>
+<p>GlyphIndex getGlyphIndex(char32) const</p>
+<p>bool hasColor() const</p>
+<p>bool hasGlyph(char32) const</p>
+<p>int32 height() const</p>
+<p>int32 indentSize() const</p>
+<p>bool isEmpty() const</p>
+<p>uint32 num_glyphs() const</p>
+<p>bool preload(const String& in)</p>
+<p>void release()</p>
+<p>double spaceWidth() const</p>
+<p>const String& familyName() const</p>
+<p>const String& styleName() const</p>
+<p>void swap(Font& inout)</p>
+<p>const Texture& getTexture() const</p>
+<br><h4>- FontAsset -</h4><p>bool IsReady(const String&in)</p>
+<p>bool IsRegistered(const String&in)</p>
+<p>bool Load(const String&in)</p>
+<p>void LoadAsync(const String&in)</p>
+<p>bool Register(const String&in, int32)</p>
+<p>void Release(const String&in)</p>
+<p>void ReleaseAll()</p>
+<p>void Unregister(const String&in)</p>
+<p>void UnregisterAll()</p>
+<p>void Wait(const String&in)</p>
+<br><h4>- GlobalAudio -</h4><p>void BusClearFilter(MixBus, size_t)</p>
+<p>void BusFadeVolume(MixBus, double, const Duration& in)</p>
+<p>Array&lt;float&gt;@ BusGetSamples(MixBus busIndex)</p>
+<p>double BusGetVolume(MixBus)</p>
+<p>void BusSetEchoFilter(MixBus busIndex, size_t filterIndex, double delay, double decay, double wet = 1.0)</p>
+<p>void BusSetHighPassFilter(MixBus busIndex, size_t filterIndex, double cutoffFrequency, double resonance, double wet = 1.0)</p>
+<p>void BusSetLowPassFilter(MixBus busIndex, size_t filterIndex, double cutoffFrequency, double resonance, double wet = 1.0)</p>
+<p>void BusSetPitchShiftFilter(MixBus busIndex, size_t filterIndex, double pitchShift)</p>
+<p>void BusSetReverbFilter(MixBus busIndex, size_t filterIndex, bool freeze, double roomSize, double damp, double width, double wet = 1.0)</p>
+<p>void BusSetVolume(MixBus, double)</p>
+<p>void FadeVolume(double, const Duration& in)</p>
+<p>size_t GetActiveVoiceCount()</p>
+<p>Array&lt;float&gt;@ GetSamples()</p>
+<p>double GetVolume()</p>
+<p>void PauseAll()</p>
+<p>void ResumeAll()</p>
+<p>void SetVolume(double)</p>
+<p>bool SupportsPitchShift()</p>
+<br><h4>- Graphics2D -</h4><p>void Flush()</p>
+<p>Float4 GetColorAdd()</p>
+<p>Float4 GetColorMul()</p>
+<p>float GetMaxScaling()</p>
+<p>Point GetRenderTargetSize()</p>
+<p>Rect GetScissorRect()</p>
+<p>const Mat3x2& GetCameraTransform()</p>
+<p>const Mat3x2& GetLocalTransform()</p>
+<p>void SetScissorRect()</p>
+<br><h4>- Graphics -</h4><p>bool IsVSyncEnabled()</p>
+<p>void SetVSyncEnabled(bool)</p>
+<br><h4>- HSV -</h4><p>void HSV()</p>
+<p>ColorF applySRGBCurve() const</p>
+<p>double elem(size_t) const</p>
+<p>size_t hash() const</p>
+<p>Vec3 hsv() const</p>
+<p>Vec4 hsva() const</p>
+<p>HSV lerp(const HSV& in, double) const</p>
+<p>ColorF removeSRGBCurve() const</p>
+<p>HSV& set(const HSV& in)</p>
+<p>HSV& setA(double a)</p>
+<p>HSV& setH(double h)</p>
+<p>HSV& setHSV(double h, double s, double v)</p>
+<p>HSV& setS(double s)</p>
+<p>HSV& setV(double v)</p>
+<p>Color toColor() const</p>
+<p>ColorF toColorF() const</p>
+<p>HSV withA(double a) const</p>
+<p>HSV withH(double h) const</p>
+<p>HSV withS(double s) const</p>
+<p>HSV withV(double v) const</p>
+<p>HSV Zero()</p>
+<br><h4>- Icon -</h4><p>void Icon(const Icon &in)</p>
+<p>Image CreateImage(uint32 code, int32 size)</p>
+<p>Image CreateMSDFImage(uint32 code, int32 size)</p>
+<p>Image CreateSDFImage(uint32 code, int32 size)</p>
+<p>bool HasGlyph(uint32)</p>
+<br><h4>- Image -</h4><p>void Image()</p>
+<p>Image& adaptiveThreshold(AdaptiveThresholdMethod method, int32 blockSize, double c, bool invertColor = InvertColor::No)</p>
+<p>Image adaptiveThresholded(AdaptiveThresholdMethod method, int32 blockSize, double c, bool invertColor = InvertColor::No) const</p>
+<p>Polygon alphaToPolygon(uint32 threshold = 160, bool allowHoles = AllowHoles::Yes) const</p>
+<p>Polygon alphaToPolygonCentered(uint32 threshold = 160, bool allowHoles = AllowHoles::Yes) const</p>
+<p>Image& bilateralFilter(int32 d, double sigmaColor, double sigmaSpace, BorderType borderType = BorderType::Reflect_101)</p>
+<p>Image bilateralFiltered(int32 d, double sigmaColor, double sigmaSpace, BorderType borderType = BorderType::Reflect_101) const</p>
+<p>Image& blur(int32, BorderType borderType = BorderType::Reflect_101)</p>
+<p>Image blurred(int32, BorderType borderType = BorderType::Reflect_101) const</p>
+<p>Image& border(int32, const Color& in = Palette::White)</p>
+<p>Image bordered(int32 top, int32 right, int32 bottom, int32 left, const Color& in = Palette::White) const</p>
+<p>Image& brighten(int32)</p>
+<p>Image brightened(int32) const</p>
+<p>void clear()</p>
+<p>Image clipped(const Rect& in) const</p>
+<p>Image cloned() const</p>
+<p>const Color& opIndex(const Point& in) const</p>
+<p>Image& dilate(int32 iterations = 1)</p>
+<p>Image dilated(int32 iterations = 1) const</p>
+<p>Image& erode(int32 iterations = 1)</p>
+<p>Image eroded(int32 iterations = 1) const</p>
+<p>void fill(Color)</p>
+<p>Image& fit(const Point& in, bool allowScaleUp = AllowScaleUp::Yes, InterpolationAlgorithm interpolation = InterpolationAlgorithm::Auto)</p>
+<p>Image fitted(const Point& in, bool allowScaleUp = AllowScaleUp::Yes, InterpolationAlgorithm interpolation = InterpolationAlgorithm::Auto) const</p>
+<p>Image& flip()</p>
+<p>Image flipped() const</p>
+<p>Image& floodFill(const Point& in, const Color& in, FloodFillConnectivity connectivity = FloodFillConnectivity::Value4, int32 lowerDifference = 0, int32 upperDifference = 0)</p>
+<p>Image floodFilled(const Point& in, const Color& in, FloodFillConnectivity connectivity = FloodFillConnectivity::Value4, int32 lowerDifference = 0, int32 upperDifference = 0) const</p>
+<p>Image& gammaCorrect(double)</p>
+<p>Image gammaCorrected(double) const</p>
+<p>Image& gaussianBlur(int32, BorderType borderType = BorderType::Reflect_101)</p>
+<p>Image gaussianBlurred(int32, BorderType borderType = BorderType::Reflect_101) const</p>
+<p>Image& grayscale()</p>
+<p>Image grayscaled() const</p>
+<p>Polygon grayscaleToPolygon(uint32 threshold = 160, bool allowHoles = AllowHoles::Yes) const</p>
+<p>Polygon grayscaleToPolygonCentered(uint32 threshold = 160, bool allowHoles = AllowHoles::Yes) const</p>
+<p>int32 height() const</p>
+<p>bool isEmpty() const</p>
+<p>Image& medianBlur(int32)</p>
+<p>Image medianBlurred(int32) const</p>
+<p>Image& mirror()</p>
+<p>Image mirrored() const</p>
+<p>Image& mosaic(int32)</p>
+<p>Image mosaiced(int32) const</p>
+<p>Image& negate()</p>
+<p>Image negated() const</p>
+<p>uint32 num_pixels() const</p>
+<p>void overwrite(Image& inout, Point) const</p>
+<p>void overwriteAt(Image& inout, Point) const</p>
+<p>void paint(Image& inout, int32, int32, const Color& in = Palette::White) const</p>
+<p>void paintAt(Image& inout, int32, int32, const Color& in = Palette::White) const</p>
+<p>Image& posterize(int32)</p>
+<p>Image posterized(int32) const</p>
+<p>void release()</p>
+<p>void resize(Point)</p>
+<p>void resizeRows(size_t, Color)</p>
+<p>Image& RGBAtoBGRA()</p>
+<p>Image& rotate180()</p>
+<p>Image& rotate270()</p>
+<p>Image& rotate90()</p>
+<p>Image rotated180() const</p>
+<p>Image rotated270() const</p>
+<p>Image rotated(double, const Color& in = Color(0, 0)) const</p>
+<p>Image rotated90() const</p>
+<p>bool save(const String& in, ImageFormat format = ImageFormat::Unspecified) const</p>
+<p>bool saveWithDialog() const</p>
+<p>Image& scale(int32 width, int32 height, InterpolationAlgorithm interpolation = InterpolationAlgorithm::Auto)</p>
+<p>Image scaled(double scaling, InterpolationAlgorithm interpolation = InterpolationAlgorithm::Auto) const</p>
+<p>Image& sepia()</p>
+<p>Image sepiaed() const</p>
+<p>void shrink_to_fit()</p>
+<p>size_t size_bytes() const</p>
+<p>Point size() const</p>
+<p>Image& spread(int32)</p>
+<p>Image spreaded(int32) const</p>
+<p>Image squareClipped() const</p>
+<p>void stamp(Image& inout, int32, int32, const Color& in = Palette::White) const</p>
+<p>void stampAt(Image& inout, int32, int32, const Color& in = Palette::White) const</p>
+<p>uint32 stride() const</p>
+<p>void swap(Image& inout)</p>
+<p>Image& threshold_Otsu(bool invertColor = InvertColor::No)</p>
+<p>Image& threshold(uint8, bool invertColor = InvertColor::No)</p>
+<p>Image thresholded_Otsu(bool invertColor = InvertColor::No) const</p>
+<p>Image thresholded(uint8, bool invertColor = InvertColor::No) const</p>
+<p>Image warpAffine(const Mat3x2& in, const Color& in = Color(0, 0)) const</p>
+<p>Image warpPerspective(const Quad& in, const Color& in = Color(0, 0)) const</p>
+<p>int32 width() const</p>
+<br><h4>- INI -</h4><p>void INI()</p>
+<p>void addSection(const String& in)</p>
+<p>void clear()</p>
+<p>String getGlobalValue(const String& in) const</p>
+<p>String getValue(const String& in, const String& in) const</p>
+<p>bool hasGlobalValue(const String& in) const</p>
+<p>bool hasSection(const String& in) const</p>
+<p>bool hasValue(const String& in, const String& in) const</p>
+<p>bool isEmpty() const</p>
+<p>bool load(const String& in)</p>
+<p>void removeSection(const String& in)</p>
+<p>bool save(const String& in)</p>
+<p>void write(const String& in, const String& in, const String& in)</p>
+<p>void writeGlobal(const String& in, const String& in)</p>
+<br><h4>- Input -</h4><p>void Input()</p>
+<p>uint32 asUint32() const</p>
+<p>uint8 code() const</p>
+<p>bool down() const</p>
+<p>String name() const</p>
+<p>uint8 playerIndex() const</p>
+<p>bool pressed() const</p>
+<p>Duration pressedDuration() const</p>
+<p>bool up() const</p>
+<br><h4>- IPv4Address -</h4><p>void IPv4Address()</p>
+<p>size_t hash() const</p>
+<p>bool isLoopback() const</p>
+<p>String str() const</p>
+<p>void swap(IPv4Address&)</p>
+<p>IPv4Address Localhost()</p>
+<p>Array&lt;size_t&gt;@ knnSearch(size_t, const Vec2&in)</p>
+<p>Array&lt;size_t&gt;@ radiusSearch(const Vec2&in, double, bool = false)</p>
+<p>void rebuildIndex()</p>
+<br><h4>- Keyboard -</h4><p>Array&lt;Input&gt;@ GetAllInputs()</p>
+<br><h4>- LicenseInfo -</h4><p>void LicenseInfo()</p>
+<br><h4>- LicenseManager -</h4><p>void AddLicense(const LicenseInfo& in)</p>
+<p>void DisableDefaultTrigger()</p>
+<p>void EnableDefaultTrigger()</p>
+<p>void SetApplicationLicense(const String& in, const LicenseInfo& in)</p>
+<p>void ShowInBrowser()</p>
+<br><h4>- Line -</h4><p>void Line(const Line& in)</p>
+<p>RectF boundingRect() const</p>
+<p>Vec2 center() const</p>
+<p>Vec2 closest(Vec2) const</p>
+<p>Line extractLine(double, double) const</p>
+<p>size_t hash() const</p>
+<p>bool hasLength() const</p>
+<p>bool intersects(const Vec2& in) const</p>
+<p>Optional&lt;Vec2&gt; intersectsAt(const Line& in) const</p>
+<p>double length() const</p>
+<p>double lengthSq() const</p>
+<p>Line lerp(const Line& in, double) const</p>
+<p>const Line& draw(const ColorF& in = Palette::White) const</p>
+<p>const Line& drawArrow(double width = 1.0, const Vec2& in headSize = Vec2(5.0, 5.0), const ColorF& in = Palette::White) const</p>
+<p>const Line& drawDoubleHeadedArrow(double width = 1.0, const Vec2& in headSize = Vec2(5.0, 5.0), const ColorF& in = Palette::White) const</p>
+<p>const Line& overwrite(Image& inout, int32, const Color& in, bool antialiased = Antialiased::Yes) const</p>
+<p>const Line& overwriteArrow(Image& inout, double, const Vec2& in, const Color& in) const</p>
+<p>const Line& overwriteDoubleHeadedArrow(Image& inout, double, const Vec2& in, const Color& in) const</p>
+<p>const Line& paint(Image& inout, const Color& in) const</p>
+<p>const Line& paintArrow(Image& inout, double, const Vec2& in, const Color& in) const</p>
+<p>const Line& paintDoubleHeadedArrow(Image& inout, double, const Vec2& in, const Color& in) const</p>
+<p>Line& moveBy(Vec2)</p>
+<p>Line movedBy(Vec2) const</p>
+<p>Vec2 normal() const</p>
+<p>Vec2& p(size_t)</p>
+<p>Vec2 point(size_t) const</p>
+<p>Vec2 position(double) const</p>
+<p>Line& reverse()</p>
+<p>Line reversed() const</p>
+<p>Line& set(Vec2, Vec2)</p>
+<p>Line stretched(double) const</p>
+<p>const Vec2& p(size_t) const</p>
+<p>Vec2 vector() const</p>
+<br><h4>- LineString -</h4><p>void LineString()</p>
+<p>void assign(const LineString& in)</p>
+<p>Spline2D asSpline(bool closeRing = CloseRing::No) const</p>
+<p>Vec2& at(size_t index)</p>
+<p>Vec2& back()</p>
+<p>Polygon calculateBuffer(double distance, int32 quality = 24) const</p>
+<p>Polygon calculateBufferClosed(double distance, int32 quality = 24) const</p>
+<p>double calculateLength(bool closeRing = CloseRing::No) const</p>
+<p>Vec2 calculatePointFromOrigin(double, bool closeRing = CloseRing::No) const</p>
+<p>Polygon calculateRoundBuffer(double distance, int32 quality = 24) const</p>
+<p>Polygon calculateRoundBufferClosed(double distance, int32 quality = 24) const</p>
+<p>size_t capacity() const</p>
+<p>LineString catmullRom(int32 interpolation = 24) const</p>
+<p>void clear()</p>
+<p>RectF computeBoundingRect() const</p>
+<p>LineString densified(double maxDistance = 2.0, bool closeRing = CloseRing::No) const</p>
+<p>bool empty() const</p>
+<p>LineString extractLineString(double, double, bool closeRing = CloseRing::No) const</p>
+<p>LineString& fill(const Vec2& in)</p>
+<p>Vec2& front()</p>
+<p>bool intersects(const Vec2& in) const</p>
+<p>bool isEmpty() const</p>
+<p>Line line(size_t index, bool closeRing = CloseRing::No) const</p>
+<p>const LineString& draw(const ColorF& in = Palette::White) const</p>
+<p>const LineString& drawClosed(const ColorF& in = Palette::White) const</p>
+<p>const LineString& overwrite(Image& inout, const Color& in, bool antialiased = Antialiased::Yes) const</p>
+<p>const LineString& overwriteClosed(Image& inout, const Color& in, bool antialiased = Antialiased::Yes) const</p>
+<p>const LineString& paint(Image& inout, const Color& in) const</p>
+<p>const LineString& paintClosed(Image& inout, const Color& in) const</p>
+<p>size_t max_size() const</p>
+<p>LineString& moveBy(Vec2)</p>
+<p>LineString movedBy(Vec2) const</p>
+<p>Vec2 normalAtLine(size_t index, bool closeRing = CloseRing::No) const</p>
+<p>Vec2 normalAtPoint(size_t index, bool closeRing = CloseRing::No) const</p>
+<p>size_t num_lines(bool closeRing = CloseRing::No) const</p>
+<p>size_t num_points() const</p>
+<p>void pop_back_N(size_t)</p>
+<p>void pop_back()</p>
+<p>void pop_front_N(size_t)</p>
+<p>void pop_front()</p>
+<p>void push_back(const Vec2& in)</p>
+<p>void push_front(const Vec2& in)</p>
+<p>void release()</p>
+<p>void reserve(size_t)</p>
+<p>void resize(size_t)</p>
+<p>LineString& scale(Vec2)</p>
+<p>LineString& scaleAt(Vec2, Vec2)</p>
+<p>LineString scaled(Vec2) const</p>
+<p>LineString scaledAt(Vec2, Vec2) const</p>
+<p>void shrink_to_fit()</p>
+<p>LineString simplified(double maxDistance = 2.0, bool closeRing = CloseRing::No) const</p>
+<p>size_t size() const</p>
+<p>void swap(LineString& inout)</p>
+<p>const Vec2& at(size_t index) const</p>
+<p>const Vec2& back() const</p>
+<p>const Vec2& front() const</p>
+<p>const Vec2& opIndex(size_t index) const</p>
+<br><h4>- LineStyle -</h4><p>void LineStyle()</p>
+<p>bool hasNoCap() const</p>
+<p>bool hasRoundCap() const</p>
+<p>bool hasRoundDot() const</p>
+<p>bool hasSquareCap() const</p>
+<p>bool hasSquareDot() const</p>
+<br><h4>- LineStyleParameters -</h4><p>void LineStyleParameters()</p>
+<p>LineStyleParameters offset(double) const</p>
+<br><h4>- Mat3x2 -</h4><p>void Mat3x2(const Mat3x2 &in)</p>
+<p>float determinant() const</p>
+<p>size_t hash() const</p>
+<p>Mat3x2 inverse() const</p>
+<p>Mat3x2 rotated(double, Float2 center = Float2(0, 0)) const</p>
+<p>Mat3x2 scaled(double, Float2 center = Float2(0, 0)) const</p>
+<p>void setProduct(const Mat3x2& in, const Mat3x2& in)</p>
+<p>Mat3x2 shearedX(double) const</p>
+<p>Mat3x2 shearedY(double) const</p>
+<p>Vec2 transformPoint(Vec2) const</p>
+<p>Mat3x2 translated(Float2) const</p>
+<p>Mat3x2 Identity()</p>
+<p>Mat3x2 Rotate(double, Float2 center = Float2(0, 0))</p>
+<p>Mat3x2 Scale(Float2, Float2 center = Float2(0, 0))</p>
+<p>Mat3x2 Screen(Float2)</p>
+<p>Mat3x2 ShearX(double)</p>
+<p>Mat3x2 ShearY(double)</p>
+<p>Mat3x2 Translate(Float2)</p>
+<br><h4>- Math -</h4><p>int32 Abs(int8)</p>
+<p>double AbsDiff(double, double)</p>
+<p>double Acos(double)</p>
+<p>double Asin(double)</p>
+<p>double Atan(double)</p>
+<p>double Atan2(double, double)</p>
+<p>double Ceil(double)</p>
+<p>double Clamp(double, double, double)</p>
+<p>double Cos(double)</p>
+<p>double Cosh(double)</p>
+<p>double Damp(double, double, double, double)</p>
+<p>double Eerp(double, double, double)</p>
+<p>double Exp(double)</p>
+<p>double Exp2(double)</p>
+<p>double Floor(double)</p>
+<p>double Fmod(double, double)</p>
+<p>double Fraction(double)</p>
+<p>double Frexp(double, double& inout)</p>
+<p>int64 GCD(int64, int64)</p>
+<p>double InvLerp(double, double, double)</p>
+<p>bool IsPrime(uint64)</p>
+<p>int64 LCM(int64, int64)</p>
+<p>double Ldexp(double, double)</p>
+<p>double Lerp(double, double, double)</p>
+<p>double LerpAngle(double, double, double)</p>
+<p>double Log10(double)</p>
+<p>double Log(double)</p>
+<p>double Log2(double)</p>
+<p>double Modf(double, double& inout)</p>
+<p>double Normalize(double)</p>
+<p>double Pow(double, double)</p>
+<p>double Round(double)</p>
+<p>double Rsqrt(double)</p>
+<p>double Saturate(double)</p>
+<p>int32 Sign(double)</p>
+<p>double Sin(double)</p>
+<p>double Sinh(double)</p>
+<p>double SmoothDamp(double from, double to, double& inout velocity, double smoothTime, double maxSpeed, double deltaTime = Scene::DeltaTime())</p>
+<p>double Smoothstep(double)</p>
+<p>double Sqrt(double)</p>
+<p>double Square(double)</p>
+<p>double Tan(double)</p>
+<p>double Tanh(double)</p>
+<p>double ToDegrees(double)</p>
+<p>double ToRadians(double)</p>
+<br><h4>- MemoryReader -</h4><p>void MemoryReader()</p>
+<p>int64 getPos() const</p>
+<p>bool isOpen() const</p>
+<p>bool setPos(int64)</p>
+<p>int64 size() const</p>
+<p>int64 skip(int64)</p>
+<p>bool supportsLookahead() const</p>
+<br><h4>- Microphone -</h4><p>void Microphone()</p>
+<p>void close()</p>
+<p>void fft(FFTResult&)</p>
+<p>size_t getBufferLength() const</p>
+<p>uint32 getSampleRate() const</p>
+<p>bool isLoop() const</p>
+<p>bool isOpen() const</p>
+<p>bool isRecording() const</p>
+<p>double mean(const Duration&in = SecondsF(0.02)) const</p>
+<p>uint32 microphoneIndex() const</p>
+<p>bool open(bool)</p>
+<p>double peak(const Duration&in = SecondsF(0.02)) const</p>
+<p>size_t posSample() const</p>
+<p>double rootMeanSquare(const Duration&in = SecondsF(0.02)) const</p>
+<p>bool start()</p>
+<p>void stop()</p>
+<p>const Wave& getBuffer() const</p>
+<br><h4>- MicrosecClock -</h4><p>void MicrosecClock()</p>
+<p>void console() const</p>
+<p>void log() const</p>
+<p>void print() const</p>
+<p>uint64 us() const</p>
+<br><h4>- MillisecClock -</h4><p>void MillisecClock()</p>
+<p>void console() const</p>
+<p>void log() const</p>
+<p>uint64 ms() const</p>
+<p>void print() const</p>
+<br><h4>- Mouse -</h4><p>Array&lt;Input&gt;@ GetAllInputs()</p>
+<p>double Wheel()</p>
+<p>double WheelH()</p>
+<br><h4>- OffsetCircular -</h4><p>void OffsetCircular(const OffsetCircular &in)</p>
+<p>Float2 fastToFloat2() const</p>
+<p>Vec2 fastToVec2() const</p>
+<p>size_t hash() const</p>
+<p>OffsetCircular& moveBy(Vec2)</p>
+<p>OffsetCircular movedBy(Vec2) const</p>
+<p>OffsetCircular& rotate(double)</p>
+<p>OffsetCircular rotated(double) const</p>
+<p>OffsetCircular& setCenter(Vec2)</p>
+<p>OffsetCircular& setTarget(Vec2)</p>
+<p>Float2 toFloat2() const</p>
+<p>Vec2 toPosition() const</p>
+<p>Vec2 toVec2() const</p>
+<p>OffsetCircular withCenter(Vec2) const</p>
+<p>OffsetCircular withR(double) const</p>
+<p>OffsetCircular withTheta(double) const</p>
+<br><h4>- ParticleSystem2D -</h4><p>void ParticleSystem2D()</p>
+<p>void draw()</p>
+<p>void drawDebug()</p>
+<p>size_t num_particles()</p>
+<p>void prewarm()</p>
+<p>void setEmitter(const ArcEmitter2D&in)</p>
+<p>void setForce(const Vec2&in)</p>
+<p>void setParameters(const ParticleSystem2DParameters&in)</p>
+<p>void setPosition(const Vec2&in)</p>
+<p>void setTexture(const Texture&in)</p>
+<p>void update()</p>
+<br><h4>- ParticleSystem2DParameters -</h4><p>void ParticleSystem2DParameters()</p>
+<br><h4>- Periodic -</h4><p>double Jump0_1(double, double = Scene::Time())</p>
+<p>double Jump1_1(double, double = Scene::Time())</p>
+<p>double Sawtooth0_1(double, double = Scene::Time())</p>
+<p>double Sawtooth1_1(double, double = Scene::Time())</p>
+<p>double Sine0_1(double, double = Scene::Time())</p>
+<p>double Sine1_1(double, double = Scene::Time())</p>
+<p>double Square0_1(double, double = Scene::Time())</p>
+<p>double Square1_1(double, double = Scene::Time())</p>
+<p>double Triangle0_1(double, double = Scene::Time())</p>
+<p>double Triangle1_1(double, double = Scene::Time())</p>
+<br><h4>- Point -</h4><p>void Point(const Point& in)</p>
+<p>int32 area() const</p>
+<p>Circle asCircle(double) const</p>
+<p>void clear()</p>
+<p>double distanceFrom(Vec2) const</p>
+<p>double distanceFromSq(Vec2) const</p>
+<p>int32 elem(size_t) const</p>
+<p>double getAngle() const</p>
+<p>Vec2 getMidpoint(Vec2) const</p>
+<p>Point getPerpendicularCCW() const</p>
+<p>Point getPerpendicularCW() const</p>
+<p>Vec2 getPointByAngleAndDistance(double, double) const</p>
+<p>size_t hash() const</p>
+<p>bool intersects(const Vec2& in) const</p>
+<p>bool isZero() const</p>
+<p>bool leftClicked() const</p>
+<p>bool leftPressed() const</p>
+<p>bool leftReleased() const</p>
+<p>double length() const</p>
+<p>double lengthSq() const</p>
+<p>Vec2 lerp(Vec2, double) const</p>
+<p>int32 manhattanDistanceFrom(Point) const</p>
+<p>int32 manhattanLength() const</p>
+<p>int32 maxComponent() const</p>
+<p>int32 minComponent() const</p>
+<p>bool mouseOver() const</p>
+<p>Point& moveBy(Point)</p>
+<p>Vec2 movedBy(Vec2) const</p>
+<p>const Point& overwrite(Image& inout, const Color& in) const</p>
+<p>const Point& paint(Image& inout, const Color& in) const</p>
+<p>bool rightClicked() const</p>
+<p>bool rightPressed() const</p>
+<p>bool rightReleased() const</p>
+<p>Point& set(Point)</p>
+<p>Point withX(int32) const</p>
+<p>Point withY(int32) const</p>
+<p>Point x0() const</p>
+<p>Point xx() const</p>
+<p>Point xy() const</p>
+<p>Point y0() const</p>
+<p>Point yx() const</p>
+<p>Point yy() const</p>
+<p>Point All(int32 value = 1)</p>
+<p>Point Down(int32 length = 1)</p>
+<p>Point Left(int32 length = 1)</p>
+<p>Point One()</p>
+<p>Point Right(int32 length = 1)</p>
+<p>Point UnitX()</p>
+<p>Point UnitY()</p>
+<p>Point Up(int32 length = 1)</p>
+<p>Point Zero()</p>
+<br><h4>- Polygon -</h4><p>void Polygon()</p>
+<p>bool addHole(const Quad& in) const</p>
+<p>bool append(const RectF& in)</p>
+<p>double area() const</p>
+<p>Polygon calculateBuffer(double) const</p>
+<p>Polygon calculateRoundBuffer(double) const</p>
+<p>Vec2 centroid() const</p>
+<p>Polygon computeConvexHull() const</p>
+<p>bool contains(const Vec2& in) const</p>
+<p>void draw(const Vec2& in, const ColorF& in color = Palette::White) const</p>
+<p>void drawFrame(const Vec2& in, double thickness = 1.0, const ColorF& in color = Palette::White) const</p>
+<p>void drawTransformed(double s, double c, const Vec2& in, const ColorF& in color = Palette::White) const</p>
+<p>void drawWireframe(const Vec2& in, double thickness = 1.0, const ColorF& in color = Palette::White) const</p>
+<p>bool hasHoles() const</p>
+<p>Array&lt;TriangleIndex&gt;@ indices() const</p>
+<p>bool intersects(const Vec2& in) const</p>
+<p>bool isEmpty() const</p>
+<p>bool leftClicked() const</p>
+<p>bool leftPressed() const</p>
+<p>bool leftReleased() const</p>
+<p>bool mouseOver() const</p>
+<p>Polygon& moveBy(Vec2)</p>
+<p>Polygon movedBy(Vec2) const</p>
+<p>size_t num_holes() const</p>
+<p>size_t num_triangles() const</p>
+<p>Array&lt;Vec2&gt;@ outer() const</p>
+<p>LineString outline(double, double) const</p>
+<p>double perimeter() const</p>
+<p>const Polygon& draw(const ColorF& in color = Palette::White) const</p>
+<p>const Polygon& drawFrame(double thickness = 1.0, const ColorF& in color = Palette::White) const</p>
+<p>const Polygon& drawWireframe(double thickness = 1.0, const ColorF& in color = Palette::White) const</p>
+<p>const Polygon& overwrite(Image& inout, double, double, const Color& in, bool antialiased = Antialiased::Yes) const</p>
+<p>const Polygon& paint(Image& inout, const Color& in) const</p>
+<p>const RectF& boundingRect() const</p>
+<p>bool rightClicked() const</p>
+<p>bool rightPressed() const</p>
+<p>bool rightReleased() const</p>
+<p>Polygon& rotate(double)</p>
+<p>Polygon& rotateAt(Vec2, double)</p>
+<p>Polygon rotated(double) const</p>
+<p>Polygon rotatedAt(Vec2, double) const</p>
+<p>Polygon& scale(Vec2)</p>
+<p>Polygon& scaleAt(Vec2, Vec2)</p>
+<p>Polygon scaled(Vec2) const</p>
+<p>Polygon scaledAt(Vec2, Vec2) const</p>
+<p>Polygon simplified(double maxDistance = 2.0) const</p>
+<p>void swap(Polygon& inout)</p>
+<p>Polygon& transform(double s, double c, const Vec2& in)</p>
+<p>Polygon transformed(double s, double c, const Vec2& in) const</p>
+<p>Triangle triangle(size_t) const</p>
+<p>Array&lt;Float2&gt;@ vertices() const</p>
+<br><h4>- Profiler -</h4><p>void EnableAssetCreationWarning(bool)</p>
+<p>int32 FPS()</p>
+<br><h4>- Quad -</h4><p>void Quad(const Quad& in)</p>
+<p>double area() const</p>
+<p>Polygon asPolygon() const</p>
+<p>RectF boundingRect() const</p>
+<p>Polygon calculateBuffer(double) const</p>
+<p>Polygon calculateRoundBuffer(double) const</p>
+<p>bool contains(const Vec2& in) const</p>
+<p>size_t hash() const</p>
+<p>bool intersects(const Vec2& in) const</p>
+<p>bool leftClicked() const</p>
+<p>bool leftPressed() const</p>
+<p>bool leftReleased() const</p>
+<p>Quad lerp(const Quad& in, double) const</p>
+<p>bool mouseOver() const</p>
+<p>Quad& moveBy(Vec2)</p>
+<p>Quad movedBy(Vec2) const</p>
+<p>LineString outline(double, double) const</p>
+<p>Vec2& p(size_t)</p>
+<p>double perimeter() const</p>
+<p>Vec2 point(size_t) const</p>
+<p>const Quad& draw(const ColorF& in = Palette::White) const</p>
+<p>const Quad& drawFrame(double innerThickness, double outerThickness, const ColorF& in = Palette::White) const</p>
+<p>const Quad& overwrite(Image& inout, const Color& in, bool antialiased = Antialiased::Yes) const</p>
+<p>const Quad& overwriteFrame(Image& inout, int32, const Color& in, bool antialiased = Antialiased::Yes) const</p>
+<p>const Quad& paint(Image& inout, const Color& in) const</p>
+<p>const Quad& paintFrame(Image& inout, int32, const Color& in) const</p>
+<p>bool rightClicked() const</p>
+<p>bool rightPressed() const</p>
+<p>bool rightReleased() const</p>
+<p>Quad rotatedAt(Vec2, double) const</p>
+<p>Quad& scale(Vec2)</p>
+<p>Quad& scaleAt(Vec2, Vec2)</p>
+<p>Quad scaled(Vec2) const</p>
+<p>Quad scaledAt(Vec2, Vec2) const</p>
+<p>Quad& set(const Quad& in)</p>
+<p>Line side(size_t) const</p>
+<p>Quad stretched(double) const</p>
+<p>Triangle triangle(size_t) const</p>
+<p>const Vec2& p(size_t) const</p>
+<br><h4>- RDTSCClock -</h4><p>void RDTSCClock()</p>
+<p>void console() const</p>
+<p>uint64 cycles() const</p>
+<p>void log() const</p>
+<p>void print() const</p>
+<br><h4>- Rect -</h4><p>void Rect(const Rect& in)</p>
+<p>int32 area() const</p>
+<p>Polygon asPolygon() const</p>
+<p>Quad asQuad() const</p>
+<p>Point bl() const</p>
+<p>Line bottom() const</p>
+<p>Vec2 bottomCenter() const</p>
+<p>int32 bottomY() const</p>
+<p>Point br() const</p>
+<p>Vec2 center() const</p>
+<p>double centerX() const</p>
+<p>double centerY() const</p>
+<p>bool contains(const Vec2& in) const</p>
+<p>Rect getOverlap(const Rect& in) const</p>
+<p>bool hasArea() const</p>
+<p>size_t hash() const</p>
+<p>bool intersects(const Vec2& in) const</p>
+<p>bool isEmpty() const</p>
+<p>Line left() const</p>
+<p>Vec2 leftCenter() const</p>
+<p>bool leftClicked() const</p>
+<p>bool leftPressed() const</p>
+<p>bool leftReleased() const</p>
+<p>int32 leftX() const</p>
+<p>RectF lerp(const Rect& in, double) const</p>
+<p>bool mouseOver() const</p>
+<p>Rect& moveBy(Point)</p>
+<p>Rect movedBy(Point) const</p>
+<p>LineString outline(double, double) const</p>
+<p>int32 perimeter() const</p>
+<p>Point point(size_t) const</p>
+<p>const Rect& draw(const ColorF& in = Palette::White) const</p>
+<p>const Rect& drawFrame(double thickness, const ColorF& in innerColor, const ColorF& in outerColor) const</p>
+<p>const Rect& drawShadow(const Vec2&in offset, double blurRadius, double spread = 0.0, const ColorF&in color = ColorF(0.0, 0.5), bool fill = true) const</p>
+<p>const Rect& overwrite(Image& inout, const Color& in) const</p>
+<p>const Rect& overwriteFrame(Image& inout, const Color& in) const</p>
+<p>const Rect& paint(Image& inout, const Color& in) const</p>
+<p>const Rect& paintFrame(Image& inout, const Color& in) const</p>
+<p>Line right() const</p>
+<p>Vec2 rightCenter() const</p>
+<p>bool rightClicked() const</p>
+<p>bool rightPressed() const</p>
+<p>bool rightReleased() const</p>
+<p>int32 rightX() const</p>
+<p>Quad rotated(double) const</p>
+<p>Quad rotatedAt(Vec2, double) const</p>
+<p>RoundRect rounded(double) const</p>
+<p>RectF scaled(Vec2) const</p>
+<p>RectF scaledAt(Vec2, Vec2) const</p>
+<p>Rect& set(Point, int32)</p>
+<p>Rect& setCenter(Point)</p>
+<p>Rect& setPos(Point)</p>
+<p>Rect& setSize(Point)</p>
+<p>Quad shearedX(double) const</p>
+<p>Quad shearedY(double) const</p>
+<p>Line side(size_t) const</p>
+<p>Rect stretched(int32) const</p>
+<p>Point tl() const</p>
+<p>Line top() const</p>
+<p>Vec2 topCenter() const</p>
+<p>int32 topY() const</p>
+<p>Point tr() const</p>
+<p>Triangle triangle(size_t) const</p>
+<p>Rect Empty()</p>
+<p>Rect FromPoints(Point, Point)</p>
+<br><h4>- RectEmitter2D -</h4><p>void RectEmitter2D()</p>
+<p>void drawDebug(const Vec2&)</p>
+<p>Emission2D emit(const Vec2&, double)</p>
+<br><h4>- RectF -</h4><p>void RectF(const Rect& in)</p>
+<p>double area() const</p>
+<p>Polygon asPolygon() const</p>
+<p>Quad asQuad() const</p>
+<p>Rect asRect() const</p>
+<p>Vec2 bl() const</p>
+<p>Line bottom() const</p>
+<p>Vec2 bottomCenter() const</p>
+<p>double bottomY() const</p>
+<p>Vec2 br() const</p>
+<p>Vec2 center() const</p>
+<p>double centerX() const</p>
+<p>double centerY() const</p>
+<p>bool contains(const Vec2& in) const</p>
+<p>RectF getOverlap(const RectF& in) const</p>
+<p>bool hasArea() const</p>
+<p>size_t hash() const</p>
+<p>bool intersects(const Vec2& in) const</p>
+<p>bool isEmpty() const</p>
+<p>Line left() const</p>
+<p>Vec2 leftCenter() const</p>
+<p>bool leftClicked() const</p>
+<p>bool leftPressed() const</p>
+<p>bool leftReleased() const</p>
+<p>double leftX() const</p>
+<p>RectF lerp(const RectF& in, double) const</p>
+<p>bool mouseOver() const</p>
+<p>RectF& moveBy(Vec2)</p>
+<p>RectF movedBy(Vec2) const</p>
+<p>LineString outline(double, double) const</p>
+<p>double perimeter() const</p>
+<p>Vec2 point(size_t) const</p>
+<p>const RectF& draw(const ColorF& in = Palette::White) const</p>
+<p>const RectF& drawFrame(double thickness, const ColorF& in innerColor, const ColorF& in outerColor) const</p>
+<p>const RectF& drawShadow(const Vec2&in offset, double blurRadius, double spread = 0.0, const ColorF&in color = ColorF(0.0, 0.5), bool fill = true) const</p>
+<p>const RectF& overwrite(Image& inout, const Color& in) const</p>
+<p>const RectF& overwriteFrame(Image& inout, const Color& in) const</p>
+<p>const RectF& paint(Image& inout, const Color& in) const</p>
+<p>const RectF& paintFrame(Image& inout, const Color& in) const</p>
+<p>Line right() const</p>
+<p>Vec2 rightCenter() const</p>
+<p>bool rightClicked() const</p>
+<p>bool rightPressed() const</p>
+<p>bool rightReleased() const</p>
+<p>double rightX() const</p>
+<p>Quad rotated(double) const</p>
+<p>Quad rotatedAt(Vec2, double) const</p>
+<p>RoundRect rounded(double) const</p>
+<p>RectF scaled(Vec2) const</p>
+<p>RectF scaledAt(Vec2, Vec2) const</p>
+<p>RectF& set(Vec2, Vec2)</p>
+<p>RectF& setCenter(Vec2)</p>
+<p>RectF& setPos(Vec2)</p>
+<p>RectF& setSize(Vec2)</p>
+<p>Quad shearedX(double) const</p>
+<p>Quad shearedY(double) const</p>
+<p>Line side(size_t) const</p>
+<p>RectF stretched(Vec2) const</p>
+<p>Vec2 tl() const</p>
+<p>Line top() const</p>
+<p>Vec2 topCenter() const</p>
+<p>double topY() const</p>
+<p>Vec2 tr() const</p>
+<p>Triangle triangle(size_t) const</p>
+<p>RectF Empty()</p>
+<p>RectF FromPoints(Vec2, Vec2)</p>
+<br><h4>- RenderTexture -</h4><p>void RenderTexture(uint32, uint32, const ColorF& color = ColorF(0.0, 1.0), const TextureFormat& in format = TextureFormat::R8G8B8A8_Unorm, bool depth = false)</p>
+<p>RectF draw(const Vec2& in, const ColorF& in, const ColorF& in, const ColorF& in, const ColorF& in) const</p>
+<p>RectF drawAt(const Vec2& in, const ColorF& in, const ColorF& in, const ColorF& in, const ColorF& in) const</p>
+<p>RectF drawAtClipped(double x, double y, const RectF& in, const ColorF& in color = Palette::White) const</p>
+<p>RectF drawClipped(double x, double y, const RectF& in, const ColorF& in color = Palette::White) const</p>
+<p>TextureRegion fitted(double, double, bool scaleUp = AllowScaleUp::Yes) const</p>
+<p>TextureRegion flipped() const</p>
+<p>bool hasDepth() const</p>
+<p>bool hasMipMap() const</p>
+<p>int32 height() const</p>
+<p>bool isEmpty() const</p>
+<p>bool isSDF() const</p>
+<p>TextureRegion mapped(Vec2) const</p>
+<p>TextureRegion mirrored() const</p>
+<p>void readAsImage(Image& in) const</p>
+<p>RectF region(Vec2) const</p>
+<p>RectF regionAt(Vec2) const</p>
+<p>void release()</p>
+<p>const RenderTexture& clear(const ColorF& in) const</p>
+<p>TextureRegion repeated(Vec2) const</p>
+<p>TextureRegion resized(Vec2) const</p>
+<p>TexturedQuad rotated(double) const</p>
+<p>TexturedQuad rotatedAt(double, double, double) const</p>
+<p>TexturedRoundRect rounded(double) const</p>
+<p>TextureRegion scaled(Vec2) const</p>
+<p>Point size() const</p>
+<p>bool srgbSampling() const</p>
+<p>void swap(RenderTexture& inout)</p>
+<p>TextureRegion uv(const RectF& in) const</p>
+<p>int32 width() const</p>
+<br><h4>- RoundRect -</h4><p>void RoundRect(const RoundRect& in)</p>
+<p>double area() const</p>
+<p>Polygon asPolygon(uint32 quality = 24) const</p>
+<p>Vec2 bottomCenter() const</p>
+<p>Vec2 center() const</p>
+<p>size_t hash() const</p>
+<p>bool intersects(const Vec2& in) const</p>
+<p>Vec2 leftCenter() const</p>
+<p>bool leftClicked() const</p>
+<p>bool leftPressed() const</p>
+<p>bool leftReleased() const</p>
+<p>RoundRect lerp(const RoundRect& in, double) const</p>
+<p>bool mouseOver() const</p>
+<p>RoundRect& moveBy(Vec2)</p>
+<p>RoundRect movedBy(Vec2) const</p>
+<p>double perimeter() const</p>
+<p>Vec2 rightCenter() const</p>
+<p>bool rightClicked() const</p>
+<p>bool rightPressed() const</p>
+<p>bool rightReleased() const</p>
+<p>const RoundRect& draw(const ColorF& in = Palette::White) const</p>
+<p>const RoundRect& drawFrame(double innerThickness, double outerThickness, const ColorF& in = Palette::White) const</p>
+<p>const RoundRect& drawShadow(const Vec2& in offset, double blurRadius, double spread = 0.0, const ColorF& in color = ColorF(0.0, 0.5), bool fill = true) const</p>
+<p>const RoundRect& overwrite(Image& inout, const Color& in, bool antialiased = Antialiased::Yes) const</p>
+<p>const RoundRect& overwriteFrame(Image& inout, int32, int32, const Color& in, bool antialiased = Antialiased::Yes) const</p>
+<p>const RoundRect& paint(Image& inout, const Color& in) const</p>
+<p>const RoundRect& paintFrame(Image& inout, int32, int32, const Color& in) const</p>
+<p>RoundRect& set(const RoundRect& in)</p>
+<p>RoundRect& setCenter(Vec2)</p>
+<p>RoundRect& setPos(Vec2)</p>
+<p>RoundRect& setSize(Vec2)</p>
+<p>RoundRect stretched(Vec2) const</p>
+<p>Vec2 topCenter() const</p>
+<br><h4>- SaturatedLinework -</h4><p>void SaturatedLinework()</p>
+<p>void draw(const ColorF& = Palette::Black) const</p>
+<p>const Ellipse& getTargetShape() const</p>
+<p>void generate() const</p>
+<p>size_t getLineCount() const</p>
+<p>double getMaxThickness() const</p>
+<p>double getMinThickness() const</p>
+<p>double getOffsetRange() const</p>
+<p>uint64 getSeed() const</p>
+<p>const Rect& getOuterRect() const</p>
+<p>SaturatedLinework& setLineCount(size_t)</p>
+<p>SaturatedLinework& setMaxThickness(double)</p>
+<p>SaturatedLinework& setMinThickness(double)</p>
+<p>SaturatedLinework& setOffsetRange(double)</p>
+<p>SaturatedLinework& setOuterRect(const Rect&in)</p>
+<p>SaturatedLinework& setSeed(uint64)</p>
+<p>SaturatedLinework& setTargetShape(const Ellipse&in)</p>
+<p>SaturatedLinework& setThickness(double, double)</p>
+<br><h4>- Scene -</h4><p>Point Center()</p>
+<p>Vec2 CenterF()</p>
+<p>Vec2 ClientToScene(Vec2)</p>
+<p>const ColorF& GetBackground()</p>
+<p>const ColorF& GetLetterBox()</p>
+<p>double DeltaTime()</p>
+<p>int32 FrameCount()</p>
+<p>double GetMaxDeltaTime()</p>
+<p>ResizeMode GetResizeMode()</p>
+<p>int32 Height()</p>
+<p>Rect Rect()</p>
+<p>void Resize(Point)</p>
+<p>void SetBackground(const ColorF& in)</p>
+<p>void SetLetterbox(const ColorF& in)</p>
+<p>void SetMaxDeltaTime(double)</p>
+<p>void SetResizeMode(ResizeMode)</p>
+<p>Point Size()</p>
+<p>double Time()</p>
+<p>int32 Width()</p>
+<br><h4>- ScopedRenderStates2D -</h4><p>void ScopedRenderStates2D()</p>
+<br><h4>- ScopedRenderTarget2D -</h4><p>void ScopedRenderTarget2D()</p>
+<br><h4>- ScopedViewport2D -</h4><p>void ScopedViewport2D()</p>
+<br><h4>- Shader -</h4><p>void Copy(const TextureRegion&in, RenderTexture&)</p>
+<p>void Downsample(const TextureRegion&in, RenderTexture&)</p>
+<p>void GaussianBlur(const TextureRegion&in, RenderTexture&, const Vec2&)</p>
+<p>void GaussianBlurH(const TextureRegion&in, RenderTexture&)</p>
+<p>void GaussianBlurV(const TextureRegion&in, RenderTexture&)</p>
+<br><h4>- Shape2D -</h4><p>void Shape2D()</p>
+<p>Polygon asPolygon() const</p>
+<p>const Shape2D& draw(const ColorF& in color = Palette::White) const</p>
+<p>const Shape2D& drawFrame(double thickness = 1.0, const ColorF& in color = Palette::White) const</p>
+<p>const Shape2D& drawWireframe(double thickness = 1.0, const ColorF& in color = Palette::White) const</p>
+<p>Shape2D Arrow(const Line& in line, double width, const Vec2& in headSize)</p>
+<p>Shape2D Cross(double r, double width, const Vec2& in center = Vec2(0, 0), double angle = 0.0)</p>
+<p>Shape2D DoubleHeadedArrow(const Vec2& in from, const Vec2& in to, double width, const Vec2& in headSize)</p>
+<p>Shape2D Heart(double r, const Vec2& in center = Vec2(0, 0), double angle = 0.0)</p>
+<p>Shape2D Hexagon(double r, const Vec2& in center = Vec2(0, 0), double angle = 0.0)</p>
+<p>Shape2D Ngon(uint32 n, double r, const Vec2& in center = Vec2(0, 0), double angle = 0.0)</p>
+<p>Shape2D NStar(uint32 n, double rOuter, double rInner, const Vec2& in center = Vec2(0, 0), double angle = 0.0)</p>
+<p>Shape2D Pentagon(double r, const Vec2& in center = Vec2(0, 0), double angle = 0.0)</p>
+<p>Shape2D Plus(double r, double width, const Vec2& in center = Vec2(0, 0), double angle = 0.0)</p>
+<p>Shape2D RectBalloon(const RectF& in rect, const Vec2& in target, double pointingRootRatio = 0.5)</p>
+<p>Shape2D Rhombus(double w, double h, const Vec2& in center = Vec2(0, 0), double angle = 0.0)</p>
+<p>Shape2D Squircle(double r, const Vec2& in center, uint32 quality)</p>
+<p>Shape2D Stairs(const Vec2& in base, double w, double h, int32 steps, bool upStairs = true)</p>
+<p>Shape2D Star(double r, const Vec2& in center = Vec2(0, 0), double angle = 0.0)</p>
+<br><h4>- SimpleGUI -</h4><p>bool Button(const String& in, const Vec2& in, double width, bool enabled = true)</p>
+<p>bool CheckBox(bool& inout, const String& in, const Vec2& in, None_t = unspecified, bool enabled = true)</p>
+<p>bool ColorPicker(HSV& inout, const Vec2& in, bool enabled = true)</p>
+<p>void Headline(const String& in, const Vec2& in, double width, bool enabled = true)</p>
+<p>RectF HeadlineRegion(const String& in, const Vec2& in, double width)</p>
+<p>bool HorizontalRadioButtons(size_t& inout, const Array&lt;String&gt;& in, const Vec2& in, double width, bool enabled = true)</p>
+<p>bool RadioButtons(size_t& inout, const Array&lt;String&gt;& in, const Vec2& in, double width, bool enabled = true)</p>
+<p>bool Slider(double& inout value, const Vec2& in pos, double sliderWidth = 120.0, bool enabled = true)</p>
+<p>bool TextBox(TextEditState& inout, const Vec2&in, double width = 200.0, None_t = unspecified, bool enabled = true)</p>
+<p>bool VerticalSlider(double& inout value, const Vec2& in pos, double sliderHeight = 120.0, bool enabled = true)</p>
+<br><h4>- SivB::Asset -</h4><p>bool IsRegistered(const String&in) // name</p>
+<p>bool Register(const String&in, int) // name, int</p>
+<p>bool Register(const String&in, bool) // name, bool</p>
+<p>bool Register(const String&in, double) // name, double</p>
+<p>bool Register(const String&in, const String&in) // name, string</p>
+<p>void Unregister(const String&in) // name</p>
+<p>void UnregisterAll()</p>
+<br><h4>- SivB::Board -</h4><p>void Draw()</p>
+<p>Item& Items(int) // id</p>
+<p>int Load(const String&in, int id = 0) // path, id</p>
+<p>int Load(const String&in, const String&in, int id = 0) // path, ext, id</p>
+<p>void Reset() // unregister items</p>
+<br><h4>- SivB::Item -</h4><p>void Item()</p>
+<p>void Item(const Item&in)</p>
+<p>Item& alpha(double) // 0.0 to 1.0</p>
+<p>Item& angle(double) // 0.0 to TwoPi</p>
+<p>Item& hide(bool)</p>
+<p>int id()</p>
+<p>Item& light(double) // 0.0 to 1.0</p>
+<p>Item& lock(bool)</p>
+<p>String path()</p>
+<p>Item& pos(const Vec2&in)</p>
+<p>Item& scale(double)</p>
+<p>Item& step(int) // 0 to stepMax()</p>
+<p>int stepMax()</p>
+<p>Item& style(int) // 0 to styleMax()</p>
+<p>int styleMax()</p>
+<p>void Part(const Item&in)</p>
+<p>void Part(const Part&in)</p>
+<p>void Part(const Item&in, const Item&in) // start, end</p>
+<p>Item& get(double) // 0.0 to 1.0</p>
+<p>void set(const Item&in)</p>
+<br><h4>- SivB::Script -</h4><p>void Control(bool) // enable default control</p>
+<p>void Exit() // exit script</p>
+<p>bool Load(const String&in) // path</p>
+<p>String Path()</p>
+<p>double Time() // get elapsed time (sec)</p>
+<br><h4>- SivB -</h4><p>String Asset(const String&in) // name</p>
+<br><h4>- Spline2D -</h4><p>void Spline2D()</p>
+<p>LineString asLineString(int32 quality = 24) const</p>
+<p>RectF boundingRect(size_t) const</p>
+<p>Polygon calculateRoundBuffer(double distance, int32 quality = 24, int32 bufferQuality = 24) const</p>
+<p>void clear()</p>
+<p>double curvature(size_t, double) const</p>
+<p>RectF fastBoundingRect(size_t) const</p>
+<p>bool isEmpty() const</p>
+<p>bool isRing() const</p>
+<p>double length(size_t i, double maxError = 0.01) const</p>
+<p>Vec2 position(size_t, double) const</p>
+<p>size_t size() const</p>
+<p>const Spline2D& draw(const LineStyle& in, double, const ColorF& in = Palette::White, int32 quality = 24) const</p>
+<p>void swap(Spline2D& inout)</p>
+<p>Vec2 velocity(size_t, double) const</p>
+<br><h4>- Spline -</h4><p>Vec2 CalculateTangent(const Vec2&in, const Vec2&in, const Vec2&in, const double = 0.0, const double = 0.0)</p>
+<p>Vec2 CatmullRom(const Vec2&in, const Vec2&in, const Vec2&in, const Vec2&in, const double)</p>
+<p>Vec2 Hermite(const Vec2&in, const Vec2&in, const Vec2&in, const Vec2&in, const double)</p>
+<br><h4>- Stopwatch -</h4><p>void Stopwatch()</p>
+<p>int32 d() const</p>
+<p>int64 d64() const</p>
+<p>double dF() const</p>
+<p>Duration elapsed() const</p>
+<p>String format(const String& in format = \</p>
+<p>int32 h() const</p>
+<p>int64 h64() const</p>
+<p>double hF() const</p>
+<p>bool isPaused() const</p>
+<p>bool isRunning() const</p>
+<p>bool isStarted() const</p>
+<p>int32 min() const</p>
+<p>int64 min64() const</p>
+<p>double minF() const</p>
+<p>int32 ms() const</p>
+<p>int64 ms64() const</p>
+<p>double msF() const</p>
+<p>void pause()</p>
+<p>void reset()</p>
+<p>void restart()</p>
+<p>void resume()</p>
+<p>int32 s() const</p>
+<p>int64 s64() const</p>
+<p>void set(const Duration& in)</p>
+<p>double sF() const</p>
+<p>void start()</p>
+<p>int64 us() const</p>
+<p>int64 us64() const</p>
+<p>double usF() const</p>
+<br><h4>- System -</h4><p>void Exit()</p>
+<p>size_t GetCurrentMonitorIndex()</p>
+<p>uint32 GetTerminationTriggers()</p>
+<p>uint32 GetUserActions()</p>
+<p>bool LaunchBrowser(const String& in)</p>
+<p>void SetTerminationTriggers(uint32)</p>
+<p>bool ShowInFileManager(const String& in)</p>
+<p>void Sleep(int32)</p>
+<p>bool Update()</p>
+<br><h4>- TCPClient -</h4><p>void TCPClient()</p>
+<p>size_t available() const</p>
+<p>void cancelConnect()</p>
+<p>bool connect(const IPv4Address&in, uint16)</p>
+<p>void disconnect()</p>
+<p>bool hasError() const</p>
+<p>bool isConnected() const</p>
+<p>bool lookahead(String&)</p>
+<p>uint16 port() const</p>
+<p>bool read(String&)</p>
+<p>bool send(const String&in)</p>
+<p>bool skip(size_t)</p>
+<br><h4>- TCPServer -</h4><p>void TCPServer()</p>
+<p>size_t available()</p>
+<p>void cancelAccept()</p>
+<p>void disconnect()</p>
+<p>Array&lt;uint64&gt;@ getSessionIDs()</p>
+<p>bool hasSession() const</p>
+<p>bool isAccepting() const</p>
+<p>bool lookahead(String&)</p>
+<p>size_t num_sessions() const</p>
+<p>uint16 port() const</p>
+<p>bool read(String&)</p>
+<p>bool send(const String&in)</p>
+<p>bool skip(size_t)</p>
+<p>void startAccept(uint16)</p>
+<p>void startAcceptMulti(uint16)</p>
+<br><h4>- TextEditState -</h4><p>void TextEditState()</p>
+<p>void clear() const</p>
+<br><h4>- TextInput -</h4><p>String GetEditingText()</p>
+<p>String GetRawInput()</p>
+<p>void UpdateText(String& inout, TextInputMode mode = TextInputMode::Default)</p>
+<br><h4>- TextReader -</h4><p>void TextReader()</p>
+<p>void close() const</p>
+<p>TextEncoding encoding() const</p>
+<p>bool isOpen() const</p>
+<p>bool open(const String& in, TextEncoding)</p>
+<p>String path() const</p>
+<p>String readAll()</p>
+<p>bool readChar(char32& out)</p>
+<p>bool readLine(String& out)</p>
+<br><h4>- TextStyle -</h4><p>void TextStyle()</p>
+<p>TextStyle CustomShader()</p>
+<p>TextStyle Default()</p>
+<p>TextStyle Outline(double, const ColorF& in)</p>
+<p>TextStyle OutlineShadow(double, const ColorF& in, const Vec2& in, const ColorF& in)</p>
+<p>TextStyle Shadow(const Vec2& in, const ColorF& in)</p>
+<br><h4>- TextToSpeech -</h4><p>LanguageCode GetDefaultLanguage()</p>
+<p>double GetSpeed()</p>
+<p>double GetVolume()</p>
+<p>bool HasLanguage(LanguageCode)</p>
+<p>bool IsSpeaking()</p>
+<p>void Pause()</p>
+<p>void Resume()</p>
+<p>void SetDefaultLanguage(LanguageCode)</p>
+<p>void SetSpeed(double)</p>
+<p>void SetVolume(double)</p>
+<p>bool Speak(const String& in, LanguageCode languageCode = LanguageCode::Unspecified)</p>
+<br><h4>- Texture -</h4><p>void Texture()</p>
+<p>RectF draw(const Vec2& in, const ColorF& in, const ColorF& in, const ColorF& in, const ColorF& in) const</p>
+<p>RectF drawAt(const Vec2& in, const ColorF& in, const ColorF& in, const ColorF& in, const ColorF& in) const</p>
+<p>RectF drawAtClipped(double x, double y, const RectF& in, const ColorF& in color = Palette::White) const</p>
+<p>RectF drawClipped(double x, double y, const RectF& in, const ColorF& in color = Palette::White) const</p>
+<p>TextureRegion fitted(double, double, bool scaleUp = AllowScaleUp::Yes) const</p>
+<p>TextureRegion flipped() const</p>
+<p>bool hasDepth() const</p>
+<p>bool hasMipMap() const</p>
+<p>int32 height() const</p>
+<p>bool isEmpty() const</p>
+<p>bool isSDF() const</p>
+<p>TextureRegion mapped(Vec2) const</p>
+<p>TextureRegion mirrored() const</p>
+<p>RectF region(Vec2) const</p>
+<p>RectF regionAt(Vec2) const</p>
+<p>void release()</p>
+<p>TextureRegion repeated(Vec2) const</p>
+<p>TextureRegion resized(Vec2) const</p>
+<p>TexturedQuad rotated(double) const</p>
+<p>TexturedQuad rotatedAt(double, double, double) const</p>
+<p>TexturedRoundRect rounded(double) const</p>
+<p>TextureRegion scaled(Vec2) const</p>
+<p>Point size() const</p>
+<p>bool srgbSampling() const</p>
+<p>void swap(Texture& inout)</p>
+<p>TextureRegion uv(const RectF& in) const</p>
+<p>int32 width() const</p>
+<br><h4>- TextureAsset -</h4><p>bool IsReady(const String&in)</p>
+<p>bool IsRegistered(const String&in)</p>
+<p>bool Load(const String&in)</p>
+<p>void LoadAsync(const String&in)</p>
+<p>bool Register(const String&in, const Color&in, const String&in, TextureDesc = TextureDesc::Unmipped)</p>
+<p>void Release(const String&in)</p>
+<p>void ReleaseAll()</p>
+<p>void Unregister(const String&in)</p>
+<p>void UnregisterAll()</p>
+<p>void Wait(const String&in)</p>
+<br><h4>- TexturedCircle -</h4><p>void TexturedCircle()</p>
+<p>const Circle& draw(const ColorF& in color = Palette::White) const</p>
+<p>Circle draw(const Vec2& in, const ColorF& in color = Palette::White) const</p>
+<br><h4>- TexturedQuad -</h4><p>void TexturedQuad()</p>
+<p>Quad draw(const Vec2& in, const ColorF& in color = Palette::White) const</p>
+<p>Quad drawAt(const Vec2& in, const ColorF& in color = Palette::White) const</p>
+<p>const Quad& draw(const ColorF& in color = Palette::White) const</p>
+<br><h4>- TexturedRoundRect -</h4><p>void TexturedRoundRect()</p>
+<p>RoundRect draw(const Vec2& in,const ColorF& in color = Palette::White) const</p>
+<p>RoundRect drawAt(const Vec2& in, const ColorF& in color = Palette::White) const</p>
+<p>const RoundRect& draw(const ColorF& in color = Palette::White) const</p>
+<br><h4>- TextureFormat -</h4><p>void TextureFormat()</p>
+<p>int32 DXGIFormat() const</p>
+<p>int32 GLFormat() const</p>
+<p>int32 GLInternalFormat() const</p>
+<p>int32 GLType() const</p>
+<p>bool isSRGB() const</p>
+<p>uint32 num_channels() const</p>
+<p>uint32 pixelSize() const</p>
+<br><h4>- TextureRegion -</h4><p>void TextureRegion()</p>
+<p>RectF draw(const Vec2& in, const ColorF& in, const ColorF& in, const ColorF& in, const ColorF& in) const</p>
+<p>RectF drawAt(const Vec2& in, const ColorF& in, const ColorF& in, const ColorF& in, const ColorF& in) const</p>
+<p>RectF drawAtClipped(double x, double y, const RectF& in, const ColorF& in color = Palette::White) const</p>
+<p>RectF drawClipped(double x, double y, const RectF& in, const ColorF& in color = Palette::White) const</p>
+<p>TextureRegion fitted(Vec2, bool scaleUp = AllowScaleUp::Yes) const</p>
+<p>TextureRegion flipped() const</p>
+<p>TextureRegion mirrored() const</p>
+<p>RectF region(double, double) const</p>
+<p>RectF regionAt(Vec2) const</p>
+<p>TextureRegion resized(Vec2) const</p>
+<p>TexturedQuad rotated(double) const</p>
+<p>TexturedQuad rotatedAt(double, double, double) const</p>
+<p>TexturedRoundRect rounded(double) const</p>
+<p>TextureRegion scaled(Vec2) const</p>
+<p>TextureRegion stretched(Vec2) const</p>
+<br><h4>- TextWriter -</h4><p>void TextWriter(const String& in, OpenMode openMode = OpenMode::Trunc, TextEncoding encoding = TextEncoding::UTF8_WITH_BOM)</p>
+<p>void clear() const</p>
+<p>void close() const</p>
+<p>TextEncoding encoding() const</p>
+<p>bool isOpen() const</p>
+<p>bool open(const String& in, OpenMode openMode = OpenMode::Trunc, TextEncoding encoding = TextEncoding::UTF8_WITH_BOM)</p>
+<p>String path() const</p>
+<p>void write(uint32)</p>
+<p>void writeln(uint32)</p>
+<br><h4>- TextWriterBuffer -</h4><p>TextWriterBuffer@ f()</p>
+<p>void TextWriterBuffer()</p>
+<br><h4>- Threading -</h4><p>size_t GetConcurrency()</p>
+<br><h4>- Time -</h4><p>uint64 GetMicrosec()</p>
+<p>uint64 GetMicrosecSinceEpoch()</p>
+<p>uint64 GetMillisec()</p>
+<p>uint64 GetMillisecSinceEpoch()</p>
+<p>uint64 GetNanosec()</p>
+<p>uint64 GetSec()</p>
+<p>uint64 GetSecSinceEpoch()</p>
+<p>uint64 UTCOffsetMinutes()</p>
+<br><h4>- Timer -</h4><p>void Timer()</p>
+<p>int32 d() const</p>
+<p>int64 d64() const</p>
+<p>double dF() const</p>
+<p>Duration duration() const</p>
+<p>String format(const String& in format = \</p>
+<p>int32 h() const</p>
+<p>int64 h64() const</p>
+<p>double hF() const</p>
+<p>bool isPaused() const</p>
+<p>bool isRunning() const</p>
+<p>bool isStarted() const</p>
+<p>int32 min() const</p>
+<p>int64 min64() const</p>
+<p>double minF() const</p>
+<p>int32 ms() const</p>
+<p>int64 ms64() const</p>
+<p>double msF() const</p>
+<p>void pause()</p>
+<p>double progress0_1() const</p>
+<p>double progress1_0() const</p>
+<p>bool reachedZero() const</p>
+<p>Duration remaining() const</p>
+<p>void reset()</p>
+<p>void restart()</p>
+<p>void resume()</p>
+<p>int32 s() const</p>
+<p>int64 s64() const</p>
+<p>void set(const Duration& in)</p>
+<p>void setRemaining(const Duration& in)</p>
+<p>double sF() const</p>
+<p>void start()</p>
+<p>int64 us() const</p>
+<p>int64 us64() const</p>
+<p>double usF() const</p>
+<br><h4>- Transformer2D -</h4><p>Transformer2D@ f(const Mat3x2& in, const Mat3x2& in, Transformer2D::Target target = Transformer2D::Target::PushLocal)</p>
+<p>void Transformer2D()</p>
+<br><h4>- Triangle -</h4><p>void Triangle(const Triangle& in)</p>
+<p>double area() const</p>
+<p>Polygon asPolygon() const</p>
+<p>RectF boundingRect() const</p>
+<p>Polygon calculateBuffer(double) const</p>
+<p>Polygon calculateRoundBuffer(double) const</p>
+<p>Vec2 centroid() const</p>
+<p>bool contains(const Vec2& in) const</p>
+<p>Circle getInscribedCircle() const</p>
+<p>size_t hash() const</p>
+<p>bool intersects(const Vec2& in) const</p>
+<p>bool leftClicked() const</p>
+<p>bool leftPressed() const</p>
+<p>bool leftReleased() const</p>
+<p>Triangle lerp(const Triangle& in, double) const</p>
+<p>bool mouseOver() const</p>
+<p>Triangle& moveBy(Vec2)</p>
+<p>Triangle movedBy(Vec2) const</p>
+<p>LineString outline(double, double) const</p>
+<p>Vec2& p(size_t)</p>
+<p>double perimeter() const</p>
+<p>Vec2 point(size_t) const</p>
+<p>bool rightClicked() const</p>
+<p>bool rightPressed() const</p>
+<p>bool rightReleased() const</p>
+<p>Triangle rotated(double) const</p>
+<p>Triangle rotatedAt(Vec2, double) const</p>
+<p>Triangle& scale(Vec2)</p>
+<p>Triangle& scaleAt(Vec2, Vec2)</p>
+<p>Triangle scaled(Vec2) const</p>
+<p>Triangle scaledAt(Vec2, Vec2) const</p>
+<p>Triangle& set(const Triangle& in)</p>
+<p>Triangle& setCentroid(Vec2)</p>
+<p>Line side(size_t) const</p>
+<p>Triangle stretched(double) const</p>
+<p>const Triangle& draw(const ColorF& in = Palette::White) const</p>
+<p>const Triangle& drawFrame(double innerThickness, double outerThickness, const ColorF& in = Palette::White) const</p>
+<p>const Triangle& overwrite(Image& inout, const Color& in, bool antialiased = Antialiased::Yes) const</p>
+<p>const Triangle& overwriteFrame(Image& inout, int32, const Color& in, bool antialiased = Antialiased::Yes) const</p>
+<p>const Triangle& paint(Image& inout, const Color& in) const</p>
+<p>const Triangle& paintFrame(Image& inout, int32, const Color& in) const</p>
+<p>const Vec2& p(size_t) const</p>
+<br><h4>- TriangleIndex -</h4><p>void TriangleIndex()</p>
+<br><h4>- VariableSpeedStopwatch -</h4><p>void VariableSpeedStopwatch(const Duration& in, double speed = 1.0, bool startImmediately = false) explicit</p>
+<p>int32 d() const</p>
+<p>int64 d64() const</p>
+<p>double dF() const</p>
+<p>Duration elapsed() const</p>
+<p>String format(const String& in format = \</p>
+<p>double getSpeed() const</p>
+<p>int32 h() const</p>
+<p>int64 h64() const</p>
+<p>double hF() const</p>
+<p>bool isPaused() const</p>
+<p>bool isRunning() const</p>
+<p>bool isStarted() const</p>
+<p>int32 min() const</p>
+<p>int64 min64() const</p>
+<p>double minF() const</p>
+<p>int32 ms() const</p>
+<p>int64 ms64() const</p>
+<p>double msF() const</p>
+<p>void pause()</p>
+<p>void reset()</p>
+<p>void restart()</p>
+<p>void resume()</p>
+<p>int32 s() const</p>
+<p>int64 s64() const</p>
+<p>void set(const Duration& in)</p>
+<p>void setSpeed(double speed)</p>
+<p>double sF() const</p>
+<p>void start()</p>
+<p>int64 us() const</p>
+<p>int64 us64() const</p>
+<p>double usF() const</p>
+<br><h4>- Vec2 -</h4><p>void Vec2(const Vec2& in)</p>
+<p>Circle asCircle(double) const</p>
+<p>Point asPoint() const</p>
+<p>Vec2& clamp(const RectF& in)</p>
+<p>Vec2 clamped(const RectF& in) const</p>
+<p>void clear()</p>
+<p>double cross(Vec2) const</p>
+<p>double distanceFrom(Vec2) const</p>
+<p>double distanceFromSq(Vec2) const</p>
+<p>double dot(Vec2) const</p>
+<p>double elem(size_t) const</p>
+<p>bool epsilonEquals(Vec2, double) const</p>
+<p>double getAngle() const</p>
+<p>Vec2 getMidpoint(Vec2) const</p>
+<p>Vec2 getPerpendicularCCW() const</p>
+<p>Vec2 getPerpendicularCW() const</p>
+<p>Vec2 getPointByAngleAndDistance(double, double) const</p>
+<p>size_t hash() const</p>
+<p>bool hasNaN() const</p>
+<p>bool hasOppositeDirection(Vec2) const</p>
+<p>bool hasSameDirection(Vec2) const</p>
+<p>bool intersects(const Vec2& in) const</p>
+<p>double invLength() const</p>
+<p>bool isZero() const</p>
+<p>double length() const</p>
+<p>double lengthSq() const</p>
+<p>Vec2 lerp(Vec2, double) const</p>
+<p>Vec2 limitLength(double) const</p>
+<p>Vec2& limitLengthSelf(double)</p>
+<p>double manhattanDistanceFrom(Vec2) const</p>
+<p>double manhattanLength() const</p>
+<p>double maxComponent() const</p>
+<p>double minComponent() const</p>
+<p>Vec2& moveBy(Vec2)</p>
+<p>Vec2 movedBy(Vec2) const</p>
+<p>Vec2& normalize()</p>
+<p>Vec2 normalized() const</p>
+<p>Vec2 projection(Vec2) const</p>
+<p>Vec2& rotate(double)</p>
+<p>Vec2& rotateAt(Vec2, double)</p>
+<p>Vec2 rotated(double) const</p>
+<p>Vec2 rotatedAt(Vec2, double) const</p>
+<p>Vec2& set(Vec2)</p>
+<p>Vec2& setLength(double)</p>
+<p>Vec2 withLength(double) const</p>
+<p>Vec2 withX(double) const</p>
+<p>Vec2 withY(double) const</p>
+<p>Vec2 x0() const</p>
+<p>Vec2 xx() const</p>
+<p>Vec3 xy0() const</p>
+<p>Vec2 xy() const</p>
+<p>Vec2 y0() const</p>
+<p>Vec2 yx() const</p>
+<p>Vec2 yy() const</p>
+<p>Vec2 All(double value = 1)</p>
+<p>Vec2 AnchorBottomCenter()</p>
+<p>Vec2 AnchorBottomLeft()</p>
+<p>Vec2 AnchorBottomRight()</p>
+<p>Vec2 AnchorCenter()</p>
+<p>Vec2 AnchorLeftCenter()</p>
+<p>Vec2 AnchorRightCenter()</p>
+<p>Vec2 AnchorTopCenter()</p>
+<p>Vec2 AnchorTopLeft()</p>
+<p>Vec2 AnchorTopRight()</p>
+<p>Vec2 Down(double length = 1)</p>
+<p>Vec2 Left(double length = 1)</p>
+<p>Vec2 One()</p>
+<p>Vec2 Right(double length = 1)</p>
+<p>Vec2 UnitX()</p>
+<p>Vec2 UnitY()</p>
+<p>Vec2 Up(double length = 1)</p>
+<p>Vec2 Zero()</p>
+<br><h4>- Vec3 -</h4><p>void Vec3(const Vec3& in)</p>
+<p>double angleTo(Vec3) const</p>
+<p>void clear()</p>
+<p>Vec3 cross(Vec3) const</p>
+<p>double distanceFrom(Vec3) const</p>
+<p>double distanceFromSq(Vec3) const</p>
+<p>double dot(Vec3) const</p>
+<p>double elem(size_t) const</p>
+<p>bool epsilonEquals(Vec3, double) const</p>
+<p>Vec3 getMidpoint(Vec3) const</p>
+<p>size_t hash() const</p>
+<p>bool hasNaN() const</p>
+<p>bool hasOppositeDirection(Vec3) const</p>
+<p>bool hasSameDirection(Vec3) const</p>
+<p>double invLength() const</p>
+<p>bool isZero() const</p>
+<p>double length() const</p>
+<p>double lengthSq() const</p>
+<p>Vec3 lerp(Vec3, double) const</p>
+<p>Vec3 limitLength(double) const</p>
+<p>Vec3& limitLengthSelf(double)</p>
+<p>double manhattanDistanceFrom(Vec3) const</p>
+<p>double manhattanLength() const</p>
+<p>double maxComponent() const</p>
+<p>double minComponent() const</p>
+<p>Vec3& moveBy(Vec3)</p>
+<p>Vec3 movedBy(Vec3) const</p>
+<p>Vec3& normalize()</p>
+<p>Vec3 normalized() const</p>
+<p>Vec3 projectOnPlane(Vec3) const</p>
+<p>Vec3 projectOnVector(Vec3) const</p>
+<p>Vec3& set(Vec3)</p>
+<p>Vec3& setLength(double)</p>
+<p>Vec3 withLength(double) const</p>
+<p>Vec3 withX(double) const</p>
+<p>Vec3 withY(double) const</p>
+<p>Vec3 withZ(double) const</p>
+<p>Vec2 xx() const</p>
+<p>Vec3 xxx() const</p>
+<p>Vec2 xy() const</p>
+<p>Vec4 xyz0() const</p>
+<p>Vec4 xyz1() const</p>
+<p>Vec3 xyz() const</p>
+<p>Vec2 xz() const</p>
+<p>Vec3 xzy() const</p>
+<p>Vec2 yx() const</p>
+<p>Vec3 yxz() const</p>
+<p>Vec2 yy() const</p>
+<p>Vec3 yyy() const</p>
+<p>Vec2 yz() const</p>
+<p>Vec3 yzx() const</p>
+<p>Vec2 zx() const</p>
+<p>Vec3 zxy() const</p>
+<p>Vec2 zy() const</p>
+<p>Vec3 zyx() const</p>
+<p>Vec2 zz() const</p>
+<p>Vec3 zzz() const</p>
+<p>Vec3 All(double value = 1)</p>
+<p>Vec3 Backward(double length = 1)</p>
+<p>Vec3 Down(double length = 1)</p>
+<p>Vec3 Forward(double length = 1)</p>
+<p>Vec3 Left(double length = 1)</p>
+<p>Vec3 One()</p>
+<p>Vec3 Right(double length = 1)</p>
+<p>Vec3 UnitX()</p>
+<p>Vec3 UnitY()</p>
+<p>Vec3 UnitZ()</p>
+<p>Vec3 Up(double length = 1)</p>
+<p>Vec3 Zero()</p>
+<br><h4>- Vec4 -</h4><p>void Vec4(const Vec4& in)</p>
+<p>void clear()</p>
+<p>double distanceFrom(Vec4) const</p>
+<p>double distanceFromSq(Vec4) const</p>
+<p>double dot(Vec4) const</p>
+<p>double elem(size_t) const</p>
+<p>bool epsilonEquals(Vec4, double) const</p>
+<p>Vec4 getMidpoint(Vec4) const</p>
+<p>size_t hash() const</p>
+<p>bool hasNaN() const</p>
+<p>bool hasOppositeDirection(Vec4) const</p>
+<p>bool hasSameDirection(Vec4) const</p>
+<p>double invLength() const</p>
+<p>bool isZero() const</p>
+<p>double length() const</p>
+<p>double lengthSq() const</p>
+<p>Vec4 lerp(Vec4, double) const</p>
+<p>Vec4 limitLength(double) const</p>
+<p>Vec4& limitLengthSelf(double)</p>
+<p>double manhattanDistanceFrom(Vec4) const</p>
+<p>double manhattanLength() const</p>
+<p>double maxComponent() const</p>
+<p>double minComponent() const</p>
+<p>Vec4& moveBy(Vec4)</p>
+<p>Vec4 movedBy(Vec4) const</p>
+<p>Vec4& normalize()</p>
+<p>Vec4 normalized() const</p>
+<p>Vec4& set(Vec4)</p>
+<p>Vec4& setLength(double)</p>
+<p>Vec4 withLength(double) const</p>
+<p>Vec4 withW(double) const</p>
+<p>Vec4 withX(double) const</p>
+<p>Vec4 withY(double) const</p>
+<p>Vec4 withZ(double) const</p>
+<p>Vec2 ww() const</p>
+<p>Vec3 www() const</p>
+<p>Vec4 wwww() const</p>
+<p>Vec2 wx() const</p>
+<p>Vec2 wy() const</p>
+<p>Vec2 wz() const</p>
+<p>Vec3 wzy() const</p>
+<p>Vec4 wzyx() const</p>
+<p>Vec2 xw() const</p>
+<p>Vec2 xx() const</p>
+<p>Vec3 xxx() const</p>
+<p>Vec4 xxxx() const</p>
+<p>Vec2 xy() const</p>
+<p>Vec4 xyz0() const</p>
+<p>Vec4 xyz1() const</p>
+<p>Vec3 xyz() const</p>
+<p>Vec4 xyzw() const</p>
+<p>Vec2 xz() const</p>
+<p>Vec2 yw() const</p>
+<p>Vec2 yx() const</p>
+<p>Vec3 yxz() const</p>
+<p>Vec2 yy() const</p>
+<p>Vec3 yyy() const</p>
+<p>Vec4 yyyy() const</p>
+<p>Vec2 yz() const</p>
+<p>Vec3 yzw() const</p>
+<p>Vec2 zw() const</p>
+<p>Vec2 zx() const</p>
+<p>Vec2 zy() const</p>
+<p>Vec3 zyx() const</p>
+<p>Vec2 zz() const</p>
+<p>Vec3 zzz() const</p>
+<p>Vec4 zzzz() const</p>
+<p>Vec4 All(double value = 1)</p>
+<p>Vec4 One()</p>
+<p>Vec4 UnitW()</p>
+<p>Vec4 UnitX()</p>
+<p>Vec4 UnitY()</p>
+<p>Vec4 UnitZ()</p>
+<p>Vec4 Zero()</p>
+<br><h4>- VideoTexture -</h4><p>void VideoTexture(const String& in, bool loop = Loop::Yes, TextureDesc = TextureDesc::Unmipped) explicit</p>
+<p>void advance(double deltaTimeSec = Scene::DeltaTime()) const</p>
+<p>RectF draw(const Vec2& in, const ColorF& in, const ColorF& in, const ColorF& in, const ColorF& in) const</p>
+<p>RectF drawAt(const Vec2& in, const ColorF& in, const ColorF& in, const ColorF& in, const ColorF& in) const</p>
+<p>RectF drawAtClipped(double x, double y, const RectF& in, const ColorF& in color = Palette::White) const</p>
+<p>RectF drawClipped(double x, double y, const RectF& in, const ColorF& in color = Palette::White) const</p>
+<p>TextureRegion fitted(double, double, bool scaleUp = AllowScaleUp::Yes) const</p>
+<p>TextureRegion flipped() const</p>
+<p>bool hasMipMap() const</p>
+<p>int32 height() const</p>
+<p>bool isEmpty() const</p>
+<p>bool isLoop() const</p>
+<p>bool lengthSec() const</p>
+<p>TextureRegion mapped(Vec2) const</p>
+<p>TextureRegion mirrored() const</p>
+<p>bool posSec() const</p>
+<p>RectF region(Vec2) const</p>
+<p>RectF regionAt(Vec2) const</p>
+<p>void release() const</p>
+<p>TextureRegion repeated(Vec2) const</p>
+<p>void reset() const</p>
+<p>TextureRegion resized(Vec2) const</p>
+<p>TexturedQuad rotated(double) const</p>
+<p>TexturedQuad rotatedAt(double, double, double) const</p>
+<p>TexturedRoundRect rounded(double) const</p>
+<p>TextureRegion scaled(Vec2) const</p>
+<p>void setPosSec(double) const</p>
+<p>Point size() const</p>
+<p>void swap(VideoTexture& inout)</p>
+<p>const Texture& getTexture() const</p>
+<p>const Texture& opImplConv() const</p>
+<p>TextureRegion uv(const RectF& in) const</p>
+<p>int32 width() const</p>
+<br><h4>- Wave -</h4><p>void Wave(const Duration& in, Arg::sampleRate_uint32 = (Arg::sampleRate = Wave::DefaultSampleRate)) explicit</p>
+<p>void assign(const Wave& in)</p>
+<p>WaveSample& at(size_t index)</p>
+<p>WaveSample& back()</p>
+<p>size_t capacity() const</p>
+<p>void clear()</p>
+<p>void deinterleave()</p>
+<p>bool empty() const</p>
+<p>Wave& fadeIn(size_t)</p>
+<p>Wave& fadeOut(size_t)</p>
+<p>void fillZero()</p>
+<p>WaveSample& front()</p>
+<p>bool isEmpty() const</p>
+<p>size_t lengthSample() const</p>
+<p>double lengthSec() const</p>
+<p>size_t max_size() const</p>
+<p>void pop_back_N(size_t)</p>
+<p>void pop_back()</p>
+<p>void pop_front_N(size_t)</p>
+<p>void pop_front()</p>
+<p>void push_back(const WaveSample& in)</p>
+<p>void push_front(const WaveSample& in)</p>
+<p>void release()</p>
+<p>Wave& removeSilenceFromBeginning()</p>
+<p>Wave& removeSilenceFromEnd()</p>
+<p>void reserve(size_t)</p>
+<p>uint32 sampleRate() const</p>
+<p>size_t samples() const</p>
+<p>bool save(const String& in, AudioFormat format = AudioFormat::Unspecified)</p>
+<p>bool saveWithDialog()</p>
+<p>void setSampleRate(uint32)</p>
+<p>void shrink_to_fit()</p>
+<p>size_t size_bytes() const</p>
+<p>size_t size() const</p>
+<p>Wave& swapLR()</p>
+<p>const WaveSample& at(size_t index) const</p>
+<p>const WaveSample& back() const</p>
+<p>const WaveSample& front() const</p>
+<p>const WaveSample& opIndex(size_t index) const</p>
+<br><h4>- WaveSample -</h4><p>void WaveSample(float, float)</p>
+<p>void clear()</p>
+<p>void lerp(WaveSample, float) const</p>
+<p>WaveSample& set(float)</p>
+<p>void swapChannel()</p>
+<p>WaveSample FromInt16(int16)</p>
+<p>WaveSample Max()</p>
+<p>WaveSample Min()</p>
+<p>WaveSample Zero()</p>
+<br><h4>- Window -</h4><p>void Centering()</p>
+<p>Point GetPos()</p>
+<p>WindowStyle GetStyle()</p>
+<p>bool IsToggleFullscreenEnabled()</p>
+<p>void Maximize()</p>
+<p>void Minimize()</p>
+<p>bool Resize(Point, bool centering = Centering::Yes)</p>
+<p>bool ResizeActual(Point, bool centering = Centering::Yes)</p>
+<p>bool ResizeVirtual(Point, bool centering = Centering::Yes)</p>
+<p>void Restore()</p>
+<p>void SetFullscreen(bool, size_t monitorIndex = System::GetCurrentMonitorIndex())</p>
+<p>void SetMinimumFrameBufferSize(Point)</p>
+<p>void SetPos(int32, int32)</p>
+<p>void SetStyle(WindowStyle)</p>
+<p>void SetTitle(const String& in)</p>
+<p>void SetToggleFullscreenEnabled(bool enabled)</p>
+<p>const String& GetTitle()</p>
+<br><h4>- ZIPReader -</h4><p>void ZIPReader()</p>
+<p>void close()</p>
+<p>Array&lt;String&gt;@ enumPaths() const</p>
+<p>MemoryReader extract(const String&in)</p>
+<p>bool extractAll(const String&in)</p>
+<p>bool extractFiles(const String&in, const String&in)</p>
+<p>bool isOpen() const</p>
+<p>bool open(const String&in)</p>
+
+
+  <br>
+  <footer class="page-footer blue-grey darken-1">
+    <div class="footer-copyright">
+      <div class="container">
+        <h6 class="center-align"><a href="https://github.com/sivboard/sivboard.github.io/issues">Copyright © 2022 - 2025 Nyuma</a></h6>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
